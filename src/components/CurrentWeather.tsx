@@ -1,13 +1,15 @@
-import { Droplets, Wind, Sun as SunIcon, Thermometer } from "lucide-react";
+import { Droplets, Wind, Sun as SunIcon, Thermometer, Star } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
 import { describeWeather, iconForCode, type GeoLocation, type WeatherData } from "@/lib/weather";
 
 interface Props {
   location: GeoLocation;
   data: WeatherData;
+  isFavorite?: boolean;
+  onToggleFavorite?: () => void;
 }
 
-export const CurrentWeather = ({ location, data }: Props) => {
+export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }: Props) => {
   const c = data.current;
   const icon = iconForCode(c.weatherCode, c.isDay);
   const localTime = new Date(c.time).toLocaleTimeString("en-US", {
@@ -28,9 +30,28 @@ export const CurrentWeather = ({ location, data }: Props) => {
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
             {localTime} · local
           </div>
-          <h1 className="font-display text-4xl font-medium leading-tight sm:text-5xl">
-            {location.name}
-          </h1>
+          <div className="flex items-center gap-3">
+            <h1 className="font-display text-4xl font-medium leading-tight sm:text-5xl">
+              {location.name}
+            </h1>
+            {onToggleFavorite && (
+              <button
+                onClick={onToggleFavorite}
+                title={isFavorite ? "Remove from favorites" : "Add to favorites"}
+                className={`flex h-10 w-10 items-center justify-center rounded-full transition ${
+                  isFavorite
+                    ? "bg-primary/20 text-primary shadow-glow"
+                    : "bg-secondary/60 text-muted-foreground hover:text-primary"
+                }`}
+              >
+                <Star
+                  className="h-5 w-5"
+                  strokeWidth={1.75}
+                  fill={isFavorite ? "currentColor" : "none"}
+                />
+              </button>
+            )}
+          </div>
           <p className="text-sm text-muted-foreground">
             {[location.admin1, location.country].filter(Boolean).join(", ")} · {localDate}
           </p>
