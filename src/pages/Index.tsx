@@ -7,6 +7,7 @@ import { DailyForecast } from "@/components/DailyForecast";
 import { FavoriteLocations } from "@/components/FavoriteLocations";
 import { useFavorites } from "@/hooks/use-favorites";
 import { fetchWeather, reverseGeocode, type GeoLocation, type WeatherData } from "@/lib/weather";
+import { toast } from "sonner";
 
 type Tab = "24h" | "5d" | "10d";
 
