@@ -56,8 +56,33 @@ export async function searchLocations(query: string): Promise<GeoLocation[]> {
 }
 
 export async function reverseGeocode(lat: number, lon: number): Promise<GeoLocation | null> {
-  const url = `https://geocoding-api.open-meteo.com/v1/reverse?latitude=${lat}&longitude=${lon}&language=en&format=json`;
+  // Try BigDataCloud first — free, no key, reliable worldwide reverse geocoding.
   try {
+    const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`;
+    const res = await fetch(url);
+    if (res.ok) {
+      const d = await res.json();
+      const name =
+        d.city || d.locality || d.localityInfo?.administrative?.[3]?.name || d.principalSubdivision || "My location";
+      if (name) {
+        return {
+          id: Math.round((lat + 90) * 1e4) * 1e6 + Math.round((lon + 180) * 1e4),
+          name,
+          country: d.countryName || "",
+          admin1: d.principalSubdivision || undefined,
+          latitude: lat,
+          longitude: lon,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        };
+      }
+    }
+  } catch {
+    // fall through to Open-Meteo
+  }
+
+  // Fallback: Open-Meteo reverse (limited coverage)
+  try {
+    const url = `https://geocoding-api.open-meteo.com/v1/reverse?latitude=${lat}&longitude=${lon}&language=en&format=json`;
     const res = await fetch(url);
     if (!res.ok) return null;
     const data = await res.json();
