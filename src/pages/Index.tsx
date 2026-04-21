@@ -4,6 +4,8 @@ import { LocationSearch } from "@/components/LocationSearch";
 import { CurrentWeather } from "@/components/CurrentWeather";
 import { HourlyForecast } from "@/components/HourlyForecast";
 import { DailyForecast } from "@/components/DailyForecast";
+import { FavoriteLocations } from "@/components/FavoriteLocations";
+import { useFavorites } from "@/hooks/use-favorites";
 import { fetchWeather, reverseGeocode, type GeoLocation, type WeatherData } from "@/lib/weather";
 
 type Tab = "24h" | "5d" | "10d";
@@ -25,6 +27,8 @@ const Index = () => {
   const [locating, setLocating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("24h");
+
+  const { favorites, isFavorite, toggleFavorite, removeFavorite } = useFavorites();
 
   useEffect(() => {
     let cancelled = false;
@@ -94,6 +98,12 @@ const Index = () => {
             </span>
           </div>
           <LocationSearch onSelect={setLocation} onUseCurrent={handleUseCurrent} loadingCurrent={locating} />
+          <FavoriteLocations
+            favorites={favorites}
+            activeId={location.id}
+            onSelect={setLocation}
+            onRemove={removeFavorite}
+          />
         </header>
 
         {loading && !data && (
@@ -111,7 +121,12 @@ const Index = () => {
 
         {data && (
           <div className="space-y-6">
-            <CurrentWeather location={location} data={data} />
+            <CurrentWeather
+              location={location}
+              data={data}
+              isFavorite={isFavorite(location)}
+              onToggleFavorite={() => toggleFavorite(location)}
+            />
 
             <div className="glass inline-flex rounded-full p-1.5">
               {tabs.map((t) => (
