@@ -44,30 +44,43 @@ const Index = () => {
   const handleUseCurrent = () => {
     if (!navigator.geolocation) {
       setError("Geolocation is not available in this browser");
+      toast.error("Geolocation not supported");
       return;
     }
     setLocating(true);
+    setError(null);
     navigator.geolocation.getCurrentPosition(
       async (pos) => {
         const { latitude, longitude } = pos.coords;
-        const place = await reverseGeocode(latitude, longitude);
-        setLocation(
-          place ?? {
-            id: Date.now(),
-            name: "My location",
-            country: "",
-            latitude,
-            longitude,
-            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-          }
-        );
+        try {
+          const place = await reverseGeocode(latitude, longitude);
+          const next: GeoLocation =
+            place ?? {
+              id: Date.now(),
+              name: "My location",
+              country: "",
+              latitude,
+              longitude,
+              timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            };
+          setLocation(next);
+          toast.success(`Showing weather for ${next.name}`);
+        } catch {
+          toast.error("Couldn't determine your city");
+        } finally {
+          setLocating(false);
+        }
+      },
+      (err) => {
+        const msg =
+          err.code === err.PERMISSION_DENIED
+            ? "Location permission denied. Enable it in your browser settings."
+            : "Couldn't access your location. Search for a city instead.";
+        setError(msg);
+        toast.error(msg);
         setLocating(false);
       },
-      () => {
-        setError("Couldn't access your location. Search for a city instead.");
-        setLocating(false);
-      },
-      { enableHighAccuracy: false, timeout: 8000 }
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
     );
   };
 
