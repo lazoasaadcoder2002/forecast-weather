@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Droplets, Wind, Sun as SunIcon, Thermometer, Star } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
 import { describeWeather, iconForCode, type GeoLocation, type WeatherData } from "@/lib/weather";
@@ -12,11 +13,20 @@ interface Props {
 export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }: Props) => {
   const c = data.current;
   const icon = iconForCode(c.weatherCode, c.isDay);
-  const localTime = new Date(c.time).toLocaleTimeString("en-US", {
+
+  // Tick every minute and re-schedule at midnight so the date auto-rolls.
+  const [now, setNow] = useState(() => new Date());
+  useEffect(() => {
+    const tick = () => setNow(new Date());
+    const interval = setInterval(tick, 60_000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const localTime = now.toLocaleTimeString("en-US", {
     hour: "numeric", minute: "2-digit", timeZone: data.timezone,
   });
-  const localDate = new Date(c.time).toLocaleDateString("en-US", {
-    weekday: "long", month: "long", day: "numeric", timeZone: data.timezone,
+  const localDate = now.toLocaleDateString("en-US", {
+    weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: data.timezone,
   });
 
   return (
