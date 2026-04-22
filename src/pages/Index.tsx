@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
-import { Loader2, AlertCircle } from "lucide-react";
+import { Loader2, AlertCircle, WifiOff } from "lucide-react";
 import { LocationSearch } from "@/components/LocationSearch";
 import { CurrentWeather } from "@/components/CurrentWeather";
 import { HourlyForecast } from "@/components/HourlyForecast";
 import { DailyForecast } from "@/components/DailyForecast";
 import { FavoriteLocations } from "@/components/FavoriteLocations";
 import { useFavorites } from "@/hooks/use-favorites";
+import { useOnlineStatus } from "@/hooks/use-online-status";
 import { fetchWeather, reverseGeocode, type GeoLocation, type WeatherData } from "@/lib/weather";
+import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weather-cache";
 import { toast } from "sonner";
 
 type Tab = "24h" | "5d" | "10d";
@@ -22,25 +24,59 @@ const DEFAULT_LOCATION: GeoLocation = {
 };
 
 const Index = () => {
-  const [location, setLocation] = useState<GeoLocation>(DEFAULT_LOCATION);
+  const [location, setLocation] = useState<GeoLocation>(
+    () => readLastLocation() ?? DEFAULT_LOCATION
+  );
   const [data, setData] = useState<WeatherData | null>(null);
+  const [cachedAt, setCachedAt] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   const [locating, setLocating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("24h");
 
+  const online = useOnlineStatus();
   const { favorites, isFavorite, toggleFavorite, removeFavorite } = useFavorites();
 
   useEffect(() => {
     let cancelled = false;
-    setLoading(true);
+
+    // Hydrate from cache immediately for an instant offline-friendly view.
+    const cached = readWeatherCache(location);
+    if (cached) {
+      setData(cached.data);
+      setCachedAt(cached.fetchedAt);
+      setLoading(false);
+    } else {
+      setData(null);
+      setCachedAt(null);
+      setLoading(true);
+    }
     setError(null);
+
+    if (!navigator.onLine) {
+      if (!cached) {
+        setError("You're offline and no saved weather exists for this location.");
+        setLoading(false);
+      }
+      return () => { cancelled = true; };
+    }
+
+    if (!cached) setLoading(true);
     fetchWeather(location.latitude, location.longitude, location.timezone || "auto")
-      .then((d) => { if (!cancelled) setData(d); })
-      .catch((e) => { if (!cancelled) setError(e.message || "Failed to load weather"); })
+      .then((d) => {
+        if (cancelled) return;
+        setData(d);
+        setCachedAt(Date.now());
+        saveWeatherCache(location, d);
+      })
+      .catch((e) => {
+        if (cancelled) return;
+        if (!cached) setError(e.message || "Failed to load weather");
+        else toast.error("Couldn't refresh — showing saved data");
+      })
       .finally(() => { if (!cancelled) setLoading(false); });
     return () => { cancelled = true; };
-  }, [location]);
+  }, [location, online]);
 
   const handleUseCurrent = () => {
     if (!navigator.geolocation) {
@@ -123,6 +159,20 @@ const Index = () => {
         {loading && !data && (
           <div className="flex items-center justify-center py-32">
             <Loader2 className="h-8 w-8 animate-spin text-primary" />
+          </div>
+        )}
+
+        {!online && (
+          <div className="glass mb-4 flex items-center gap-3 rounded-2xl p-4 text-sm">
+            <WifiOff className="h-5 w-5 text-primary" />
+            <div>
+              <div className="font-medium">Offline mode</div>
+              <div className="text-xs text-muted-foreground">
+                {cachedAt
+                  ? `Showing data saved ${new Date(cachedAt).toLocaleString()}`
+                  : "Connect to the internet to load weather."}
+              </div>
+            </div>
           </div>
         )}
 
