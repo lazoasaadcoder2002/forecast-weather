@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { Loader2, AlertCircle, WifiOff } from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { Loader2, AlertCircle, WifiOff, RefreshCw } from "lucide-react";
 import { LocationSearch } from "@/components/LocationSearch";
 import { CurrentWeather } from "@/components/CurrentWeather";
 import { HourlyForecast } from "@/components/HourlyForecast";
@@ -30,6 +30,7 @@ const Index = () => {
   const [data, setData] = useState<WeatherData | null>(null);
   const [cachedAt, setCachedAt] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [locating, setLocating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("24h");
@@ -37,10 +38,51 @@ const Index = () => {
   const online = useOnlineStatus();
   const { favorites, isFavorite, toggleFavorite, removeFavorite } = useFavorites();
 
+  const refreshWeather = useCallback(
+    async (loc: GeoLocation, opts: { silent?: boolean; userInitiated?: boolean } = {}) => {
+      const cached = readWeatherCache(loc);
+
+      if (!navigator.onLine) {
+        if (cached) {
+          setData(cached.data);
+          setCachedAt(cached.fetchedAt);
+          setError(null);
+          if (opts.userInitiated) toast.info("You're offline — showing saved data");
+        } else {
+          setError("You're offline and no saved weather exists for this location.");
+          if (opts.userInitiated) toast.error("You're offline and no saved data exists");
+        }
+        return;
+      }
+
+      if (opts.silent) setRefreshing(true);
+      try {
+        const d = await fetchWeather(loc.latitude, loc.longitude, loc.timezone || "auto");
+        setData(d);
+        setCachedAt(Date.now());
+        setError(null);
+        saveWeatherCache(loc, d);
+        if (opts.userInitiated) toast.success("Weather updated");
+      } catch (e) {
+        const msg = (e as Error).message || "Failed to load weather";
+        if (cached) {
+          setData(cached.data);
+          setCachedAt(cached.fetchedAt);
+          toast.error("Couldn't refresh — showing saved data");
+        } else {
+          setError(msg);
+          if (opts.userInitiated) toast.error(msg);
+        }
+      } finally {
+        if (opts.silent) setRefreshing(false);
+      }
+    },
+    []
+  );
+
   useEffect(() => {
     let cancelled = false;
 
-    // Hydrate from cache immediately for an instant offline-friendly view.
     const cached = readWeatherCache(location);
     if (cached) {
       setData(cached.data);
@@ -53,30 +95,16 @@ const Index = () => {
     }
     setError(null);
 
-    if (!navigator.onLine) {
-      if (!cached) {
-        setError("You're offline and no saved weather exists for this location.");
-        setLoading(false);
-      }
-      return () => { cancelled = true; };
-    }
+    refreshWeather(location, { silent: !!cached }).finally(() => {
+      if (!cancelled) setLoading(false);
+    });
 
-    if (!cached) setLoading(true);
-    fetchWeather(location.latitude, location.longitude, location.timezone || "auto")
-      .then((d) => {
-        if (cancelled) return;
-        setData(d);
-        setCachedAt(Date.now());
-        saveWeatherCache(location, d);
-      })
-      .catch((e) => {
-        if (cancelled) return;
-        if (!cached) setError(e.message || "Failed to load weather");
-        else toast.error("Couldn't refresh — showing saved data");
-      })
-      .finally(() => { if (!cancelled) setLoading(false); });
     return () => { cancelled = true; };
-  }, [location, online]);
+  }, [location, online, refreshWeather]);
+
+  const handleRefresh = () => {
+    refreshWeather(location, { silent: true, userInitiated: true });
+  };
 
   const handleUseCurrent = () => {
     if (!navigator.geolocation) {
@@ -192,20 +220,31 @@ const Index = () => {
               onToggleFavorite={() => toggleFavorite(location)}
             />
 
-            <div className="glass inline-flex rounded-full p-1.5">
-              {tabs.map((t) => (
-                <button
-                  key={t.id}
-                  onClick={() => setTab(t.id)}
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    tab === t.id
-                      ? "bg-gradient-sun text-primary-foreground shadow-glow"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  {t.label}
-                </button>
-              ))}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="glass inline-flex rounded-full p-1.5">
+                {tabs.map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => setTab(t.id)}
+                    className={`rounded-full px-5 py-2 text-sm font-medium transition ${
+                      tab === t.id
+                        ? "bg-gradient-sun text-primary-foreground shadow-glow"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={handleRefresh}
+                disabled={refreshing}
+                title={online ? "Refresh weather" : "Offline — will show cached data"}
+                className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition hover:text-primary disabled:opacity-60"
+              >
+                <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
+                <span>Refresh</span>
+              </button>
             </div>
 
             {tab === "24h" && <HourlyForecast data={data} hours={24} />}
