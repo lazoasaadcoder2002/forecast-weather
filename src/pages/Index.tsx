@@ -182,6 +182,17 @@ const Index = () => {
             onSelect={setLocation}
             onRemove={removeFavorite}
           />
+          <div>
+            <button
+              onClick={handleRefresh}
+              disabled={refreshing}
+              title={online ? "Refresh weather" : "Offline — will show cached data"}
+              className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition hover:text-primary disabled:opacity-60"
+            >
+              <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
+              <span>Refresh weather</span>
+            </button>
+          </div>
         </header>
 
         {loading && !data && (
@@ -220,31 +231,20 @@ const Index = () => {
               onToggleFavorite={() => toggleFavorite(location)}
             />
 
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="glass inline-flex rounded-full p-1.5">
-                {tabs.map((t) => (
-                  <button
-                    key={t.id}
-                    onClick={() => setTab(t.id)}
-                    className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                      tab === t.id
-                        ? "bg-gradient-sun text-primary-foreground shadow-glow"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {t.label}
-                  </button>
-                ))}
-              </div>
-              <button
-                onClick={handleRefresh}
-                disabled={refreshing}
-                title={online ? "Refresh weather" : "Offline — will show cached data"}
-                className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition hover:text-primary disabled:opacity-60"
-              >
-                <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
-                <span>Refresh</span>
-              </button>
+            <div className="glass inline-flex rounded-full p-1.5">
+              {tabs.map((t) => (
+                <button
+                  key={t.id}
+                  onClick={() => setTab(t.id)}
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition ${
+                    tab === t.id
+                      ? "bg-gradient-sun text-primary-foreground shadow-glow"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
             </div>
 
             {tab === "24h" && <HourlyForecast data={data} hours={24} />}
