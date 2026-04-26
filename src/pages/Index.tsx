@@ -106,11 +106,43 @@ const Index = () => {
     refreshWeather(location, { silent: true, userInitiated: true });
   };
 
-  const handleUseCurrent = () => {
+  const showPermissionInstructions = () => {
+    const ua = navigator.userAgent.toLowerCase();
+    let steps = "Open your browser settings → Site settings → Location, and allow access for this site.";
+    if (ua.includes("chrome") && !ua.includes("edg")) {
+      steps = "Click the lock icon (🔒) in the address bar → Site settings → set Location to Allow → reload the page.";
+    } else if (ua.includes("safari")) {
+      steps = "Open Safari → Settings → Websites → Location → set this site to Allow. Then reload.";
+    } else if (ua.includes("firefox")) {
+      steps = "Click the lock icon (🔒) in the address bar → Clear the blocked Location permission → reload and allow when prompted.";
+    } else if (ua.includes("edg")) {
+      steps = "Click the lock icon (🔒) in the address bar → Permissions for this site → set Location to Allow → reload.";
+    }
+    setError(`Location access is blocked. ${steps}`);
+    toast.error("Please enable location in your browser settings", {
+      description: steps,
+      duration: 8000,
+    });
+  };
+
+  const handleUseCurrent = async () => {
     if (!navigator.geolocation) {
       setError("Geolocation is not available in this browser");
       toast.error("Geolocation not supported");
       return;
+    }
+
+    // Check permission state first — if already denied, guide the user to settings
+    if (navigator.permissions?.query) {
+      try {
+        const status = await navigator.permissions.query({ name: "geolocation" as PermissionName });
+        if (status.state === "denied") {
+          showPermissionInstructions();
+          return;
+        }
+      } catch {
+        // Permissions API not supported here — fall through to getCurrentPosition
+      }
     }
 
     setLocating(true);
