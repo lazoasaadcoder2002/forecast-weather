@@ -112,41 +112,88 @@ const Index = () => {
       toast.error("Geolocation not supported");
       return;
     }
+
     setLocating(true);
     setError(null);
-    navigator.geolocation.getCurrentPosition(
-      async (pos) => {
-        const { latitude, longitude } = pos.coords;
-        try {
-          const place = await reverseGeocode(latitude, longitude);
-          const next: GeoLocation =
-            place ?? {
-              id: Date.now(),
-              name: "My location",
-              country: "",
-              latitude,
-              longitude,
-              timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-            };
-          setLocation(next);
-          toast.success(`Showing weather for ${next.name}`);
-        } catch {
-          toast.error("Couldn't determine your city");
-        } finally {
-          setLocating(false);
-        }
-      },
-      (err) => {
-        const msg =
-          err.code === err.PERMISSION_DENIED
-            ? "Location permission denied. Enable it in your browser settings."
-            : "Couldn't access your location. Search for a city instead.";
-        setError(msg);
-        toast.error(msg);
+
+    // Manual timeout — some embedded/iframe contexts never invoke the
+    // geolocation callbacks, leaving the spinner stuck forever.
+    let settled = false;
+    const timeoutId = window.setTimeout(() => {
+      if (settled) return;
+      settled = true;
+      setLocating(false);
+      const msg =
+        "Couldn't get your location. If you're viewing inside a preview frame, try opening the app in a new tab, or search for your city.";
+      setError(msg);
+      toast.error("Location request timed out");
+    }, 12000);
+
+    const handleSuccess = async (pos: GeolocationPosition) => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timeoutId);
+      const { latitude, longitude } = pos.coords;
+      try {
+        const place = await reverseGeocode(latitude, longitude);
+        const next: GeoLocation =
+          place ?? {
+            id: Date.now(),
+            name: "My location",
+            country: "",
+            latitude,
+            longitude,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          };
+        setLocation(next);
+        toast.success(`Showing weather for ${next.name}`);
+      } catch {
+        // Still set the raw coordinates so weather can load even if reverse-geocode fails
+        setLocation({
+          id: Date.now(),
+          name: "My location",
+          country: "",
+          latitude,
+          longitude,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        });
+        toast.success("Showing weather for your location");
+      } finally {
         setLocating(false);
-      },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
-    );
+      }
+    };
+
+    const handleError = (err: GeolocationPositionError) => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timeoutId);
+      const msg =
+        err.code === err.PERMISSION_DENIED
+          ? "Location permission denied. Enable it in your browser settings."
+          : err.code === err.POSITION_UNAVAILABLE
+          ? "Your location is unavailable right now. Try again or search for a city."
+          : err.code === err.TIMEOUT
+          ? "Getting your location took too long. Try again."
+          : "Couldn't access your location. Search for a city instead.";
+      setError(msg);
+      toast.error(msg);
+      setLocating(false);
+    };
+
+    try {
+      navigator.geolocation.getCurrentPosition(handleSuccess, handleError, {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 60000,
+      });
+    } catch (e) {
+      settled = true;
+      window.clearTimeout(timeoutId);
+      setLocating(false);
+      const msg = (e as Error).message || "Couldn't access your location.";
+      setError(msg);
+      toast.error(msg);
+    }
   };
 
   const tabs = useMemo(
