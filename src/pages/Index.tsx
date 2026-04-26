@@ -192,6 +192,11 @@ const Index = () => {
               <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
               <span>Refresh</span>
             </button>
+            {cachedAt && (
+              <span className="ml-3 text-xs text-muted-foreground">
+                Last updated: {new Date(cachedAt).toLocaleString()}
+              </span>
+            )}
           </div>
         </header>
 
