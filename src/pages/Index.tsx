@@ -199,10 +199,13 @@ const Index = () => {
       if (settled) return;
       settled = true;
       window.clearTimeout(timeoutId);
+      if (err.code === err.PERMISSION_DENIED) {
+        setLocating(false);
+        showPermissionInstructions();
+        return;
+      }
       const msg =
-        err.code === err.PERMISSION_DENIED
-          ? "Location permission denied. Enable it in your browser settings."
-          : err.code === err.POSITION_UNAVAILABLE
+        err.code === err.POSITION_UNAVAILABLE
           ? "Your location is unavailable right now. Try again or search for a city."
           : err.code === err.TIMEOUT
           ? "Getting your location took too long. Try again."
