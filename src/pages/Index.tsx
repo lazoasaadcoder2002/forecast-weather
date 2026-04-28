@@ -167,8 +167,7 @@ const Index = () => {
       }
     }
 
-    setLocating(true);
-    setError(null);
+    // (locating + error already set above)
 
     // Manual timeout — some embedded/iframe contexts never invoke the
     // geolocation callbacks, leaving the spinner stuck forever.
