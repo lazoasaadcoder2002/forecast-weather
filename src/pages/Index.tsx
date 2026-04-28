@@ -125,18 +125,40 @@ const Index = () => {
     });
   };
 
+  const useIpFallback = async (notify = true): Promise<boolean> => {
+    const place = await ipGeolocate();
+    if (place) {
+      setLocation(place);
+      setError(null);
+      if (notify) toast.success(`Approximate location: ${place.name}`);
+      return true;
+    }
+    return false;
+  };
+
   const handleUseCurrent = async () => {
-    if (!navigator.geolocation) {
-      setError("Geolocation is not available in this browser");
-      toast.error("Geolocation not supported");
+    setLocating(true);
+    setError(null);
+
+    // 1) Try IP-based geolocation first — no permission prompt, instant.
+    if (await useIpFallback(true)) {
+      setLocating(false);
       return;
     }
 
-    // Check permission state first — if already denied, guide the user to settings
+    // 2) Fall back to precise GPS (requires permission).
+    if (!navigator.geolocation) {
+      setError("Couldn't detect your location. Please search for a city.");
+      toast.error("Location unavailable");
+      setLocating(false);
+      return;
+    }
+
     if (navigator.permissions?.query) {
       try {
         const status = await navigator.permissions.query({ name: "geolocation" as PermissionName });
         if (status.state === "denied") {
+          setLocating(false);
           showPermissionInstructions();
           return;
         }
