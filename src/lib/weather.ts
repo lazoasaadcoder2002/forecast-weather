@@ -44,6 +44,27 @@ export interface WeatherData {
   timezone: string;
 }
 
+export async function ipGeolocate(): Promise<GeoLocation | null> {
+  // Free, no key, no permission required. Approximate (city-level).
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    if (!res.ok) return null;
+    const d = await res.json();
+    if (typeof d.latitude !== "number" || typeof d.longitude !== "number") return null;
+    return {
+      id: Date.now(),
+      name: d.city || d.region || "My location",
+      country: d.country_name || "",
+      admin1: d.region || undefined,
+      latitude: d.latitude,
+      longitude: d.longitude,
+      timezone: d.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone,
+    };
+  } catch {
+    return null;
+  }
+}
+
 export async function searchLocations(query: string): Promise<GeoLocation[]> {
   if (!query.trim()) return [];
   const url = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(
