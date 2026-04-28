@@ -7,7 +7,7 @@ import { DailyForecast } from "@/components/DailyForecast";
 import { FavoriteLocations } from "@/components/FavoriteLocations";
 import { useFavorites } from "@/hooks/use-favorites";
 import { useOnlineStatus } from "@/hooks/use-online-status";
-import { fetchWeather, reverseGeocode, type GeoLocation, type WeatherData } from "@/lib/weather";
+import { fetchWeather, reverseGeocode, ipGeolocate, type GeoLocation, type WeatherData } from "@/lib/weather";
 import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weather-cache";
 import { toast } from "sonner";
 
