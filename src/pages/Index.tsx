@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { Loader2, AlertCircle, WifiOff, RefreshCw } from "lucide-react";
+import { Loader2, AlertCircle, WifiOff, RefreshCw, Menu, Star, MapPin, Info, ExternalLink } from "lucide-react";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { LocationSearch } from "@/components/LocationSearch";
 import { CurrentWeather } from "@/components/CurrentWeather";
 import { HourlyForecast } from "@/components/HourlyForecast";
@@ -271,6 +272,84 @@ const Index = () => {
         <header className="mb-8 flex flex-col gap-6 sm:mb-10">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <button
+                    aria-label="Open navigation menu"
+                    className="glass inline-flex h-9 w-9 items-center justify-center rounded-xl text-foreground transition hover:text-primary"
+                  >
+                    <Menu className="h-5 w-5" />
+                  </button>
+                </SheetTrigger>
+                <SheetContent side="left" className="w-[85vw] max-w-xs">
+                  <SheetHeader className="text-left">
+                    <SheetTitle className="flex items-center gap-2">
+                      <div className="h-7 w-7 rounded-lg bg-gradient-sun shadow-glow" />
+                      <span className="font-display text-lg font-medium">Skyline</span>
+                    </SheetTitle>
+                    <SheetDescription>Worldwide weather forecasts</SheetDescription>
+                  </SheetHeader>
+
+                  <nav className="mt-6 flex flex-col gap-1">
+                    <SheetClose asChild>
+                      <button
+                        onClick={handleUseCurrent}
+                        className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
+                      >
+                        <MapPin className="h-4 w-4 text-primary" />
+                        Use current location
+                      </button>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <button
+                        onClick={handleRefresh}
+                        className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
+                      >
+                        <RefreshCw className="h-4 w-4 text-primary" />
+                        Refresh weather
+                      </button>
+                    </SheetClose>
+                  </nav>
+
+                  {favorites.length > 0 && (
+                    <div className="mt-6">
+                      <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
+                        <Star className="h-3 w-3" /> Favorites
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        {favorites.map((fav) => (
+                          <SheetClose asChild key={fav.id}>
+                            <button
+                              onClick={() => setLocation(fav)}
+                              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-left text-sm transition hover:bg-muted/50 ${
+                                fav.id === location.id ? "bg-muted/40 font-medium text-primary" : ""
+                              }`}
+                            >
+                              <MapPin className="h-3.5 w-3.5" />
+                              <span className="truncate">{fav.name}</span>
+                            </button>
+                          </SheetClose>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="mt-6 border-t pt-4">
+                    <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
+                      <Info className="h-3 w-3" /> About
+                    </div>
+                    <a
+                      href="https://open-meteo.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between rounded-lg px-3 py-2 text-sm transition hover:bg-muted/50"
+                    >
+                      <span>Open-Meteo data</span>
+                      <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
+                    </a>
+                  </div>
+                </SheetContent>
+              </Sheet>
               <div className="h-9 w-9 rounded-xl bg-gradient-sun shadow-glow" />
               <span className="font-display text-xl font-medium">Skyline</span>
             </div>
