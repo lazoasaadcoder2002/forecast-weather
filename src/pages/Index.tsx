@@ -518,7 +518,7 @@ const Index = () => {
         )}
 
         <footer className="mt-12 text-center text-xs text-muted-foreground">
-          Weather data by <a href="https://open-meteo.com" target="_blank" rel="noreferrer" className="underline hover:text-primary">Open-Meteo</a>
+          {t("footer")} <a href="https://open-meteo.com" target="_blank" rel="noreferrer" className="underline hover:text-primary">Open-Meteo</a>
         </footer>
       </div>
 
@@ -526,9 +526,9 @@ const Index = () => {
         <DialogContent className="max-w-3xl p-4 sm:p-6">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <MapIcon className="h-5 w-5 text-primary" /> Weather map
+              <MapIcon className="h-5 w-5 text-primary" /> {t("map.title")}
             </DialogTitle>
-            <DialogDescription>Tap any spot on the world map to load its forecast.</DialogDescription>
+            <DialogDescription>{t("map.description")}</DialogDescription>
           </DialogHeader>
           <div className="h-[60vh]">
             <WeatherMap
