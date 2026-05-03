@@ -86,7 +86,7 @@ export const WeatherMap = ({ initial, onPick }: Props) => {
         )}
       </div>
       <div className="text-sm">
-        Selected: <span className="font-medium text-primary">{label}</span>
+        {t("map.selected")}: <span className="font-medium text-primary">{label}</span>
       </div>
     </div>
   );
