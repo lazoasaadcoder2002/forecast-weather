@@ -11,6 +11,7 @@ interface Props {
 }
 
 export const LocationSearch = ({ onSelect, onUseCurrent, loadingCurrent }: Props) => {
+  const { t } = useTranslation();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<GeoLocation[]>([]);
   const [open, setOpen] = useState(false);
