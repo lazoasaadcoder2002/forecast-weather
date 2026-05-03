@@ -494,17 +494,17 @@ const Index = () => {
             />
 
             <div className="glass inline-flex rounded-full p-1.5">
-              {tabs.map((t) => (
+              {tabs.map((tabItem) => (
                 <button
-                  key={t.id}
-                  onClick={() => setTab(t.id)}
+                  key={tabItem.id}
+                  onClick={() => setTab(tabItem.id)}
                   className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    tab === t.id
+                    tab === tabItem.id
                       ? "bg-gradient-sun text-primary-foreground shadow-glow"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  {t.label}
+                  {tabItem.label}
                 </button>
               ))}
             </div>
