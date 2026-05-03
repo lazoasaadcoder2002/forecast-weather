@@ -47,7 +47,7 @@ export const LocationSearch = ({ onSelect, onUseCurrent, loadingCurrent }: Props
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length && setOpen(true)}
-          placeholder="Search any city, anywhere…"
+          placeholder={t("search.placeholder")}
           className="flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground/70"
         />
         {loading && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />}
