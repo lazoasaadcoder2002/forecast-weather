@@ -30,6 +30,7 @@ const DEFAULT_LOCATION: GeoLocation = {
 };
 
 const Index = () => {
+  const { t, i18n } = useTranslation();
   const [location, setLocation] = useState<GeoLocation>(
     () => readLastLocation() ?? DEFAULT_LOCATION
   );
