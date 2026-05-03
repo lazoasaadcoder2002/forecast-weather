@@ -53,7 +53,7 @@ export const LocationSearch = ({ onSelect, onUseCurrent, loadingCurrent }: Props
         {loading && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />}
         <button
           onClick={onUseCurrent}
-          title="Use my location"
+          title={t("search.useMyLocation")}
           className="flex h-9 w-9 items-center justify-center rounded-full bg-secondary/60 text-foreground transition hover:bg-secondary hover:text-primary"
         >
           {loadingCurrent ? <Loader2 className="h-4 w-4 animate-spin" /> : <Locate className="h-4 w-4" strokeWidth={1.75} />}
