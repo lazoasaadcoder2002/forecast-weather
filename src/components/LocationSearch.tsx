@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Search, MapPin, Loader2, Locate } from "lucide-react";
 import { searchLocations, type GeoLocation } from "@/lib/weather";
 import { cn } from "@/lib/utils";
