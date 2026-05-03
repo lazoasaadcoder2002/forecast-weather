@@ -467,11 +467,11 @@ const Index = () => {
           <div className="glass mb-4 flex items-center gap-3 rounded-2xl p-4 text-sm">
             <WifiOff className="h-5 w-5 text-primary" />
             <div>
-              <div className="font-medium">Offline mode</div>
+              <div className="font-medium">{t("offline.title")}</div>
               <div className="text-xs text-muted-foreground">
                 {cachedAt
-                  ? `Showing data saved ${new Date(cachedAt).toLocaleString()}`
-                  : "Connect to the internet to load weather."}
+                  ? t("offline.savedAt", { date: new Date(cachedAt).toLocaleString() })
+                  : t("offline.connect")}
               </div>
             </div>
           </div>
