@@ -306,6 +306,15 @@ const Index = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <button
+                        onClick={() => setMapOpen(true)}
+                        className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
+                      >
+                        <MapIcon className="h-4 w-4 text-primary" />
+                        Pick on map
+                      </button>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <button
                         onClick={handleRefresh}
                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
                       >
@@ -314,6 +323,42 @@ const Index = () => {
                       </button>
                     </SheetClose>
                   </nav>
+
+                  <div className="mt-6 max-h-[55vh] overflow-y-auto pr-1">
+                    <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
+                      <Globe2 className="h-3 w-3" /> Europe
+                    </div>
+                    <div className="flex flex-col gap-0.5">
+                      {EUROPEAN_CAPITALS.map((c) => (
+                        <SheetClose asChild key={c.id}>
+                          <button
+                            onClick={() => setLocation(c)}
+                            className="flex items-center justify-between gap-3 rounded-lg px-3 py-1.5 text-left text-sm transition hover:bg-muted/50"
+                          >
+                            <span className="truncate">{c.name}</span>
+                            <span className="truncate text-xs text-muted-foreground">{c.country}</span>
+                          </button>
+                        </SheetClose>
+                      ))}
+                    </div>
+
+                    <div className="mb-2 mt-4 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
+                      <Languages className="h-3 w-3" /> Arab world
+                    </div>
+                    <div className="flex flex-col gap-0.5">
+                      {ARABIC_CAPITALS.map((c) => (
+                        <SheetClose asChild key={c.id}>
+                          <button
+                            onClick={() => setLocation(c)}
+                            className="flex items-center justify-between gap-3 rounded-lg px-3 py-1.5 text-left text-sm transition hover:bg-muted/50"
+                          >
+                            <span className="truncate">{c.name}</span>
+                            <span className="truncate text-xs text-muted-foreground">{c.country}</span>
+                          </button>
+                        </SheetClose>
+                      ))}
+                    </div>
+                  </div>
 
                   {favorites.length > 0 && (
                     <div className="mt-6">
