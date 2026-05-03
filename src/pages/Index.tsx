@@ -262,11 +262,11 @@ const Index = () => {
 
   const tabs = useMemo(
     () => [
-      { id: "24h" as Tab, label: "Hourly" },
-      { id: "5d" as Tab, label: "5 days" },
-      { id: "10d" as Tab, label: "10 days" },
+      { id: "24h" as Tab, label: t("tabs.hourly") },
+      { id: "5d" as Tab, label: t("tabs.fiveDays") },
+      { id: "10d" as Tab, label: t("tabs.tenDays") },
     ],
-    []
+    [t]
   );
 
   return (
