@@ -495,6 +495,26 @@ const Index = () => {
           Weather data by <a href="https://open-meteo.com" target="_blank" rel="noreferrer" className="underline hover:text-primary">Open-Meteo</a>
         </footer>
       </div>
+
+      <Dialog open={mapOpen} onOpenChange={setMapOpen}>
+        <DialogContent className="max-w-3xl p-4 sm:p-6">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <MapIcon className="h-5 w-5 text-primary" /> Weather map
+            </DialogTitle>
+            <DialogDescription>Tap any spot on the world map to load its forecast.</DialogDescription>
+          </DialogHeader>
+          <div className="h-[60vh]">
+            <WeatherMap
+              initial={location}
+              onPick={(loc) => {
+                setLocation(loc);
+                setMapOpen(false);
+              }}
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </main>
   );
 };
