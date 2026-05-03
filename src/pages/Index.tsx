@@ -443,15 +443,15 @@ const Index = () => {
             <button
               onClick={handleRefresh}
               disabled={refreshing}
-              title={online ? "Refresh weather" : "Offline — will show cached data"}
+              title={online ? t("drawer.refresh") : t("toasts.offlineSaved")}
               className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition hover:text-primary disabled:opacity-60"
             >
               <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
-              <span>Refresh</span>
+              <span>{t("actions.refresh")}</span>
             </button>
             {cachedAt && (
               <span className="ml-3 text-xs text-muted-foreground">
-                Last updated: {new Date(cachedAt).toLocaleString()}
+                {t("actions.lastUpdated")}: {new Date(cachedAt).toLocaleString()}
               </span>
             )}
           </div>
