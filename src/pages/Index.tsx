@@ -38,6 +38,7 @@ const Index = () => {
   const [locating, setLocating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("24h");
+  const [mapOpen, setMapOpen] = useState(false);
 
   const online = useOnlineStatus();
   const { favorites, isFavorite, toggleFavorite, removeFavorite } = useFavorites();
