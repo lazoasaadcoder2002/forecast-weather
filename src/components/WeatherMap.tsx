@@ -81,7 +81,7 @@ export const WeatherMap = ({ initial, onPick }: Props) => {
         </MapContainer>
         {loading && (
           <div className="absolute right-3 top-3 z-[400] glass flex items-center gap-2 rounded-full px-3 py-1.5 text-xs">
-            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Locating…
+            <Loader2 className="h-3.5 w-3.5 animate-spin" /> {t("map.locating")}
           </div>
         )}
       </div>
