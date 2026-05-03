@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Weltweite Wettervorhersagen", "worldwide": "Weltweite Vorhersagen" },
+  "search": { "placeholder": "Stadt weltweit suchen…", "useMyLocation": "Meinen Standort verwenden" },
+  "drawer": { "useCurrent": "Aktuellen Standort verwenden", "pickOnMap": "Auf Karte auswählen", "refresh": "Wetter aktualisieren", "europe": "Europa", "arab": "Arabische Welt", "favorites": "Favoriten", "language": "Sprache", "about": "Info", "dataSource": "Open-Meteo Daten" },
+  "tabs": { "hourly": "Stündlich", "fiveDays": "5 Tage", "tenDays": "10 Tage" },
+  "actions": { "refresh": "Aktualisieren", "lastUpdated": "Zuletzt aktualisiert" },
+  "map": { "title": "Wetterkarte", "description": "Tippe irgendwo auf die Weltkarte, um die Vorhersage zu laden.", "hint": "Tippe auf die Karte, um das Wetter dort zu sehen.", "selected": "Ausgewählt", "locating": "Suche…" },
+  "offline": { "title": "Offline-Modus", "savedAt": "Gespeicherte Daten vom {{date}}", "connect": "Internetverbindung erforderlich." },
+  "toasts": { "updated": "Wetter aktualisiert", "approxLocation": "Ungefährer Standort: {{name}}", "showing": "Wetter für {{name}}", "showingYours": "Wetter für deinen Standort", "unavailable": "Standort nicht verfügbar", "timedOut": "Zeitüberschreitung beim Standort", "offlineSaved": "Offline — gespeicherte Daten angezeigt", "offlineNoData": "Offline und keine gespeicherten Daten", "couldntRefresh": "Aktualisierung fehlgeschlagen — gespeicherte Daten", "enableLocation": "Standortzugriff im Browser aktivieren" },
+  "footer": "Wetterdaten von"
+}

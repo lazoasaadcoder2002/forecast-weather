@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Previsioni meteo in tutto il mondo", "worldwide": "Previsioni mondiali" },
+  "search": { "placeholder": "Cerca qualsiasi città…", "useMyLocation": "Usa la mia posizione" },
+  "drawer": { "useCurrent": "Usa posizione attuale", "pickOnMap": "Scegli sulla mappa", "refresh": "Aggiorna meteo", "europe": "Europa", "arab": "Mondo arabo", "favorites": "Preferiti", "language": "Lingua", "about": "Info", "dataSource": "Dati Open-Meteo" },
+  "tabs": { "hourly": "Orario", "fiveDays": "5 giorni", "tenDays": "10 giorni" },
+  "actions": { "refresh": "Aggiorna", "lastUpdated": "Ultimo aggiornamento" },
+  "map": { "title": "Mappa meteo", "description": "Tocca un punto sulla mappa per vedere le previsioni.", "hint": "Tocca la mappa per vedere il meteo di quel punto.", "selected": "Selezionato", "locating": "Ricerca…" },
+  "offline": { "title": "Modalità offline", "savedAt": "Dati salvati il {{date}}", "connect": "Connettiti a internet per caricare il meteo." },
+  "toasts": { "updated": "Meteo aggiornato", "approxLocation": "Posizione approssimativa: {{name}}", "showing": "Meteo per {{name}}", "showingYours": "Meteo per la tua posizione", "unavailable": "Posizione non disponibile", "timedOut": "Tempo scaduto per la posizione", "offlineSaved": "Offline — dati salvati", "offlineNoData": "Offline e nessun dato salvato", "couldntRefresh": "Aggiornamento fallito — dati salvati", "enableLocation": "Attiva la posizione nel browser" },
+  "footer": "Dati meteo da"
+}

@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Prévisions météo dans le monde entier", "worldwide": "Prévisions mondiales" },
+  "search": { "placeholder": "Cherchez n'importe quelle ville…", "useMyLocation": "Utiliser ma position" },
+  "drawer": { "useCurrent": "Utiliser ma position actuelle", "pickOnMap": "Choisir sur la carte", "refresh": "Actualiser la météo", "europe": "Europe", "arab": "Monde arabe", "favorites": "Favoris", "language": "Langue", "about": "À propos", "dataSource": "Données Open-Meteo" },
+  "tabs": { "hourly": "Par heure", "fiveDays": "5 jours", "tenDays": "10 jours" },
+  "actions": { "refresh": "Actualiser", "lastUpdated": "Dernière mise à jour" },
+  "map": { "title": "Carte météo", "description": "Touchez n'importe où sur la carte du monde pour voir les prévisions.", "hint": "Touchez la carte pour voir la météo de cet endroit.", "selected": "Sélectionné", "locating": "Localisation…" },
+  "offline": { "title": "Mode hors ligne", "savedAt": "Données enregistrées le {{date}}", "connect": "Connectez-vous à internet pour charger la météo." },
+  "toasts": { "updated": "Météo mise à jour", "approxLocation": "Position approximative : {{name}}", "showing": "Météo pour {{name}}", "showingYours": "Météo pour votre position", "unavailable": "Position indisponible", "timedOut": "Délai dépassé pour la position", "offlineSaved": "Hors ligne — données enregistrées affichées", "offlineNoData": "Hors ligne et aucune donnée enregistrée", "couldntRefresh": "Échec de l'actualisation — données enregistrées", "enableLocation": "Activez la localisation dans votre navigateur" },
+  "footer": "Données météo par"
+}
