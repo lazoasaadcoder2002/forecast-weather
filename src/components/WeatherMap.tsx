@@ -32,6 +32,7 @@ const ClickHandler = ({ onPick }: { onPick: (lat: number, lon: number) => void }
 };
 
 export const WeatherMap = ({ initial, onPick }: Props) => {
+  const { t } = useTranslation();
   const [pos, setPos] = useState<[number, number]>([initial.latitude, initial.longitude]);
   const [label, setLabel] = useState<string>(initial.name);
   const [loading, setLoading] = useState(false);
