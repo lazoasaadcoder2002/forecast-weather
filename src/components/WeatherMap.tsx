@@ -63,7 +63,7 @@ export const WeatherMap = ({ initial, onPick }: Props) => {
   return (
     <div className="flex h-full flex-col gap-3">
       <div className="text-xs text-muted-foreground">
-        Tap anywhere on the map to see the weather for that spot.
+        {t("map.hint")}
       </div>
       <div className="relative flex-1 overflow-hidden rounded-2xl border">
         <MapContainer
