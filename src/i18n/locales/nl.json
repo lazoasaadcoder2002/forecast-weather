@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Wereldwijde weersvoorspellingen", "worldwide": "Wereldwijde voorspellingen" },
+  "search": { "placeholder": "Zoek een stad, waar dan ook…", "useMyLocation": "Gebruik mijn locatie" },
+  "drawer": { "useCurrent": "Huidige locatie gebruiken", "pickOnMap": "Kies op kaart", "refresh": "Weer vernieuwen", "europe": "Europa", "arab": "Arabische wereld", "favorites": "Favorieten", "language": "Taal", "about": "Over", "dataSource": "Open-Meteo data" },
+  "tabs": { "hourly": "Per uur", "fiveDays": "5 dagen", "tenDays": "10 dagen" },
+  "actions": { "refresh": "Vernieuwen", "lastUpdated": "Laatst bijgewerkt" },
+  "map": { "title": "Weerkaart", "description": "Tik ergens op de wereldkaart om de voorspelling te laden.", "hint": "Tik op de kaart om het weer daar te zien.", "selected": "Geselecteerd", "locating": "Zoeken…" },
+  "offline": { "title": "Offline-modus", "savedAt": "Gegevens opgeslagen op {{date}}", "connect": "Maak verbinding met internet om het weer te laden." },
+  "toasts": { "updated": "Weer bijgewerkt", "approxLocation": "Geschatte locatie: {{name}}", "showing": "Weer voor {{name}}", "showingYours": "Weer voor jouw locatie", "unavailable": "Locatie niet beschikbaar", "timedOut": "Locatieverzoek time-out", "offlineSaved": "Offline — opgeslagen gegevens worden getoond", "offlineNoData": "Offline en geen opgeslagen gegevens", "couldntRefresh": "Kon niet vernieuwen — opgeslagen gegevens", "enableLocation": "Schakel locatie in de browserinstellingen in" },
+  "footer": "Weergegevens door"
+}

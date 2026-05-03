@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Globalne prognozy pogody", "worldwide": "Prognozy światowe" },
+  "search": { "placeholder": "Wyszukaj dowolne miasto…", "useMyLocation": "Użyj mojej lokalizacji" },
+  "drawer": { "useCurrent": "Użyj bieżącej lokalizacji", "pickOnMap": "Wybierz na mapie", "refresh": "Odśwież pogodę", "europe": "Europa", "arab": "Świat arabski", "favorites": "Ulubione", "language": "Język", "about": "Informacje", "dataSource": "Dane Open-Meteo" },
+  "tabs": { "hourly": "Godzinowo", "fiveDays": "5 dni", "tenDays": "10 dni" },
+  "actions": { "refresh": "Odśwież", "lastUpdated": "Ostatnia aktualizacja" },
+  "map": { "title": "Mapa pogody", "description": "Dotknij dowolnego miejsca na mapie, aby załadować prognozę.", "hint": "Dotknij mapy, aby zobaczyć pogodę w danym miejscu.", "selected": "Wybrano", "locating": "Lokalizowanie…" },
+  "offline": { "title": "Tryb offline", "savedAt": "Dane zapisane {{date}}", "connect": "Połącz się z internetem, aby pobrać pogodę." },
+  "toasts": { "updated": "Pogoda zaktualizowana", "approxLocation": "Przybliżona lokalizacja: {{name}}", "showing": "Pogoda dla {{name}}", "showingYours": "Pogoda dla Twojej lokalizacji", "unavailable": "Lokalizacja niedostępna", "timedOut": "Przekroczono czas lokalizacji", "offlineSaved": "Offline — pokazuję zapisane dane", "offlineNoData": "Offline i brak zapisanych danych", "couldntRefresh": "Nie udało się odświeżyć — pokazuję zapisane dane", "enableLocation": "Włącz lokalizację w ustawieniach przeglądarki" },
+  "footer": "Dane pogodowe:"
+}

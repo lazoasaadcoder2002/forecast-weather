@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -31,6 +32,7 @@ const ClickHandler = ({ onPick }: { onPick: (lat: number, lon: number) => void }
 };
 
 export const WeatherMap = ({ initial, onPick }: Props) => {
+  const { t } = useTranslation();
   const [pos, setPos] = useState<[number, number]>([initial.latitude, initial.longitude]);
   const [label, setLabel] = useState<string>(initial.name);
   const [loading, setLoading] = useState(false);
@@ -61,7 +63,7 @@ export const WeatherMap = ({ initial, onPick }: Props) => {
   return (
     <div className="flex h-full flex-col gap-3">
       <div className="text-xs text-muted-foreground">
-        Tap anywhere on the map to see the weather for that spot.
+        {t("map.hint")}
       </div>
       <div className="relative flex-1 overflow-hidden rounded-2xl border">
         <MapContainer
@@ -79,12 +81,12 @@ export const WeatherMap = ({ initial, onPick }: Props) => {
         </MapContainer>
         {loading && (
           <div className="absolute right-3 top-3 z-[400] glass flex items-center gap-2 rounded-full px-3 py-1.5 text-xs">
-            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Locating…
+            <Loader2 className="h-3.5 w-3.5 animate-spin" /> {t("map.locating")}
           </div>
         )}
       </div>
       <div className="text-sm">
-        Selected: <span className="font-medium text-primary">{label}</span>
+        {t("map.selected")}: <span className="font-medium text-primary">{label}</span>
       </div>
     </div>
   );

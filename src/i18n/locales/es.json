@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Pronósticos meteorológicos mundiales", "worldwide": "Pronósticos mundiales" },
+  "search": { "placeholder": "Busca cualquier ciudad…", "useMyLocation": "Usar mi ubicación" },
+  "drawer": { "useCurrent": "Usar ubicación actual", "pickOnMap": "Elegir en el mapa", "refresh": "Actualizar el tiempo", "europe": "Europa", "arab": "Mundo árabe", "favorites": "Favoritos", "language": "Idioma", "about": "Acerca de", "dataSource": "Datos de Open-Meteo" },
+  "tabs": { "hourly": "Por hora", "fiveDays": "5 días", "tenDays": "10 días" },
+  "actions": { "refresh": "Actualizar", "lastUpdated": "Última actualización" },
+  "map": { "title": "Mapa del tiempo", "description": "Toca cualquier punto del mapa mundial para ver el pronóstico.", "hint": "Toca cualquier punto del mapa para ver el tiempo allí.", "selected": "Seleccionado", "locating": "Localizando…" },
+  "offline": { "title": "Modo sin conexión", "savedAt": "Mostrando datos guardados {{date}}", "connect": "Conéctate a internet para cargar el tiempo." },
+  "toasts": { "updated": "Tiempo actualizado", "approxLocation": "Ubicación aproximada: {{name}}", "showing": "Mostrando el tiempo para {{name}}", "showingYours": "Mostrando el tiempo para tu ubicación", "unavailable": "Ubicación no disponible", "timedOut": "Tiempo de espera agotado para la ubicación", "offlineSaved": "Sin conexión — mostrando datos guardados", "offlineNoData": "Sin conexión y sin datos guardados", "couldntRefresh": "No se pudo actualizar — mostrando datos guardados", "enableLocation": "Activa la ubicación en los ajustes del navegador" },
+  "footer": "Datos meteorológicos de"
+}

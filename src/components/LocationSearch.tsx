@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Search, MapPin, Loader2, Locate } from "lucide-react";
 import { searchLocations, type GeoLocation } from "@/lib/weather";
 import { cn } from "@/lib/utils";
@@ -10,6 +11,7 @@ interface Props {
 }
 
 export const LocationSearch = ({ onSelect, onUseCurrent, loadingCurrent }: Props) => {
+  const { t } = useTranslation();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<GeoLocation[]>([]);
   const [open, setOpen] = useState(false);
@@ -45,13 +47,13 @@ export const LocationSearch = ({ onSelect, onUseCurrent, loadingCurrent }: Props
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length && setOpen(true)}
-          placeholder="Search any city, anywhere…"
+          placeholder={t("search.placeholder")}
           className="flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground/70"
         />
         {loading && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />}
         <button
           onClick={onUseCurrent}
-          title="Use my location"
+          title={t("search.useMyLocation")}
           className="flex h-9 w-9 items-center justify-center rounded-full bg-secondary/60 text-foreground transition hover:bg-secondary hover:text-primary"
         >
           {loadingCurrent ? <Loader2 className="h-4 w-4 animate-spin" /> : <Locate className="h-4 w-4" strokeWidth={1.75} />}

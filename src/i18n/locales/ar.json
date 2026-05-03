@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "توقعات الطقس حول العالم", "worldwide": "توقعات عالمية" },
+  "search": { "placeholder": "ابحث عن أي مدينة…", "useMyLocation": "استخدم موقعي" },
+  "drawer": { "useCurrent": "استخدم الموقع الحالي", "pickOnMap": "اختر من الخريطة", "refresh": "تحديث الطقس", "europe": "أوروبا", "arab": "العالم العربي", "favorites": "المفضلة", "language": "اللغة", "about": "حول", "dataSource": "بيانات Open-Meteo" },
+  "tabs": { "hourly": "بالساعة", "fiveDays": "٥ أيام", "tenDays": "١٠ أيام" },
+  "actions": { "refresh": "تحديث", "lastUpdated": "آخر تحديث" },
+  "map": { "title": "خريطة الطقس", "description": "اضغط على أي نقطة في خريطة العالم لعرض التوقعات.", "hint": "اضغط على الخريطة لرؤية طقس ذلك المكان.", "selected": "المحدد", "locating": "جارٍ تحديد الموقع…" },
+  "offline": { "title": "وضع عدم الاتصال", "savedAt": "عرض بيانات محفوظة بتاريخ {{date}}", "connect": "اتصل بالإنترنت لتحميل الطقس." },
+  "toasts": { "updated": "تم تحديث الطقس", "approxLocation": "الموقع التقريبي: {{name}}", "showing": "عرض الطقس لـ {{name}}", "showingYours": "عرض الطقس لموقعك", "unavailable": "الموقع غير متاح", "timedOut": "انتهت مهلة طلب الموقع", "offlineSaved": "غير متصل — عرض البيانات المحفوظة", "offlineNoData": "غير متصل ولا توجد بيانات محفوظة", "couldntRefresh": "تعذّر التحديث — عرض البيانات المحفوظة", "enableLocation": "يرجى تفعيل الموقع في إعدادات المتصفح" },
+  "footer": "بيانات الطقس من"
+}

@@ -1,0 +1,21 @@
+{
+  "app": { "name": "Skyline", "tagline": "Worldwide weather forecasts", "worldwide": "Worldwide forecasts" },
+  "search": { "placeholder": "Search any city, anywhere…", "useMyLocation": "Use my location" },
+  "drawer": {
+    "useCurrent": "Use current location",
+    "pickOnMap": "Pick on map",
+    "refresh": "Refresh weather",
+    "europe": "Europe",
+    "arab": "Arab world",
+    "favorites": "Favorites",
+    "language": "Language",
+    "about": "About",
+    "dataSource": "Open-Meteo data"
+  },
+  "tabs": { "hourly": "Hourly", "fiveDays": "5 days", "tenDays": "10 days" },
+  "actions": { "refresh": "Refresh", "lastUpdated": "Last updated" },
+  "map": { "title": "Weather map", "description": "Tap any spot on the world map to load its forecast.", "hint": "Tap anywhere on the map to see the weather for that spot.", "selected": "Selected", "locating": "Locating…" },
+  "offline": { "title": "Offline mode", "savedAt": "Showing data saved {{date}}", "connect": "Connect to the internet to load weather." },
+  "toasts": { "updated": "Weather updated", "approxLocation": "Approximate location: {{name}}", "showing": "Showing weather for {{name}}", "showingYours": "Showing weather for your location", "unavailable": "Location unavailable", "timedOut": "Location request timed out", "offlineSaved": "You're offline — showing saved data", "offlineNoData": "You're offline and no saved data exists", "couldntRefresh": "Couldn't refresh — showing saved data", "enableLocation": "Please enable location in your browser settings" },
+  "footer": "Weather data by"
+}

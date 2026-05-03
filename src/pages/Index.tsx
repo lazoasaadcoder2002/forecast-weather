@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Loader2, AlertCircle, WifiOff, RefreshCw, Menu, Star, MapPin, Info, ExternalLink, Map as MapIcon, Globe2, Languages } from "lucide-react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { WeatherMap } from "@/components/WeatherMap";
 import { EUROPEAN_CAPITALS, ARABIC_CAPITALS } from "@/lib/regions";
+import { LANGUAGES } from "@/i18n";
 import { LocationSearch } from "@/components/LocationSearch";
 import { CurrentWeather } from "@/components/CurrentWeather";
 import { HourlyForecast } from "@/components/HourlyForecast";
@@ -28,6 +30,7 @@ const DEFAULT_LOCATION: GeoLocation = {
 };
 
 const Index = () => {
+  const { t, i18n } = useTranslation();
   const [location, setLocation] = useState<GeoLocation>(
     () => readLastLocation() ?? DEFAULT_LOCATION
   );
@@ -259,11 +262,11 @@ const Index = () => {
 
   const tabs = useMemo(
     () => [
-      { id: "24h" as Tab, label: "Hourly" },
-      { id: "5d" as Tab, label: "5 days" },
-      { id: "10d" as Tab, label: "10 days" },
+      { id: "24h" as Tab, label: t("tabs.hourly") },
+      { id: "5d" as Tab, label: t("tabs.fiveDays") },
+      { id: "10d" as Tab, label: t("tabs.tenDays") },
     ],
-    []
+    [t]
   );
 
   return (
@@ -279,19 +282,19 @@ const Index = () => {
               <Sheet>
                 <SheetTrigger asChild>
                   <button
-                    aria-label="Open navigation menu"
+                    aria-label={t("drawer.useCurrent")}
                     className="glass inline-flex h-9 w-9 items-center justify-center rounded-xl text-foreground transition hover:text-primary"
                   >
                     <Menu className="h-5 w-5" />
                   </button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[85vw] max-w-xs">
+                <SheetContent side="left" className="w-[85vw] max-w-xs overflow-y-auto">
                   <SheetHeader className="text-left">
                     <SheetTitle className="flex items-center gap-2">
                       <div className="h-7 w-7 rounded-lg bg-gradient-sun shadow-glow" />
-                      <span className="font-display text-lg font-medium">Skyline</span>
+                      <span className="font-display text-lg font-medium">{t("app.name")}</span>
                     </SheetTitle>
-                    <SheetDescription>Worldwide weather forecasts</SheetDescription>
+                    <SheetDescription>{t("app.tagline")}</SheetDescription>
                   </SheetHeader>
 
                   <nav className="mt-6 flex flex-col gap-1">
@@ -301,7 +304,7 @@ const Index = () => {
                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
                       >
                         <MapPin className="h-4 w-4 text-primary" />
-                        Use current location
+                        {t("drawer.useCurrent")}
                       </button>
                     </SheetClose>
                     <SheetClose asChild>
@@ -310,7 +313,7 @@ const Index = () => {
                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
                       >
                         <MapIcon className="h-4 w-4 text-primary" />
-                        Pick on map
+                        {t("drawer.pickOnMap")}
                       </button>
                     </SheetClose>
                     <SheetClose asChild>
@@ -319,14 +322,37 @@ const Index = () => {
                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
                       >
                         <RefreshCw className="h-4 w-4 text-primary" />
-                        Refresh weather
+                        {t("drawer.refresh")}
                       </button>
                     </SheetClose>
                   </nav>
 
-                  <div className="mt-6 max-h-[55vh] overflow-y-auto pr-1">
+                  <div className="mt-6">
                     <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
-                      <Globe2 className="h-3 w-3" /> Europe
+                      <Languages className="h-3 w-3" /> {t("drawer.language")}
+                    </div>
+                    <div className="grid grid-cols-2 gap-1">
+                      {LANGUAGES.map((l) => {
+                        const active = i18n.language === l.code || i18n.language?.startsWith(l.code + "-");
+                        return (
+                          <button
+                            key={l.code}
+                            onClick={() => i18n.changeLanguage(l.code)}
+                            className={`flex flex-col items-start rounded-lg px-3 py-2 text-left text-sm transition hover:bg-muted/50 ${
+                              active ? "bg-muted/50 font-medium text-primary" : ""
+                            }`}
+                          >
+                            <span className="truncate">{l.native}</span>
+                            <span className="truncate text-xs text-muted-foreground">{l.label}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  <div className="mt-6">
+                    <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
+                      <Globe2 className="h-3 w-3" /> {t("drawer.europe")}
                     </div>
                     <div className="flex flex-col gap-0.5">
                       {EUROPEAN_CAPITALS.map((c) => (
@@ -343,7 +369,7 @@ const Index = () => {
                     </div>
 
                     <div className="mb-2 mt-4 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
-                      <Languages className="h-3 w-3" /> Arab world
+                      <Globe2 className="h-3 w-3" /> {t("drawer.arab")}
                     </div>
                     <div className="flex flex-col gap-0.5">
                       {ARABIC_CAPITALS.map((c) => (
@@ -363,7 +389,7 @@ const Index = () => {
                   {favorites.length > 0 && (
                     <div className="mt-6">
                       <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
-                        <Star className="h-3 w-3" /> Favorites
+                        <Star className="h-3 w-3" /> {t("drawer.favorites")}
                       </div>
                       <div className="flex flex-col gap-1">
                         {favorites.map((fav) => (
@@ -385,7 +411,7 @@ const Index = () => {
 
                   <div className="mt-6 border-t pt-4">
                     <div className="mb-2 flex items-center gap-2 px-3 text-xs uppercase tracking-wider text-muted-foreground">
-                      <Info className="h-3 w-3" /> About
+                      <Info className="h-3 w-3" /> {t("drawer.about")}
                     </div>
                     <a
                       href="https://open-meteo.com"
@@ -393,17 +419,17 @@ const Index = () => {
                       rel="noreferrer"
                       className="flex items-center justify-between rounded-lg px-3 py-2 text-sm transition hover:bg-muted/50"
                     >
-                      <span>Open-Meteo data</span>
+                      <span>{t("drawer.dataSource")}</span>
                       <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
                     </a>
                   </div>
                 </SheetContent>
               </Sheet>
               <div className="h-9 w-9 rounded-xl bg-gradient-sun shadow-glow" />
-              <span className="font-display text-xl font-medium">Skyline</span>
+              <span className="font-display text-xl font-medium">{t("app.name")}</span>
             </div>
             <span className="hidden text-xs uppercase tracking-[0.25em] text-muted-foreground sm:block">
-              Worldwide forecasts
+              {t("app.worldwide")}
             </span>
           </div>
           <LocationSearch onSelect={setLocation} onUseCurrent={handleUseCurrent} loadingCurrent={locating} />
@@ -417,15 +443,15 @@ const Index = () => {
             <button
               onClick={handleRefresh}
               disabled={refreshing}
-              title={online ? "Refresh weather" : "Offline — will show cached data"}
+              title={online ? t("drawer.refresh") : t("toasts.offlineSaved")}
               className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition hover:text-primary disabled:opacity-60"
             >
               <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
-              <span>Refresh</span>
+              <span>{t("actions.refresh")}</span>
             </button>
             {cachedAt && (
               <span className="ml-3 text-xs text-muted-foreground">
-                Last updated: {new Date(cachedAt).toLocaleString()}
+                {t("actions.lastUpdated")}: {new Date(cachedAt).toLocaleString()}
               </span>
             )}
           </div>
@@ -441,11 +467,11 @@ const Index = () => {
           <div className="glass mb-4 flex items-center gap-3 rounded-2xl p-4 text-sm">
             <WifiOff className="h-5 w-5 text-primary" />
             <div>
-              <div className="font-medium">Offline mode</div>
+              <div className="font-medium">{t("offline.title")}</div>
               <div className="text-xs text-muted-foreground">
                 {cachedAt
-                  ? `Showing data saved ${new Date(cachedAt).toLocaleString()}`
-                  : "Connect to the internet to load weather."}
+                  ? t("offline.savedAt", { date: new Date(cachedAt).toLocaleString() })
+                  : t("offline.connect")}
               </div>
             </div>
           </div>
@@ -468,17 +494,17 @@ const Index = () => {
             />
 
             <div className="glass inline-flex rounded-full p-1.5">
-              {tabs.map((t) => (
+              {tabs.map((tabItem) => (
                 <button
-                  key={t.id}
-                  onClick={() => setTab(t.id)}
+                  key={tabItem.id}
+                  onClick={() => setTab(tabItem.id)}
                   className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    tab === t.id
+                    tab === tabItem.id
                       ? "bg-gradient-sun text-primary-foreground shadow-glow"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  {t.label}
+                  {tabItem.label}
                 </button>
               ))}
             </div>
@@ -492,7 +518,7 @@ const Index = () => {
         )}
 
         <footer className="mt-12 text-center text-xs text-muted-foreground">
-          Weather data by <a href="https://open-meteo.com" target="_blank" rel="noreferrer" className="underline hover:text-primary">Open-Meteo</a>
+          {t("footer")} <a href="https://open-meteo.com" target="_blank" rel="noreferrer" className="underline hover:text-primary">Open-Meteo</a>
         </footer>
       </div>
 
@@ -500,9 +526,9 @@ const Index = () => {
         <DialogContent className="max-w-3xl p-4 sm:p-6">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <MapIcon className="h-5 w-5 text-primary" /> Weather map
+              <MapIcon className="h-5 w-5 text-primary" /> {t("map.title")}
             </DialogTitle>
-            <DialogDescription>Tap any spot on the world map to load its forecast.</DialogDescription>
+            <DialogDescription>{t("map.description")}</DialogDescription>
           </DialogHeader>
           <div className="h-[60vh]">
             <WeatherMap
