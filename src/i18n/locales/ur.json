@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "دنیا بھر کی موسمی پیش گوئی", "worldwide": "عالمی پیش گوئی" },
+  "search": { "placeholder": "کسی بھی شہر کو تلاش کریں…", "useMyLocation": "میرا مقام استعمال کریں" },
+  "drawer": { "useCurrent": "موجودہ مقام استعمال کریں", "pickOnMap": "نقشے سے منتخب کریں", "refresh": "موسم ریفریش کریں", "europe": "یورپ", "arab": "عرب دنیا", "favorites": "پسندیدہ", "language": "زبان", "about": "بارے میں", "dataSource": "Open-Meteo ڈیٹا" },
+  "tabs": { "hourly": "گھنٹہ وار", "fiveDays": "5 دن", "tenDays": "10 دن" },
+  "actions": { "refresh": "ریفریش", "lastUpdated": "آخری اپڈیٹ" },
+  "map": { "title": "موسمی نقشہ", "description": "پیش گوئی دیکھنے کے لیے نقشے پر کہیں بھی ٹیپ کریں۔", "hint": "اس جگہ کا موسم دیکھنے کے لیے نقشے پر ٹیپ کریں۔", "selected": "منتخب شدہ", "locating": "مقام تلاش کیا جا رہا ہے…" },
+  "offline": { "title": "آف لائن موڈ", "savedAt": "{{date}} کو محفوظ کردہ ڈیٹا", "connect": "موسم لوڈ کرنے کے لیے انٹرنیٹ سے جڑیں۔" },
+  "toasts": { "updated": "موسم اپڈیٹ ہوا", "approxLocation": "تخمینی مقام: {{name}}", "showing": "{{name}} کا موسم دکھایا جا رہا ہے", "showingYours": "آپ کے مقام کا موسم", "unavailable": "مقام دستیاب نہیں", "timedOut": "مقام کی درخواست کا وقت ختم", "offlineSaved": "آف لائن — محفوظ ڈیٹا دکھایا جا رہا ہے", "offlineNoData": "آف لائن اور کوئی محفوظ ڈیٹا نہیں", "couldntRefresh": "ریفریش نہیں ہو سکا — محفوظ ڈیٹا", "enableLocation": "براہ کرم براؤزر سیٹنگز میں مقام فعال کریں" },
+  "footer": "موسمی ڈیٹا بذریعہ"
+}

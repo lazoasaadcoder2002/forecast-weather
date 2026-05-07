@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "世界中の天気予報", "worldwide": "世界の予報" },
+  "search": { "placeholder": "都市を検索…", "useMyLocation": "現在地を使用" },
+  "drawer": { "useCurrent": "現在地を使用", "pickOnMap": "地図から選択", "refresh": "天気を更新", "europe": "ヨーロッパ", "arab": "アラブ世界", "favorites": "お気に入り", "language": "言語", "about": "アプリについて", "dataSource": "Open-Meteo データ" },
+  "tabs": { "hourly": "時間別", "fiveDays": "5日間", "tenDays": "10日間" },
+  "actions": { "refresh": "更新", "lastUpdated": "最終更新" },
+  "map": { "title": "天気マップ", "description": "地図上の任意の場所をタップして予報を表示。", "hint": "その地点の天気を見るには地図をタップ。", "selected": "選択中", "locating": "位置情報取得中…" },
+  "offline": { "title": "オフラインモード", "savedAt": "{{date}}に保存されたデータを表示中", "connect": "天気を読み込むにはインターネットに接続してください。" },
+  "toasts": { "updated": "天気を更新しました", "approxLocation": "おおよその位置: {{name}}", "showing": "{{name}}の天気を表示中", "showingYours": "現在地の天気を表示中", "unavailable": "位置情報を取得できません", "timedOut": "位置情報の取得がタイムアウトしました", "offlineSaved": "オフライン — 保存データを表示中", "offlineNoData": "オフラインで保存データもありません", "couldntRefresh": "更新できません — 保存データを表示", "enableLocation": "ブラウザ設定で位置情報を有効にしてください" },
+  "footer": "天気データ提供"
+}

@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Ramalan cuaca seluruh dunia", "worldwide": "Ramalan global" },
+  "search": { "placeholder": "Cari mana-mana bandar…", "useMyLocation": "Guna lokasi saya" },
+  "drawer": { "useCurrent": "Guna lokasi semasa", "pickOnMap": "Pilih pada peta", "refresh": "Segarkan cuaca", "europe": "Eropah", "arab": "Dunia Arab", "favorites": "Kegemaran", "language": "Bahasa", "about": "Tentang", "dataSource": "Data Open-Meteo" },
+  "tabs": { "hourly": "Setiap jam", "fiveDays": "5 hari", "tenDays": "10 hari" },
+  "actions": { "refresh": "Segarkan", "lastUpdated": "Kemaskini terakhir" },
+  "map": { "title": "Peta cuaca", "description": "Ketik mana-mana titik pada peta dunia untuk memuatkan ramalan.", "hint": "Ketik peta untuk melihat cuaca di titik itu.", "selected": "Dipilih", "locating": "Mencari lokasi…" },
+  "offline": { "title": "Mod luar talian", "savedAt": "Memaparkan data disimpan {{date}}", "connect": "Sambung ke internet untuk memuatkan cuaca." },
+  "toasts": { "updated": "Cuaca dikemaskini", "approxLocation": "Lokasi anggaran: {{name}}", "showing": "Memaparkan cuaca untuk {{name}}", "showingYours": "Memaparkan cuaca lokasi anda", "unavailable": "Lokasi tidak tersedia", "timedOut": "Permintaan lokasi tamat masa", "offlineSaved": "Luar talian — memaparkan data disimpan", "offlineNoData": "Luar talian dan tiada data disimpan", "couldntRefresh": "Tidak dapat menyegarkan — data disimpan", "enableLocation": "Sila aktifkan lokasi dalam tetapan pelayar" },
+  "footer": "Data cuaca oleh"
+}

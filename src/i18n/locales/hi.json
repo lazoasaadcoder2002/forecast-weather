@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "दुनिया भर का मौसम पूर्वानुमान", "worldwide": "विश्वव्यापी पूर्वानुमान" },
+  "search": { "placeholder": "किसी भी शहर को खोजें…", "useMyLocation": "मेरा स्थान उपयोग करें" },
+  "drawer": { "useCurrent": "वर्तमान स्थान का उपयोग करें", "pickOnMap": "मानचित्र पर चुनें", "refresh": "मौसम ताज़ा करें", "europe": "यूरोप", "arab": "अरब जगत", "favorites": "पसंदीदा", "language": "भाषा", "about": "जानकारी", "dataSource": "Open-Meteo डेटा" },
+  "tabs": { "hourly": "घंटेवार", "fiveDays": "5 दिन", "tenDays": "10 दिन" },
+  "actions": { "refresh": "ताज़ा करें", "lastUpdated": "अंतिम अपडेट" },
+  "map": { "title": "मौसम मानचित्र", "description": "पूर्वानुमान देखने के लिए मानचित्र पर कहीं भी टैप करें।", "hint": "उस स्थान का मौसम देखने के लिए मानचित्र पर टैप करें।", "selected": "चयनित", "locating": "स्थान खोज रहे हैं…" },
+  "offline": { "title": "ऑफ़लाइन मोड", "savedAt": "{{date}} को सहेजा गया डेटा", "connect": "मौसम लोड करने के लिए इंटरनेट से कनेक्ट करें।" },
+  "toasts": { "updated": "मौसम अपडेट हुआ", "approxLocation": "अनुमानित स्थान: {{name}}", "showing": "{{name}} का मौसम दिखाया जा रहा है", "showingYours": "आपके स्थान का मौसम", "unavailable": "स्थान उपलब्ध नहीं", "timedOut": "स्थान अनुरोध समय समाप्त", "offlineSaved": "आप ऑफ़लाइन हैं — सहेजा डेटा दिखाया जा रहा है", "offlineNoData": "ऑफ़लाइन और कोई सहेजा डेटा नहीं", "couldntRefresh": "ताज़ा नहीं हो सका — सहेजा डेटा", "enableLocation": "कृपया ब्राउज़र सेटिंग में स्थान सक्षम करें" },
+  "footer": "मौसम डेटा द्वारा"
+}
