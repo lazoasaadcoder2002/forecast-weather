@@ -148,14 +148,14 @@ const Index = () => {
     setLocating(true);
     setError(null);
 
-    // 1) Try IP-based geolocation first — no permission prompt, instant.
-    if (await useIpFallback(true)) {
-      setLocating(false);
-      return;
-    }
-
-    // 2) Fall back to precise GPS (requires permission).
+    // 1) Prefer precise GPS coordinates (accurate to the user's actual position).
+    //    IP-based lookups often resolve to the ISP's datacenter (e.g. Kabul) and
+    //    must only be used when GPS is unavailable or denied.
     if (!navigator.geolocation) {
+      if (await useIpFallback(true)) {
+        setLocating(false);
+        return;
+      }
       setError("Couldn't detect your location. Please search for a city.");
       toast.error("Location unavailable");
       setLocating(false);
@@ -167,6 +167,8 @@ const Index = () => {
         const status = await navigator.permissions.query({ name: "geolocation" as PermissionName });
         if (status.state === "denied") {
           setLocating(false);
+          // GPS denied — try IP as a last resort before showing instructions.
+          if (await useIpFallback(true)) return;
           showPermissionInstructions();
           return;
         }
