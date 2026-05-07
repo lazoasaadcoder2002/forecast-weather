@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "전 세계 일기 예보", "worldwide": "전 세계 예보" },
+  "search": { "placeholder": "도시를 검색하세요…", "useMyLocation": "내 위치 사용" },
+  "drawer": { "useCurrent": "현재 위치 사용", "pickOnMap": "지도에서 선택", "refresh": "날씨 새로고침", "europe": "유럽", "arab": "아랍 세계", "favorites": "즐겨찾기", "language": "언어", "about": "정보", "dataSource": "Open-Meteo 데이터" },
+  "tabs": { "hourly": "시간별", "fiveDays": "5일", "tenDays": "10일" },
+  "actions": { "refresh": "새로고침", "lastUpdated": "마지막 업데이트" },
+  "map": { "title": "날씨 지도", "description": "지도의 아무 곳이나 탭하여 예보를 확인하세요.", "hint": "그 지점의 날씨를 보려면 지도를 탭하세요.", "selected": "선택됨", "locating": "위치 확인 중…" },
+  "offline": { "title": "오프라인 모드", "savedAt": "{{date}}에 저장된 데이터 표시 중", "connect": "날씨를 불러오려면 인터넷에 연결하세요." },
+  "toasts": { "updated": "날씨가 업데이트되었습니다", "approxLocation": "대략적 위치: {{name}}", "showing": "{{name}}의 날씨를 표시 중", "showingYours": "현재 위치의 날씨", "unavailable": "위치를 사용할 수 없음", "timedOut": "위치 요청 시간 초과", "offlineSaved": "오프라인 — 저장된 데이터 표시 중", "offlineNoData": "오프라인이며 저장된 데이터 없음", "couldntRefresh": "새로고침 실패 — 저장된 데이터", "enableLocation": "브라우저 설정에서 위치를 활성화하세요" },
+  "footer": "날씨 데이터 제공"
+}

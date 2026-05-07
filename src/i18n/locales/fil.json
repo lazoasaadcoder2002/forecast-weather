@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Mga forecast ng panahon sa buong mundo", "worldwide": "Pang-mundong forecast" },
+  "search": { "placeholder": "Maghanap ng kahit anong lungsod…", "useMyLocation": "Gamitin ang aking lokasyon" },
+  "drawer": { "useCurrent": "Gamitin ang kasalukuyang lokasyon", "pickOnMap": "Pumili sa mapa", "refresh": "I-refresh ang panahon", "europe": "Europa", "arab": "Mundong Arabo", "favorites": "Mga paborito", "language": "Wika", "about": "Tungkol", "dataSource": "Datos ng Open-Meteo" },
+  "tabs": { "hourly": "Oras-oras", "fiveDays": "5 araw", "tenDays": "10 araw" },
+  "actions": { "refresh": "I-refresh", "lastUpdated": "Huling update" },
+  "map": { "title": "Mapa ng panahon", "description": "I-tap ang kahit saan sa mapa para makita ang forecast.", "hint": "I-tap ang mapa para makita ang panahon doon.", "selected": "Napili", "locating": "Hinahanap ang lokasyon…" },
+  "offline": { "title": "Offline mode", "savedAt": "Ipinapakita ang naka-save na datos noong {{date}}", "connect": "Kumonekta sa internet para ma-load ang panahon." },
+  "toasts": { "updated": "Na-update ang panahon", "approxLocation": "Tinatayang lokasyon: {{name}}", "showing": "Ipinapakita ang panahon para sa {{name}}", "showingYours": "Ipinapakita ang panahon ng iyong lokasyon", "unavailable": "Hindi available ang lokasyon", "timedOut": "Nag-time out ang kahilingan sa lokasyon", "offlineSaved": "Offline ka — ipinapakita ang naka-save na datos", "offlineNoData": "Offline at walang naka-save na datos", "couldntRefresh": "Hindi ma-refresh — naka-save na datos", "enableLocation": "Paki-enable ang lokasyon sa browser settings" },
+  "footer": "Datos ng panahon mula sa"
+}

@@ -1,0 +1,11 @@
+{
+  "app": { "name": "Skyline", "tagline": "Dự báo thời tiết toàn cầu", "worldwide": "Dự báo toàn cầu" },
+  "search": { "placeholder": "Tìm thành phố bất kỳ…", "useMyLocation": "Dùng vị trí của tôi" },
+  "drawer": { "useCurrent": "Dùng vị trí hiện tại", "pickOnMap": "Chọn trên bản đồ", "refresh": "Làm mới thời tiết", "europe": "Châu Âu", "arab": "Thế giới Ả Rập", "favorites": "Yêu thích", "language": "Ngôn ngữ", "about": "Giới thiệu", "dataSource": "Dữ liệu Open-Meteo" },
+  "tabs": { "hourly": "Hàng giờ", "fiveDays": "5 ngày", "tenDays": "10 ngày" },
+  "actions": { "refresh": "Làm mới", "lastUpdated": "Cập nhật lần cuối" },
+  "map": { "title": "Bản đồ thời tiết", "description": "Chạm vào bất kỳ điểm nào trên bản đồ để xem dự báo.", "hint": "Chạm vào bản đồ để xem thời tiết tại đó.", "selected": "Đã chọn", "locating": "Đang định vị…" },
+  "offline": { "title": "Chế độ ngoại tuyến", "savedAt": "Hiển thị dữ liệu lưu ngày {{date}}", "connect": "Kết nối internet để tải thời tiết." },
+  "toasts": { "updated": "Đã cập nhật thời tiết", "approxLocation": "Vị trí gần đúng: {{name}}", "showing": "Hiển thị thời tiết cho {{name}}", "showingYours": "Hiển thị thời tiết vị trí của bạn", "unavailable": "Vị trí không khả dụng", "timedOut": "Yêu cầu vị trí hết thời gian", "offlineSaved": "Bạn đang ngoại tuyến — hiển thị dữ liệu đã lưu", "offlineNoData": "Ngoại tuyến và không có dữ liệu lưu", "couldntRefresh": "Không thể làm mới — dữ liệu đã lưu", "enableLocation": "Vui lòng bật vị trí trong cài đặt trình duyệt" },
+  "footer": "Dữ liệu thời tiết bởi"
+}
