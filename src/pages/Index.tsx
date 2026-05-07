@@ -226,13 +226,23 @@ const Index = () => {
       }
     };
 
-    const handleError = (err: GeolocationPositionError) => {
+    const handleError = async (err: GeolocationPositionError) => {
       if (settled) return;
       settled = true;
       window.clearTimeout(timeoutId);
       if (err.code === err.PERMISSION_DENIED) {
+        // Try IP fallback before nagging the user about permissions.
+        if (await useIpFallback(true)) {
+          setLocating(false);
+          return;
+        }
         setLocating(false);
         showPermissionInstructions();
+        return;
+      }
+      // For unavailable/timeout errors, attempt IP fallback as a safety net.
+      if (await useIpFallback(false)) {
+        setLocating(false);
         return;
       }
       const msg =
