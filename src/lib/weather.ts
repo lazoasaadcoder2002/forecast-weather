@@ -189,13 +189,28 @@ export function iconForCode(code: number, isDay = 1): WeatherIconName {
   return "cloud";
 }
 
+const localeFor = () => {
+  const l = (i18n.language || "en").toLowerCase();
+  // Map our codes to BCP-47 locales (most match directly).
+  const map: Record<string, string> = { fil: "fil-PH", zh: "zh-CN", ar: "ar", ur: "ur-PK", uk: "uk-UA" };
+  return map[l] ?? l;
+};
+
 export function formatHour(iso: string, timezone: string): string {
-  return new Date(iso).toLocaleTimeString("en-US", {
+  return new Date(iso).toLocaleTimeString(localeFor(), {
     hour: "numeric",
     timeZone: timezone,
   });
 }
 
 export function formatDay(iso: string, timezone: string, opts: Intl.DateTimeFormatOptions = { weekday: "short" }): string {
-  return new Date(iso).toLocaleDateString("en-US", { ...opts, timeZone: timezone });
+  return new Date(iso).toLocaleDateString(localeFor(), { ...opts, timeZone: timezone });
+}
+
+export function formatLocaleTime(date: Date, timezone: string): string {
+  return date.toLocaleTimeString(localeFor(), { hour: "numeric", minute: "2-digit", timeZone: timezone });
+}
+
+export function formatLocaleDate(date: Date, timezone: string): string {
+  return date.toLocaleDateString(localeFor(), { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: timezone });
 }
