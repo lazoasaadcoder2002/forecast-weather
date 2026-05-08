@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Dự báo thời tiết toàn cầu", "worldwide": "Dự báo toàn cầu" },
-  "search": { "placeholder": "Tìm thành phố bất kỳ…", "useMyLocation": "Dùng vị trí của tôi" },
-  "drawer": { "useCurrent": "Dùng vị trí hiện tại", "pickOnMap": "Chọn trên bản đồ", "refresh": "Làm mới thời tiết", "europe": "Châu Âu", "arab": "Thế giới Ả Rập", "favorites": "Yêu thích", "language": "Ngôn ngữ", "about": "Giới thiệu", "dataSource": "Dữ liệu Open-Meteo" },
-  "tabs": { "hourly": "Hàng giờ", "fiveDays": "5 ngày", "tenDays": "10 ngày" },
-  "actions": { "refresh": "Làm mới", "lastUpdated": "Cập nhật lần cuối" },
-  "map": { "title": "Bản đồ thời tiết", "description": "Chạm vào bất kỳ điểm nào trên bản đồ để xem dự báo.", "hint": "Chạm vào bản đồ để xem thời tiết tại đó.", "selected": "Đã chọn", "locating": "Đang định vị…" },
-  "offline": { "title": "Chế độ ngoại tuyến", "savedAt": "Hiển thị dữ liệu lưu ngày {{date}}", "connect": "Kết nối internet để tải thời tiết." },
-  "toasts": { "updated": "Đã cập nhật thời tiết", "approxLocation": "Vị trí gần đúng: {{name}}", "showing": "Hiển thị thời tiết cho {{name}}", "showingYours": "Hiển thị thời tiết vị trí của bạn", "unavailable": "Vị trí không khả dụng", "timedOut": "Yêu cầu vị trí hết thời gian", "offlineSaved": "Bạn đang ngoại tuyến — hiển thị dữ liệu đã lưu", "offlineNoData": "Ngoại tuyến và không có dữ liệu lưu", "couldntRefresh": "Không thể làm mới — dữ liệu đã lưu", "enableLocation": "Vui lòng bật vị trí trong cài đặt trình duyệt" },
-  "footer": "Dữ liệu thời tiết bởi"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Dự báo thời tiết toàn cầu",
+    "worldwide": "Dự báo toàn cầu"
+  },
+  "search": {
+    "placeholder": "Tìm thành phố…",
+    "useMyLocation": "Dùng vị trí của tôi"
+  },
+  "drawer": {
+    "useCurrent": "Dùng vị trí hiện tại",
+    "pickOnMap": "Chọn trên bản đồ",
+    "refresh": "Làm mới thời tiết",
+    "europe": "Châu Âu",
+    "arab": "Thế giới Ả Rập",
+    "favorites": "Yêu thích",
+    "language": "Ngôn ngữ",
+    "about": "Giới thiệu",
+    "dataSource": "Dữ liệu Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Theo giờ",
+    "fiveDays": "5 ngày",
+    "tenDays": "10 ngày"
+  },
+  "actions": {
+    "refresh": "Làm mới",
+    "lastUpdated": "Cập nhật cuối"
+  },
+  "map": {
+    "title": "Bản đồ thời tiết",
+    "description": "Nhấn vào bất kỳ điểm nào để tải dự báo.",
+    "hint": "Nhấn vào bản đồ để xem thời tiết tại điểm đó.",
+    "selected": "Đã chọn",
+    "locating": "Đang định vị…"
+  },
+  "offline": {
+    "title": "Chế độ ngoại tuyến",
+    "savedAt": "Hiển thị dữ liệu đã lưu {{date}}",
+    "connect": "Kết nối internet để tải thời tiết."
+  },
+  "toasts": {
+    "updated": "Đã cập nhật thời tiết",
+    "approxLocation": "Vị trí gần đúng: {{name}}",
+    "showing": "Thời tiết cho {{name}}",
+    "showingYours": "Thời tiết tại vị trí của bạn",
+    "unavailable": "Không có vị trí",
+    "timedOut": "Yêu cầu vị trí hết hạn",
+    "offlineSaved": "Ngoại tuyến — hiển thị dữ liệu đã lưu",
+    "offlineNoData": "Ngoại tuyến và không có dữ liệu lưu",
+    "couldntRefresh": "Không thể làm mới — dữ liệu đã lưu",
+    "enableLocation": "Bật vị trí trong cài đặt trình duyệt"
+  },
+  "current": {
+    "local": "địa phương",
+    "feelsLike": "Cảm giác",
+    "humidity": "Độ ẩm",
+    "wind": "Gió",
+    "uvIndex": "Chỉ số UV",
+    "addFav": "Thêm vào yêu thích",
+    "removeFav": "Bỏ khỏi yêu thích",
+    "feelsLikeFull": "Cảm giác {{temp}}°"
+  },
+  "hourly": {
+    "next": "{{hours}} giờ tới",
+    "scroll": "cuộn →",
+    "now": "Bây giờ"
+  },
+  "daily": {
+    "outlook": "Dự báo {{days}} ngày",
+    "today": "Hôm nay"
+  },
+  "favorites": {
+    "title": "Yêu thích",
+    "remove": "Xóa"
+  },
+  "footer": "Dữ liệu thời tiết bởi",
+  "weather": {
+    "0": "Trời quang",
+    "1": "Phần lớn quang đãng",
+    "2": "Có mây rải rác",
+    "3": "Nhiều mây",
+    "45": "Sương mù",
+    "48": "Sương mù đóng băng",
+    "51": "Mưa phùn nhẹ",
+    "53": "Mưa phùn",
+    "55": "Mưa phùn nặng",
+    "56": "Mưa phùn đóng băng",
+    "57": "Mưa phùn đóng băng",
+    "61": "Mưa nhẹ",
+    "63": "Mưa",
+    "65": "Mưa to",
+    "66": "Mưa đóng băng",
+    "67": "Mưa đóng băng",
+    "71": "Tuyết nhẹ",
+    "73": "Tuyết",
+    "75": "Tuyết dày",
+    "77": "Hạt tuyết",
+    "80": "Mưa rào",
+    "81": "Mưa rào",
+    "82": "Mưa rào dữ dội",
+    "85": "Mưa tuyết",
+    "86": "Mưa tuyết dày",
+    "95": "Dông",
+    "96": "Dông kèm mưa đá",
+    "99": "Dông dữ dội",
+    "unknown": "Không rõ"
+  }
 }

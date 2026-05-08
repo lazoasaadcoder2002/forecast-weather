@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Previsões meteorológicas mundiais", "worldwide": "Previsões mundiais" },
-  "search": { "placeholder": "Pesquise qualquer cidade…", "useMyLocation": "Usar a minha localização" },
-  "drawer": { "useCurrent": "Usar localização atual", "pickOnMap": "Escolher no mapa", "refresh": "Atualizar meteorologia", "europe": "Europa", "arab": "Mundo árabe", "favorites": "Favoritos", "language": "Idioma", "about": "Sobre", "dataSource": "Dados Open-Meteo" },
-  "tabs": { "hourly": "Horário", "fiveDays": "5 dias", "tenDays": "10 dias" },
-  "actions": { "refresh": "Atualizar", "lastUpdated": "Última atualização" },
-  "map": { "title": "Mapa meteorológico", "description": "Toque em qualquer ponto do mapa para ver a previsão.", "hint": "Toque no mapa para ver o tempo nesse ponto.", "selected": "Selecionado", "locating": "A localizar…" },
-  "offline": { "title": "Modo offline", "savedAt": "Mostrando dados de {{date}}", "connect": "Ligue-se à internet para carregar o tempo." },
-  "toasts": { "updated": "Meteorologia atualizada", "approxLocation": "Localização aproximada: {{name}}", "showing": "Tempo para {{name}}", "showingYours": "Tempo para a sua localização", "unavailable": "Localização indisponível", "timedOut": "Tempo esgotado para localização", "offlineSaved": "Sem ligação — a mostrar dados guardados", "offlineNoData": "Sem ligação e sem dados guardados", "couldntRefresh": "Falha ao atualizar — dados guardados", "enableLocation": "Ative a localização no navegador" },
-  "footer": "Dados meteorológicos por"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Previsões meteorológicas mundiais",
+    "worldwide": "Previsões mundiais"
+  },
+  "search": {
+    "placeholder": "Procurar uma cidade…",
+    "useMyLocation": "A minha localização"
+  },
+  "drawer": {
+    "useCurrent": "Usar localização atual",
+    "pickOnMap": "Escolher no mapa",
+    "refresh": "Atualizar tempo",
+    "europe": "Europa",
+    "arab": "Mundo árabe",
+    "favorites": "Favoritos",
+    "language": "Idioma",
+    "about": "Sobre",
+    "dataSource": "Dados Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Hora",
+    "fiveDays": "5 dias",
+    "tenDays": "10 dias"
+  },
+  "actions": {
+    "refresh": "Atualizar",
+    "lastUpdated": "Atualizado"
+  },
+  "map": {
+    "title": "Mapa do tempo",
+    "description": "Toque em qualquer ponto para carregar a previsão.",
+    "hint": "Toque no mapa para ver o tempo nesse local.",
+    "selected": "Selecionado",
+    "locating": "A localizar…"
+  },
+  "offline": {
+    "title": "Modo offline",
+    "savedAt": "Dados guardados em {{date}}",
+    "connect": "Liga-te à Internet."
+  },
+  "toasts": {
+    "updated": "Tempo atualizado",
+    "approxLocation": "Localização aproximada: {{name}}",
+    "showing": "Tempo em {{name}}",
+    "showingYours": "Tempo na tua localização",
+    "unavailable": "Localização indisponível",
+    "timedOut": "Tempo esgotado",
+    "offlineSaved": "Offline — a mostrar dados guardados",
+    "offlineNoData": "Offline e sem dados guardados",
+    "couldntRefresh": "Falha ao atualizar — dados guardados",
+    "enableLocation": "Ativa a localização nas definições"
+  },
+  "current": {
+    "local": "local",
+    "feelsLike": "Sensação",
+    "humidity": "Humidade",
+    "wind": "Vento",
+    "uvIndex": "Índice UV",
+    "addFav": "Adicionar aos favoritos",
+    "removeFav": "Remover dos favoritos",
+    "feelsLikeFull": "Sensação {{temp}}°"
+  },
+  "hourly": {
+    "next": "Próximas {{hours}} horas",
+    "scroll": "deslizar →",
+    "now": "Agora"
+  },
+  "daily": {
+    "outlook": "Previsão a {{days}} dias",
+    "today": "Hoje"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "remove": "Remover"
+  },
+  "footer": "Dados meteorológicos de",
+  "weather": {
+    "0": "Céu limpo",
+    "1": "Praticamente limpo",
+    "2": "Parcialmente nublado",
+    "3": "Encoberto",
+    "45": "Nevoeiro",
+    "48": "Nevoeiro gelado",
+    "51": "Chuvisco fraco",
+    "53": "Chuvisco",
+    "55": "Chuvisco forte",
+    "56": "Chuvisco gelado",
+    "57": "Chuvisco gelado",
+    "61": "Chuva fraca",
+    "63": "Chuva",
+    "65": "Chuva forte",
+    "66": "Chuva gelada",
+    "67": "Chuva gelada",
+    "71": "Neve fraca",
+    "73": "Neve",
+    "75": "Neve forte",
+    "77": "Grãos de neve",
+    "80": "Aguaceiros",
+    "81": "Aguaceiros",
+    "82": "Aguaceiros violentos",
+    "85": "Aguaceiros de neve",
+    "86": "Aguaceiros fortes de neve",
+    "95": "Trovoada",
+    "96": "Trovoada com granizo",
+    "99": "Trovoada severa",
+    "unknown": "Desconhecido"
+  }
 }

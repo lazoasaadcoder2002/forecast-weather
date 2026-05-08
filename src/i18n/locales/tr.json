@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Dünya genelinde hava tahminleri", "worldwide": "Dünya çapında tahminler" },
-  "search": { "placeholder": "Herhangi bir şehri arayın…", "useMyLocation": "Konumumu kullan" },
-  "drawer": { "useCurrent": "Mevcut konumu kullan", "pickOnMap": "Haritadan seç", "refresh": "Havayı yenile", "europe": "Avrupa", "arab": "Arap dünyası", "favorites": "Favoriler", "language": "Dil", "about": "Hakkında", "dataSource": "Open-Meteo verileri" },
-  "tabs": { "hourly": "Saatlik", "fiveDays": "5 gün", "tenDays": "10 gün" },
-  "actions": { "refresh": "Yenile", "lastUpdated": "Son güncelleme" },
-  "map": { "title": "Hava haritası", "description": "Tahmini görmek için dünya haritasında herhangi bir yere dokunun.", "hint": "O noktanın havasını görmek için haritaya dokunun.", "selected": "Seçilen", "locating": "Konum bulunuyor…" },
-  "offline": { "title": "Çevrimdışı mod", "savedAt": "{{date}} tarihli kayıtlı veriler gösteriliyor", "connect": "Hava durumunu yüklemek için internete bağlanın." },
-  "toasts": { "updated": "Hava güncellendi", "approxLocation": "Yaklaşık konum: {{name}}", "showing": "{{name}} için hava gösteriliyor", "showingYours": "Konumunuzun havası gösteriliyor", "unavailable": "Konum kullanılamıyor", "timedOut": "Konum isteği zaman aşımına uğradı", "offlineSaved": "Çevrimdışısınız — kayıtlı veriler gösteriliyor", "offlineNoData": "Çevrimdışısınız ve kayıtlı veri yok", "couldntRefresh": "Yenilenemedi — kayıtlı veriler gösteriliyor", "enableLocation": "Lütfen tarayıcı ayarlarında konumu etkinleştirin" },
-  "footer": "Hava verileri:"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Dünya geneli hava tahminleri",
+    "worldwide": "Dünya tahminleri"
+  },
+  "search": {
+    "placeholder": "Şehir ara…",
+    "useMyLocation": "Konumumu kullan"
+  },
+  "drawer": {
+    "useCurrent": "Mevcut konumu kullan",
+    "pickOnMap": "Haritadan seç",
+    "refresh": "Havayı yenile",
+    "europe": "Avrupa",
+    "arab": "Arap dünyası",
+    "favorites": "Favoriler",
+    "language": "Dil",
+    "about": "Hakkında",
+    "dataSource": "Open-Meteo verileri"
+  },
+  "tabs": {
+    "hourly": "Saatlik",
+    "fiveDays": "5 gün",
+    "tenDays": "10 gün"
+  },
+  "actions": {
+    "refresh": "Yenile",
+    "lastUpdated": "Son güncelleme"
+  },
+  "map": {
+    "title": "Hava haritası",
+    "description": "Tahmini görmek için haritada bir noktaya dokun.",
+    "hint": "O nokta için havayı görmek için haritaya dokun.",
+    "selected": "Seçildi",
+    "locating": "Konum belirleniyor…"
+  },
+  "offline": {
+    "title": "Çevrimdışı mod",
+    "savedAt": "{{date}} tarihli kayıtlı veriler",
+    "connect": "İnternete bağlan."
+  },
+  "toasts": {
+    "updated": "Hava güncellendi",
+    "approxLocation": "Yaklaşık konum: {{name}}",
+    "showing": "{{name}} için hava",
+    "showingYours": "Konumunuz için hava",
+    "unavailable": "Konum kullanılamıyor",
+    "timedOut": "Konum isteği zaman aşımına uğradı",
+    "offlineSaved": "Çevrimdışı — kayıtlı veriler gösteriliyor",
+    "offlineNoData": "Çevrimdışısınız ve kayıtlı veri yok",
+    "couldntRefresh": "Yenilenemedi — kayıtlı veriler",
+    "enableLocation": "Tarayıcı ayarlarından konumu etkinleştirin"
+  },
+  "current": {
+    "local": "yerel",
+    "feelsLike": "Hissedilen",
+    "humidity": "Nem",
+    "wind": "Rüzgâr",
+    "uvIndex": "UV indeksi",
+    "addFav": "Favorilere ekle",
+    "removeFav": "Favorilerden çıkar",
+    "feelsLikeFull": "Hissedilen {{temp}}°"
+  },
+  "hourly": {
+    "next": "Sonraki {{hours}} saat",
+    "scroll": "kaydır →",
+    "now": "Şimdi"
+  },
+  "daily": {
+    "outlook": "{{days}} günlük tahmin",
+    "today": "Bugün"
+  },
+  "favorites": {
+    "title": "Favoriler",
+    "remove": "Kaldır"
+  },
+  "footer": "Hava verileri:",
+  "weather": {
+    "0": "Açık",
+    "1": "Çoğunlukla açık",
+    "2": "Parçalı bulutlu",
+    "3": "Kapalı",
+    "45": "Sisli",
+    "48": "Kırağılı sis",
+    "51": "Hafif çisenti",
+    "53": "Çisenti",
+    "55": "Yoğun çisenti",
+    "56": "Donduran çisenti",
+    "57": "Donduran çisenti",
+    "61": "Hafif yağmur",
+    "63": "Yağmur",
+    "65": "Şiddetli yağmur",
+    "66": "Donduran yağmur",
+    "67": "Donduran yağmur",
+    "71": "Hafif kar",
+    "73": "Kar",
+    "75": "Yoğun kar",
+    "77": "Kar taneleri",
+    "80": "Sağanak",
+    "81": "Sağanak",
+    "82": "Şiddetli sağanak",
+    "85": "Kar sağanağı",
+    "86": "Yoğun kar sağanağı",
+    "95": "Gök gürültülü fırtına",
+    "96": "Dolulu fırtına",
+    "99": "Şiddetli fırtına",
+    "unknown": "Bilinmiyor"
+  }
 }

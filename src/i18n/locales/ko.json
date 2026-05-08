@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "전 세계 일기 예보", "worldwide": "전 세계 예보" },
-  "search": { "placeholder": "도시를 검색하세요…", "useMyLocation": "내 위치 사용" },
-  "drawer": { "useCurrent": "현재 위치 사용", "pickOnMap": "지도에서 선택", "refresh": "날씨 새로고침", "europe": "유럽", "arab": "아랍 세계", "favorites": "즐겨찾기", "language": "언어", "about": "정보", "dataSource": "Open-Meteo 데이터" },
-  "tabs": { "hourly": "시간별", "fiveDays": "5일", "tenDays": "10일" },
-  "actions": { "refresh": "새로고침", "lastUpdated": "마지막 업데이트" },
-  "map": { "title": "날씨 지도", "description": "지도의 아무 곳이나 탭하여 예보를 확인하세요.", "hint": "그 지점의 날씨를 보려면 지도를 탭하세요.", "selected": "선택됨", "locating": "위치 확인 중…" },
-  "offline": { "title": "오프라인 모드", "savedAt": "{{date}}에 저장된 데이터 표시 중", "connect": "날씨를 불러오려면 인터넷에 연결하세요." },
-  "toasts": { "updated": "날씨가 업데이트되었습니다", "approxLocation": "대략적 위치: {{name}}", "showing": "{{name}}의 날씨를 표시 중", "showingYours": "현재 위치의 날씨", "unavailable": "위치를 사용할 수 없음", "timedOut": "위치 요청 시간 초과", "offlineSaved": "오프라인 — 저장된 데이터 표시 중", "offlineNoData": "오프라인이며 저장된 데이터 없음", "couldntRefresh": "새로고침 실패 — 저장된 데이터", "enableLocation": "브라우저 설정에서 위치를 활성화하세요" },
-  "footer": "날씨 데이터 제공"
+  "app": {
+    "name": "Skyline",
+    "tagline": "전 세계 날씨 예보",
+    "worldwide": "전 세계 예보"
+  },
+  "search": {
+    "placeholder": "도시 검색…",
+    "useMyLocation": "내 위치 사용"
+  },
+  "drawer": {
+    "useCurrent": "현재 위치 사용",
+    "pickOnMap": "지도에서 선택",
+    "refresh": "날씨 새로고침",
+    "europe": "유럽",
+    "arab": "아랍 세계",
+    "favorites": "즐겨찾기",
+    "language": "언어",
+    "about": "정보",
+    "dataSource": "Open-Meteo 데이터"
+  },
+  "tabs": {
+    "hourly": "시간별",
+    "fiveDays": "5일",
+    "tenDays": "10일"
+  },
+  "actions": {
+    "refresh": "새로고침",
+    "lastUpdated": "최근 업데이트"
+  },
+  "map": {
+    "title": "날씨 지도",
+    "description": "예보를 보려면 지도에서 아무 곳이나 누르세요.",
+    "hint": "지도를 눌러 해당 지점의 날씨를 확인하세요.",
+    "selected": "선택됨",
+    "locating": "위치 확인 중…"
+  },
+  "offline": {
+    "title": "오프라인 모드",
+    "savedAt": "{{date}}에 저장된 데이터 표시",
+    "connect": "인터넷에 연결하세요."
+  },
+  "toasts": {
+    "updated": "날씨 업데이트됨",
+    "approxLocation": "대략적인 위치: {{name}}",
+    "showing": "{{name}}의 날씨",
+    "showingYours": "내 위치의 날씨",
+    "unavailable": "위치를 사용할 수 없음",
+    "timedOut": "위치 요청 시간 초과",
+    "offlineSaved": "오프라인 — 저장된 데이터 표시",
+    "offlineNoData": "오프라인이며 저장된 데이터 없음",
+    "couldntRefresh": "새로고침 실패 — 저장된 데이터 표시",
+    "enableLocation": "브라우저 설정에서 위치를 활성화하세요"
+  },
+  "current": {
+    "local": "현지",
+    "feelsLike": "체감",
+    "humidity": "습도",
+    "wind": "바람",
+    "uvIndex": "자외선 지수",
+    "addFav": "즐겨찾기에 추가",
+    "removeFav": "즐겨찾기에서 제거",
+    "feelsLikeFull": "체감 {{temp}}°"
+  },
+  "hourly": {
+    "next": "다음 {{hours}}시간",
+    "scroll": "스크롤 →",
+    "now": "지금"
+  },
+  "daily": {
+    "outlook": "{{days}}일 예보",
+    "today": "오늘"
+  },
+  "favorites": {
+    "title": "즐겨찾기",
+    "remove": "제거"
+  },
+  "footer": "날씨 데이터 제공:",
+  "weather": {
+    "0": "맑음",
+    "1": "대체로 맑음",
+    "2": "구름 조금",
+    "3": "흐림",
+    "45": "안개",
+    "48": "착빙 안개",
+    "51": "약한 이슬비",
+    "53": "이슬비",
+    "55": "강한 이슬비",
+    "56": "착빙 이슬비",
+    "57": "착빙 이슬비",
+    "61": "약한 비",
+    "63": "비",
+    "65": "강한 비",
+    "66": "어는 비",
+    "67": "어는 비",
+    "71": "약한 눈",
+    "73": "눈",
+    "75": "강한 눈",
+    "77": "싸락눈",
+    "80": "소나기",
+    "81": "소나기",
+    "82": "강한 소나기",
+    "85": "눈 소나기",
+    "86": "강한 눈 소나기",
+    "95": "뇌우",
+    "96": "우박을 동반한 뇌우",
+    "99": "강한 뇌우",
+    "unknown": "알 수 없음"
+  }
 }

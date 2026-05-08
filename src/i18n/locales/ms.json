@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Ramalan cuaca seluruh dunia", "worldwide": "Ramalan global" },
-  "search": { "placeholder": "Cari mana-mana bandar…", "useMyLocation": "Guna lokasi saya" },
-  "drawer": { "useCurrent": "Guna lokasi semasa", "pickOnMap": "Pilih pada peta", "refresh": "Segarkan cuaca", "europe": "Eropah", "arab": "Dunia Arab", "favorites": "Kegemaran", "language": "Bahasa", "about": "Tentang", "dataSource": "Data Open-Meteo" },
-  "tabs": { "hourly": "Setiap jam", "fiveDays": "5 hari", "tenDays": "10 hari" },
-  "actions": { "refresh": "Segarkan", "lastUpdated": "Kemaskini terakhir" },
-  "map": { "title": "Peta cuaca", "description": "Ketik mana-mana titik pada peta dunia untuk memuatkan ramalan.", "hint": "Ketik peta untuk melihat cuaca di titik itu.", "selected": "Dipilih", "locating": "Mencari lokasi…" },
-  "offline": { "title": "Mod luar talian", "savedAt": "Memaparkan data disimpan {{date}}", "connect": "Sambung ke internet untuk memuatkan cuaca." },
-  "toasts": { "updated": "Cuaca dikemaskini", "approxLocation": "Lokasi anggaran: {{name}}", "showing": "Memaparkan cuaca untuk {{name}}", "showingYours": "Memaparkan cuaca lokasi anda", "unavailable": "Lokasi tidak tersedia", "timedOut": "Permintaan lokasi tamat masa", "offlineSaved": "Luar talian — memaparkan data disimpan", "offlineNoData": "Luar talian dan tiada data disimpan", "couldntRefresh": "Tidak dapat menyegarkan — data disimpan", "enableLocation": "Sila aktifkan lokasi dalam tetapan pelayar" },
-  "footer": "Data cuaca oleh"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Ramalan cuaca seluruh dunia",
+    "worldwide": "Ramalan dunia"
+  },
+  "search": {
+    "placeholder": "Cari bandar…",
+    "useMyLocation": "Guna lokasi saya"
+  },
+  "drawer": {
+    "useCurrent": "Guna lokasi semasa",
+    "pickOnMap": "Pilih pada peta",
+    "refresh": "Segarkan cuaca",
+    "europe": "Eropah",
+    "arab": "Dunia Arab",
+    "favorites": "Kegemaran",
+    "language": "Bahasa",
+    "about": "Tentang",
+    "dataSource": "Data Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Setiap jam",
+    "fiveDays": "5 hari",
+    "tenDays": "10 hari"
+  },
+  "actions": {
+    "refresh": "Segarkan",
+    "lastUpdated": "Kemas kini terakhir"
+  },
+  "map": {
+    "title": "Peta cuaca",
+    "description": "Ketik mana-mana titik pada peta untuk memuat ramalan.",
+    "hint": "Ketik peta untuk melihat cuaca lokasi itu.",
+    "selected": "Dipilih",
+    "locating": "Mencari lokasi…"
+  },
+  "offline": {
+    "title": "Mod luar talian",
+    "savedAt": "Menunjukkan data disimpan {{date}}",
+    "connect": "Sambung ke internet."
+  },
+  "toasts": {
+    "updated": "Cuaca dikemas kini",
+    "approxLocation": "Lokasi anggaran: {{name}}",
+    "showing": "Cuaca untuk {{name}}",
+    "showingYours": "Cuaca untuk lokasi anda",
+    "unavailable": "Lokasi tiada",
+    "timedOut": "Permintaan lokasi tamat masa",
+    "offlineSaved": "Luar talian — menunjukkan data tersimpan",
+    "offlineNoData": "Luar talian dan tiada data tersimpan",
+    "couldntRefresh": "Gagal segarkan — data tersimpan",
+    "enableLocation": "Dayakan lokasi dalam tetapan pelayar"
+  },
+  "current": {
+    "local": "tempatan",
+    "feelsLike": "Terasa",
+    "humidity": "Kelembapan",
+    "wind": "Angin",
+    "uvIndex": "Indeks UV",
+    "addFav": "Tambah ke kegemaran",
+    "removeFav": "Buang dari kegemaran",
+    "feelsLikeFull": "Terasa {{temp}}°"
+  },
+  "hourly": {
+    "next": "{{hours}} jam akan datang",
+    "scroll": "tatal →",
+    "now": "Sekarang"
+  },
+  "daily": {
+    "outlook": "Ramalan {{days}} hari",
+    "today": "Hari ini"
+  },
+  "favorites": {
+    "title": "Kegemaran",
+    "remove": "Buang"
+  },
+  "footer": "Data cuaca oleh",
+  "weather": {
+    "0": "Cerah",
+    "1": "Kebanyakan cerah",
+    "2": "Berawan separa",
+    "3": "Mendung",
+    "45": "Berkabus",
+    "48": "Kabus fros",
+    "51": "Renyai ringan",
+    "53": "Renyai",
+    "55": "Renyai lebat",
+    "56": "Renyai beku",
+    "57": "Renyai beku",
+    "61": "Hujan ringan",
+    "63": "Hujan",
+    "65": "Hujan lebat",
+    "66": "Hujan beku",
+    "67": "Hujan beku",
+    "71": "Salji ringan",
+    "73": "Salji",
+    "75": "Salji lebat",
+    "77": "Butiran salji",
+    "80": "Hujan renyai",
+    "81": "Hujan renyai",
+    "82": "Hujan ganas",
+    "85": "Hujan salji",
+    "86": "Hujan salji lebat",
+    "95": "Ribut petir",
+    "96": "Ribut dengan hujan batu",
+    "99": "Ribut teruk",
+    "unknown": "Tidak diketahui"
+  }
 }

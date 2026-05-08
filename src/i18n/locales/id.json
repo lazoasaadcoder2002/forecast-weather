@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Prakiraan cuaca seluruh dunia", "worldwide": "Prakiraan global" },
-  "search": { "placeholder": "Cari kota mana saja…", "useMyLocation": "Gunakan lokasi saya" },
-  "drawer": { "useCurrent": "Gunakan lokasi saat ini", "pickOnMap": "Pilih di peta", "refresh": "Segarkan cuaca", "europe": "Eropa", "arab": "Dunia Arab", "favorites": "Favorit", "language": "Bahasa", "about": "Tentang", "dataSource": "Data Open-Meteo" },
-  "tabs": { "hourly": "Per jam", "fiveDays": "5 hari", "tenDays": "10 hari" },
-  "actions": { "refresh": "Segarkan", "lastUpdated": "Terakhir diperbarui" },
-  "map": { "title": "Peta cuaca", "description": "Ketuk titik mana saja di peta dunia untuk memuat prakiraan.", "hint": "Ketuk peta untuk melihat cuaca di titik tersebut.", "selected": "Dipilih", "locating": "Mencari lokasi…" },
-  "offline": { "title": "Mode offline", "savedAt": "Menampilkan data tersimpan {{date}}", "connect": "Sambungkan ke internet untuk memuat cuaca." },
-  "toasts": { "updated": "Cuaca diperbarui", "approxLocation": "Lokasi perkiraan: {{name}}", "showing": "Menampilkan cuaca untuk {{name}}", "showingYours": "Menampilkan cuaca lokasi Anda", "unavailable": "Lokasi tidak tersedia", "timedOut": "Permintaan lokasi habis waktu", "offlineSaved": "Anda offline — menampilkan data tersimpan", "offlineNoData": "Offline dan tidak ada data tersimpan", "couldntRefresh": "Gagal memperbarui — menampilkan data tersimpan", "enableLocation": "Aktifkan lokasi di pengaturan browser" },
-  "footer": "Data cuaca oleh"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Prakiraan cuaca dunia",
+    "worldwide": "Prakiraan dunia"
+  },
+  "search": {
+    "placeholder": "Cari kota…",
+    "useMyLocation": "Gunakan lokasi saya"
+  },
+  "drawer": {
+    "useCurrent": "Gunakan lokasi saat ini",
+    "pickOnMap": "Pilih di peta",
+    "refresh": "Segarkan cuaca",
+    "europe": "Eropa",
+    "arab": "Dunia Arab",
+    "favorites": "Favorit",
+    "language": "Bahasa",
+    "about": "Tentang",
+    "dataSource": "Data Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Per jam",
+    "fiveDays": "5 hari",
+    "tenDays": "10 hari"
+  },
+  "actions": {
+    "refresh": "Segarkan",
+    "lastUpdated": "Terakhir diperbarui"
+  },
+  "map": {
+    "title": "Peta cuaca",
+    "description": "Ketuk titik mana saja di peta untuk memuat prakiraan.",
+    "hint": "Ketuk peta untuk melihat cuaca lokasi tersebut.",
+    "selected": "Terpilih",
+    "locating": "Mencari lokasi…"
+  },
+  "offline": {
+    "title": "Mode offline",
+    "savedAt": "Menampilkan data tersimpan {{date}}",
+    "connect": "Sambungkan ke internet."
+  },
+  "toasts": {
+    "updated": "Cuaca diperbarui",
+    "approxLocation": "Lokasi perkiraan: {{name}}",
+    "showing": "Cuaca untuk {{name}}",
+    "showingYours": "Cuaca untuk lokasi Anda",
+    "unavailable": "Lokasi tidak tersedia",
+    "timedOut": "Permintaan lokasi habis waktu",
+    "offlineSaved": "Offline — menampilkan data tersimpan",
+    "offlineNoData": "Offline dan tidak ada data tersimpan",
+    "couldntRefresh": "Gagal menyegarkan — data tersimpan",
+    "enableLocation": "Aktifkan lokasi di pengaturan browser"
+  },
+  "current": {
+    "local": "lokal",
+    "feelsLike": "Terasa",
+    "humidity": "Kelembapan",
+    "wind": "Angin",
+    "uvIndex": "Indeks UV",
+    "addFav": "Tambah ke favorit",
+    "removeFav": "Hapus dari favorit",
+    "feelsLikeFull": "Terasa {{temp}}°"
+  },
+  "hourly": {
+    "next": "{{hours}} jam berikutnya",
+    "scroll": "geser →",
+    "now": "Sekarang"
+  },
+  "daily": {
+    "outlook": "Prakiraan {{days}} hari",
+    "today": "Hari ini"
+  },
+  "favorites": {
+    "title": "Favorit",
+    "remove": "Hapus"
+  },
+  "footer": "Data cuaca oleh",
+  "weather": {
+    "0": "Cerah",
+    "1": "Sebagian besar cerah",
+    "2": "Berawan sebagian",
+    "3": "Mendung",
+    "45": "Berkabut",
+    "48": "Kabut beku",
+    "51": "Gerimis ringan",
+    "53": "Gerimis",
+    "55": "Gerimis lebat",
+    "56": "Gerimis membeku",
+    "57": "Gerimis membeku",
+    "61": "Hujan ringan",
+    "63": "Hujan",
+    "65": "Hujan lebat",
+    "66": "Hujan membeku",
+    "67": "Hujan membeku",
+    "71": "Salju ringan",
+    "73": "Salju",
+    "75": "Salju lebat",
+    "77": "Butir salju",
+    "80": "Hujan singkat",
+    "81": "Hujan singkat",
+    "82": "Hujan deras",
+    "85": "Hujan salju",
+    "86": "Hujan salju lebat",
+    "95": "Badai petir",
+    "96": "Badai dengan hujan es",
+    "99": "Badai parah",
+    "unknown": "Tidak diketahui"
+  }
 }

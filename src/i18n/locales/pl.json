@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Globalne prognozy pogody", "worldwide": "Prognozy światowe" },
-  "search": { "placeholder": "Wyszukaj dowolne miasto…", "useMyLocation": "Użyj mojej lokalizacji" },
-  "drawer": { "useCurrent": "Użyj bieżącej lokalizacji", "pickOnMap": "Wybierz na mapie", "refresh": "Odśwież pogodę", "europe": "Europa", "arab": "Świat arabski", "favorites": "Ulubione", "language": "Język", "about": "Informacje", "dataSource": "Dane Open-Meteo" },
-  "tabs": { "hourly": "Godzinowo", "fiveDays": "5 dni", "tenDays": "10 dni" },
-  "actions": { "refresh": "Odśwież", "lastUpdated": "Ostatnia aktualizacja" },
-  "map": { "title": "Mapa pogody", "description": "Dotknij dowolnego miejsca na mapie, aby załadować prognozę.", "hint": "Dotknij mapy, aby zobaczyć pogodę w danym miejscu.", "selected": "Wybrano", "locating": "Lokalizowanie…" },
-  "offline": { "title": "Tryb offline", "savedAt": "Dane zapisane {{date}}", "connect": "Połącz się z internetem, aby pobrać pogodę." },
-  "toasts": { "updated": "Pogoda zaktualizowana", "approxLocation": "Przybliżona lokalizacja: {{name}}", "showing": "Pogoda dla {{name}}", "showingYours": "Pogoda dla Twojej lokalizacji", "unavailable": "Lokalizacja niedostępna", "timedOut": "Przekroczono czas lokalizacji", "offlineSaved": "Offline — pokazuję zapisane dane", "offlineNoData": "Offline i brak zapisanych danych", "couldntRefresh": "Nie udało się odświeżyć — pokazuję zapisane dane", "enableLocation": "Włącz lokalizację w ustawieniach przeglądarki" },
-  "footer": "Dane pogodowe:"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Prognozy pogody na świecie",
+    "worldwide": "Prognozy światowe"
+  },
+  "search": {
+    "placeholder": "Szukaj miasta…",
+    "useMyLocation": "Moja lokalizacja"
+  },
+  "drawer": {
+    "useCurrent": "Użyj bieżącej lokalizacji",
+    "pickOnMap": "Wybierz na mapie",
+    "refresh": "Odśwież pogodę",
+    "europe": "Europa",
+    "arab": "Świat arabski",
+    "favorites": "Ulubione",
+    "language": "Język",
+    "about": "O aplikacji",
+    "dataSource": "Dane Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Godzinowo",
+    "fiveDays": "5 dni",
+    "tenDays": "10 dni"
+  },
+  "actions": {
+    "refresh": "Odśwież",
+    "lastUpdated": "Aktualizacja"
+  },
+  "map": {
+    "title": "Mapa pogody",
+    "description": "Dotknij dowolnego miejsca, aby załadować prognozę.",
+    "hint": "Dotknij mapy, aby zobaczyć pogodę.",
+    "selected": "Wybrano",
+    "locating": "Lokalizowanie…"
+  },
+  "offline": {
+    "title": "Tryb offline",
+    "savedAt": "Zapisane dane z {{date}}",
+    "connect": "Połącz się z internetem."
+  },
+  "toasts": {
+    "updated": "Pogoda zaktualizowana",
+    "approxLocation": "Przybliżona lokalizacja: {{name}}",
+    "showing": "Pogoda dla {{name}}",
+    "showingYours": "Pogoda dla Twojej lokalizacji",
+    "unavailable": "Lokalizacja niedostępna",
+    "timedOut": "Upłynął limit czasu",
+    "offlineSaved": "Offline — zapisane dane",
+    "offlineNoData": "Offline i brak zapisanych danych",
+    "couldntRefresh": "Nie odświeżono — zapisane dane",
+    "enableLocation": "Włącz lokalizację w ustawieniach przeglądarki"
+  },
+  "current": {
+    "local": "lokalny",
+    "feelsLike": "Odczuwalna",
+    "humidity": "Wilgotność",
+    "wind": "Wiatr",
+    "uvIndex": "Indeks UV",
+    "addFav": "Dodaj do ulubionych",
+    "removeFav": "Usuń z ulubionych",
+    "feelsLikeFull": "Odczuwalna {{temp}}°"
+  },
+  "hourly": {
+    "next": "Następne {{hours}} godz.",
+    "scroll": "przewiń →",
+    "now": "Teraz"
+  },
+  "daily": {
+    "outlook": "Prognoza na {{days}} dni",
+    "today": "Dziś"
+  },
+  "favorites": {
+    "title": "Ulubione",
+    "remove": "Usuń"
+  },
+  "footer": "Dane pogodowe od",
+  "weather": {
+    "0": "Bezchmurnie",
+    "1": "Przeważnie pogodnie",
+    "2": "Częściowe zachmurzenie",
+    "3": "Pochmurno",
+    "45": "Mgła",
+    "48": "Mgła szadziowa",
+    "51": "Lekka mżawka",
+    "53": "Mżawka",
+    "55": "Silna mżawka",
+    "56": "Marznąca mżawka",
+    "57": "Marznąca mżawka",
+    "61": "Lekki deszcz",
+    "63": "Deszcz",
+    "65": "Silny deszcz",
+    "66": "Marznący deszcz",
+    "67": "Marznący deszcz",
+    "71": "Lekki śnieg",
+    "73": "Śnieg",
+    "75": "Silny śnieg",
+    "77": "Ziarna śniegu",
+    "80": "Przelotne opady",
+    "81": "Przelotne opady",
+    "82": "Gwałtowne opady",
+    "85": "Przelotne opady śniegu",
+    "86": "Silne opady śniegu",
+    "95": "Burza",
+    "96": "Burza z gradem",
+    "99": "Silna burza",
+    "unknown": "Nieznane"
+  }
 }

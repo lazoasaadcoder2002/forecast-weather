@@ -1,6 +1,13 @@
 {
-  "app": { "name": "Skyline", "tagline": "Worldwide weather forecasts", "worldwide": "Worldwide forecasts" },
-  "search": { "placeholder": "Search any city, anywhere…", "useMyLocation": "Use my location" },
+  "app": {
+    "name": "Skyline",
+    "tagline": "Worldwide weather forecasts",
+    "worldwide": "Worldwide forecasts"
+  },
+  "search": {
+    "placeholder": "Search any city, anywhere…",
+    "useMyLocation": "Use my location"
+  },
   "drawer": {
     "useCurrent": "Use current location",
     "pickOnMap": "Pick on map",
@@ -12,10 +19,92 @@
     "about": "About",
     "dataSource": "Open-Meteo data"
   },
-  "tabs": { "hourly": "Hourly", "fiveDays": "5 days", "tenDays": "10 days" },
-  "actions": { "refresh": "Refresh", "lastUpdated": "Last updated" },
-  "map": { "title": "Weather map", "description": "Tap any spot on the world map to load its forecast.", "hint": "Tap anywhere on the map to see the weather for that spot.", "selected": "Selected", "locating": "Locating…" },
-  "offline": { "title": "Offline mode", "savedAt": "Showing data saved {{date}}", "connect": "Connect to the internet to load weather." },
-  "toasts": { "updated": "Weather updated", "approxLocation": "Approximate location: {{name}}", "showing": "Showing weather for {{name}}", "showingYours": "Showing weather for your location", "unavailable": "Location unavailable", "timedOut": "Location request timed out", "offlineSaved": "You're offline — showing saved data", "offlineNoData": "You're offline and no saved data exists", "couldntRefresh": "Couldn't refresh — showing saved data", "enableLocation": "Please enable location in your browser settings" },
-  "footer": "Weather data by"
+  "tabs": {
+    "hourly": "Hourly",
+    "fiveDays": "5 days",
+    "tenDays": "10 days"
+  },
+  "actions": {
+    "refresh": "Refresh",
+    "lastUpdated": "Last updated"
+  },
+  "map": {
+    "title": "Weather map",
+    "description": "Tap any spot on the world map to load its forecast.",
+    "hint": "Tap anywhere on the map to see the weather for that spot.",
+    "selected": "Selected",
+    "locating": "Locating…"
+  },
+  "offline": {
+    "title": "Offline mode",
+    "savedAt": "Showing data saved {{date}}",
+    "connect": "Connect to the internet to load weather."
+  },
+  "toasts": {
+    "updated": "Weather updated",
+    "approxLocation": "Approximate location: {{name}}",
+    "showing": "Showing weather for {{name}}",
+    "showingYours": "Showing weather for your location",
+    "unavailable": "Location unavailable",
+    "timedOut": "Location request timed out",
+    "offlineSaved": "You're offline — showing saved data",
+    "offlineNoData": "You're offline and no saved data exists",
+    "couldntRefresh": "Couldn't refresh — showing saved data",
+    "enableLocation": "Please enable location in your browser settings"
+  },
+  "current": {
+    "local": "local",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "uvIndex": "UV index",
+    "addFav": "Add to favorites",
+    "removeFav": "Remove from favorites",
+    "feelsLikeFull": "Feels like {{temp}}°"
+  },
+  "hourly": {
+    "next": "Next {{hours}} hours",
+    "scroll": "scroll →",
+    "now": "Now"
+  },
+  "daily": {
+    "outlook": "{{days}}-day outlook",
+    "today": "Today"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "remove": "Remove favorite"
+  },
+  "footer": "Weather data by",
+  "weather": {
+    "0": "Clear sky",
+    "1": "Mainly clear",
+    "2": "Partly cloudy",
+    "3": "Overcast",
+    "45": "Foggy",
+    "48": "Rime fog",
+    "51": "Light drizzle",
+    "53": "Drizzle",
+    "55": "Heavy drizzle",
+    "56": "Freezing drizzle",
+    "57": "Freezing drizzle",
+    "61": "Light rain",
+    "63": "Rain",
+    "65": "Heavy rain",
+    "66": "Freezing rain",
+    "67": "Freezing rain",
+    "71": "Light snow",
+    "73": "Snow",
+    "75": "Heavy snow",
+    "77": "Snow grains",
+    "80": "Rain showers",
+    "81": "Rain showers",
+    "82": "Violent showers",
+    "85": "Snow showers",
+    "86": "Heavy snow showers",
+    "95": "Thunderstorm",
+    "96": "Thunderstorm w/ hail",
+    "99": "Severe thunderstorm",
+    "unknown": "Unknown"
+  }
 }

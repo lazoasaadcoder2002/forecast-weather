@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Previsioni meteo in tutto il mondo", "worldwide": "Previsioni mondiali" },
-  "search": { "placeholder": "Cerca qualsiasi città…", "useMyLocation": "Usa la mia posizione" },
-  "drawer": { "useCurrent": "Usa posizione attuale", "pickOnMap": "Scegli sulla mappa", "refresh": "Aggiorna meteo", "europe": "Europa", "arab": "Mondo arabo", "favorites": "Preferiti", "language": "Lingua", "about": "Info", "dataSource": "Dati Open-Meteo" },
-  "tabs": { "hourly": "Orario", "fiveDays": "5 giorni", "tenDays": "10 giorni" },
-  "actions": { "refresh": "Aggiorna", "lastUpdated": "Ultimo aggiornamento" },
-  "map": { "title": "Mappa meteo", "description": "Tocca un punto sulla mappa per vedere le previsioni.", "hint": "Tocca la mappa per vedere il meteo di quel punto.", "selected": "Selezionato", "locating": "Ricerca…" },
-  "offline": { "title": "Modalità offline", "savedAt": "Dati salvati il {{date}}", "connect": "Connettiti a internet per caricare il meteo." },
-  "toasts": { "updated": "Meteo aggiornato", "approxLocation": "Posizione approssimativa: {{name}}", "showing": "Meteo per {{name}}", "showingYours": "Meteo per la tua posizione", "unavailable": "Posizione non disponibile", "timedOut": "Tempo scaduto per la posizione", "offlineSaved": "Offline — dati salvati", "offlineNoData": "Offline e nessun dato salvato", "couldntRefresh": "Aggiornamento fallito — dati salvati", "enableLocation": "Attiva la posizione nel browser" },
-  "footer": "Dati meteo da"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Previsioni meteo nel mondo",
+    "worldwide": "Previsioni mondiali"
+  },
+  "search": {
+    "placeholder": "Cerca una città…",
+    "useMyLocation": "La mia posizione"
+  },
+  "drawer": {
+    "useCurrent": "Usa posizione attuale",
+    "pickOnMap": "Scegli sulla mappa",
+    "refresh": "Aggiorna meteo",
+    "europe": "Europa",
+    "arab": "Mondo arabo",
+    "favorites": "Preferiti",
+    "language": "Lingua",
+    "about": "Informazioni",
+    "dataSource": "Dati Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Orario",
+    "fiveDays": "5 giorni",
+    "tenDays": "10 giorni"
+  },
+  "actions": {
+    "refresh": "Aggiorna",
+    "lastUpdated": "Aggiornato"
+  },
+  "map": {
+    "title": "Mappa meteo",
+    "description": "Tocca un punto per caricare le previsioni.",
+    "hint": "Tocca la mappa per vedere il meteo.",
+    "selected": "Selezionato",
+    "locating": "Localizzazione…"
+  },
+  "offline": {
+    "title": "Modalità offline",
+    "savedAt": "Dati salvati il {{date}}",
+    "connect": "Connettiti a Internet."
+  },
+  "toasts": {
+    "updated": "Meteo aggiornato",
+    "approxLocation": "Posizione approssimativa: {{name}}",
+    "showing": "Meteo per {{name}}",
+    "showingYours": "Meteo per la tua posizione",
+    "unavailable": "Posizione non disponibile",
+    "timedOut": "Tempo scaduto",
+    "offlineSaved": "Offline — dati salvati",
+    "offlineNoData": "Offline e nessun dato salvato",
+    "couldntRefresh": "Aggiornamento fallito — dati salvati",
+    "enableLocation": "Abilita la posizione nelle impostazioni"
+  },
+  "current": {
+    "local": "locale",
+    "feelsLike": "Percepita",
+    "humidity": "Umidità",
+    "wind": "Vento",
+    "uvIndex": "Indice UV",
+    "addFav": "Aggiungi ai preferiti",
+    "removeFav": "Rimuovi dai preferiti",
+    "feelsLikeFull": "Percepita {{temp}}°"
+  },
+  "hourly": {
+    "next": "Prossime {{hours}} ore",
+    "scroll": "scorri →",
+    "now": "Ora"
+  },
+  "daily": {
+    "outlook": "Previsione a {{days}} giorni",
+    "today": "Oggi"
+  },
+  "favorites": {
+    "title": "Preferiti",
+    "remove": "Rimuovi"
+  },
+  "footer": "Dati meteo da",
+  "weather": {
+    "0": "Cielo sereno",
+    "1": "Prevalentemente sereno",
+    "2": "Parzialmente nuvoloso",
+    "3": "Coperto",
+    "45": "Nebbia",
+    "48": "Nebbia ghiacciata",
+    "51": "Pioviggine leggera",
+    "53": "Pioviggine",
+    "55": "Pioviggine intensa",
+    "56": "Pioviggine gelata",
+    "57": "Pioviggine gelata",
+    "61": "Pioggia leggera",
+    "63": "Pioggia",
+    "65": "Pioggia intensa",
+    "66": "Pioggia gelata",
+    "67": "Pioggia gelata",
+    "71": "Neve leggera",
+    "73": "Neve",
+    "75": "Neve intensa",
+    "77": "Granuli di neve",
+    "80": "Rovesci",
+    "81": "Rovesci",
+    "82": "Rovesci violenti",
+    "85": "Rovesci di neve",
+    "86": "Rovesci intensi di neve",
+    "95": "Temporale",
+    "96": "Temporale con grandine",
+    "99": "Temporale severo",
+    "unknown": "Sconosciuto"
+  }
 }

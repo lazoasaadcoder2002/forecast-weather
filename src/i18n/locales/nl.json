@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Wereldwijde weersvoorspellingen", "worldwide": "Wereldwijde voorspellingen" },
-  "search": { "placeholder": "Zoek een stad, waar dan ook…", "useMyLocation": "Gebruik mijn locatie" },
-  "drawer": { "useCurrent": "Huidige locatie gebruiken", "pickOnMap": "Kies op kaart", "refresh": "Weer vernieuwen", "europe": "Europa", "arab": "Arabische wereld", "favorites": "Favorieten", "language": "Taal", "about": "Over", "dataSource": "Open-Meteo data" },
-  "tabs": { "hourly": "Per uur", "fiveDays": "5 dagen", "tenDays": "10 dagen" },
-  "actions": { "refresh": "Vernieuwen", "lastUpdated": "Laatst bijgewerkt" },
-  "map": { "title": "Weerkaart", "description": "Tik ergens op de wereldkaart om de voorspelling te laden.", "hint": "Tik op de kaart om het weer daar te zien.", "selected": "Geselecteerd", "locating": "Zoeken…" },
-  "offline": { "title": "Offline-modus", "savedAt": "Gegevens opgeslagen op {{date}}", "connect": "Maak verbinding met internet om het weer te laden." },
-  "toasts": { "updated": "Weer bijgewerkt", "approxLocation": "Geschatte locatie: {{name}}", "showing": "Weer voor {{name}}", "showingYours": "Weer voor jouw locatie", "unavailable": "Locatie niet beschikbaar", "timedOut": "Locatieverzoek time-out", "offlineSaved": "Offline — opgeslagen gegevens worden getoond", "offlineNoData": "Offline en geen opgeslagen gegevens", "couldntRefresh": "Kon niet vernieuwen — opgeslagen gegevens", "enableLocation": "Schakel locatie in de browserinstellingen in" },
-  "footer": "Weergegevens door"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Wereldwijde weersvoorspellingen",
+    "worldwide": "Wereldwijde voorspellingen"
+  },
+  "search": {
+    "placeholder": "Zoek een stad…",
+    "useMyLocation": "Mijn locatie"
+  },
+  "drawer": {
+    "useCurrent": "Huidige locatie gebruiken",
+    "pickOnMap": "Op kaart kiezen",
+    "refresh": "Weer verversen",
+    "europe": "Europa",
+    "arab": "Arabische wereld",
+    "favorites": "Favorieten",
+    "language": "Taal",
+    "about": "Over",
+    "dataSource": "Open-Meteo data"
+  },
+  "tabs": {
+    "hourly": "Per uur",
+    "fiveDays": "5 dagen",
+    "tenDays": "10 dagen"
+  },
+  "actions": {
+    "refresh": "Vernieuwen",
+    "lastUpdated": "Bijgewerkt"
+  },
+  "map": {
+    "title": "Weerkaart",
+    "description": "Tik op een plek om de voorspelling te laden.",
+    "hint": "Tik op de kaart om het weer te zien.",
+    "selected": "Geselecteerd",
+    "locating": "Locatie bepalen…"
+  },
+  "offline": {
+    "title": "Offline-modus",
+    "savedAt": "Opgeslagen gegevens van {{date}}",
+    "connect": "Maak verbinding met internet."
+  },
+  "toasts": {
+    "updated": "Weer bijgewerkt",
+    "approxLocation": "Geschatte locatie: {{name}}",
+    "showing": "Weer voor {{name}}",
+    "showingYours": "Weer voor jouw locatie",
+    "unavailable": "Locatie niet beschikbaar",
+    "timedOut": "Verzoek verlopen",
+    "offlineSaved": "Offline — opgeslagen gegevens",
+    "offlineNoData": "Offline en geen opgeslagen gegevens",
+    "couldntRefresh": "Vernieuwen mislukt — opgeslagen gegevens",
+    "enableLocation": "Schakel locatie in via de browserinstellingen"
+  },
+  "current": {
+    "local": "lokaal",
+    "feelsLike": "Voelt als",
+    "humidity": "Vochtigheid",
+    "wind": "Wind",
+    "uvIndex": "UV-index",
+    "addFav": "Toevoegen aan favorieten",
+    "removeFav": "Verwijderen uit favorieten",
+    "feelsLikeFull": "Voelt als {{temp}}°"
+  },
+  "hourly": {
+    "next": "Komende {{hours}} uur",
+    "scroll": "scrollen →",
+    "now": "Nu"
+  },
+  "daily": {
+    "outlook": "{{days}}-daagse vooruitzicht",
+    "today": "Vandaag"
+  },
+  "favorites": {
+    "title": "Favorieten",
+    "remove": "Verwijderen"
+  },
+  "footer": "Weergegevens door",
+  "weather": {
+    "0": "Onbewolkt",
+    "1": "Vrijwel onbewolkt",
+    "2": "Half bewolkt",
+    "3": "Bewolkt",
+    "45": "Mist",
+    "48": "IJzelmist",
+    "51": "Lichte motregen",
+    "53": "Motregen",
+    "55": "Zware motregen",
+    "56": "IJzelmotregen",
+    "57": "IJzelmotregen",
+    "61": "Lichte regen",
+    "63": "Regen",
+    "65": "Zware regen",
+    "66": "IJzelregen",
+    "67": "IJzelregen",
+    "71": "Lichte sneeuw",
+    "73": "Sneeuw",
+    "75": "Zware sneeuw",
+    "77": "Sneeuwkorrels",
+    "80": "Buien",
+    "81": "Buien",
+    "82": "Hevige buien",
+    "85": "Sneeuwbuien",
+    "86": "Zware sneeuwbuien",
+    "95": "Onweer",
+    "96": "Onweer met hagel",
+    "99": "Zwaar onweer",
+    "unknown": "Onbekend"
+  }
 }
