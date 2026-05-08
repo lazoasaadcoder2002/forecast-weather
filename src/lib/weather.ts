@@ -164,39 +164,13 @@ export async function fetchWeather(lat: number, lon: number, timezone = "auto"):
   };
 }
 
-// WMO weather interpretation codes
+// WMO weather interpretation codes — translated via i18n keys (weather.<code>)
+import i18n from "@/i18n";
+
 export function describeWeather(code: number): string {
-  const map: Record<number, string> = {
-    0: "Clear sky",
-    1: "Mainly clear",
-    2: "Partly cloudy",
-    3: "Overcast",
-    45: "Foggy",
-    48: "Rime fog",
-    51: "Light drizzle",
-    53: "Drizzle",
-    55: "Heavy drizzle",
-    56: "Freezing drizzle",
-    57: "Freezing drizzle",
-    61: "Light rain",
-    63: "Rain",
-    65: "Heavy rain",
-    66: "Freezing rain",
-    67: "Freezing rain",
-    71: "Light snow",
-    73: "Snow",
-    75: "Heavy snow",
-    77: "Snow grains",
-    80: "Rain showers",
-    81: "Rain showers",
-    82: "Violent showers",
-    85: "Snow showers",
-    86: "Heavy snow showers",
-    95: "Thunderstorm",
-    96: "Thunderstorm w/ hail",
-    99: "Severe thunderstorm",
-  };
-  return map[code] ?? "Unknown";
+  const key = `weather.${code}`;
+  const translated = i18n.t(key);
+  return translated === key ? i18n.t("weather.unknown") : translated;
 }
 
 export type WeatherIconName =
