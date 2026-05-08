@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Droplets } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
 import { describeWeather, formatDay, iconForCode, type WeatherData } from "@/lib/weather";
@@ -5,8 +6,10 @@ import { describeWeather, formatDay, iconForCode, type WeatherData } from "@/lib
 interface Props { data: WeatherData; days: 5 | 10; }
 
 export const DailyForecast = ({ data, days }: Props) => {
-  const items = data.daily.time.slice(0, days).map((t, i) => ({
-    time: t,
+  const { t, i18n } = useTranslation();
+  void i18n.language;
+  const items = data.daily.time.slice(0, days).map((time, i) => ({
+    time,
     code: data.daily.weatherCode[i],
     max: data.daily.tempMax[i],
     min: data.daily.tempMin[i],
@@ -20,7 +23,7 @@ export const DailyForecast = ({ data, days }: Props) => {
   return (
     <section className="glass rounded-[2rem] p-6 animate-fade-in-up" style={{ animationDelay: "160ms" }}>
       <div className="mb-5 flex items-baseline justify-between">
-        <h2 className="font-display text-2xl font-medium">{days}-day outlook</h2>
+        <h2 className="font-display text-2xl font-medium">{t("daily.outlook", { days })}</h2>
         <span className="text-xs uppercase tracking-wider text-muted-foreground">
           {Math.round(allMin)}° – {Math.round(allMax)}°
         </span>
@@ -32,7 +35,7 @@ export const DailyForecast = ({ data, days }: Props) => {
           return (
             <li key={d.time} className="grid grid-cols-[64px_36px_1fr_120px] items-center gap-3 py-3 sm:grid-cols-[88px_44px_1fr_160px] sm:gap-4">
               <span className="text-sm font-medium text-foreground/90">
-                {i === 0 ? "Today" : formatDay(d.time, data.timezone)}
+                {i === 0 ? t("daily.today") : formatDay(d.time, data.timezone)}
               </span>
               <WeatherIcon name={iconForCode(d.code, 1)} className="h-7 w-7" />
               <div className="hidden text-sm text-muted-foreground sm:block">
