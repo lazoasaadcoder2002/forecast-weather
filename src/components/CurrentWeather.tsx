@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Droplets, Wind, Sun as SunIcon, Thermometer, Star } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
-import { describeWeather, iconForCode, type GeoLocation, type WeatherData } from "@/lib/weather";
+import { describeWeather, iconForCode, formatLocaleTime, formatLocaleDate, type GeoLocation, type WeatherData } from "@/lib/weather";
 
 interface Props {
   location: GeoLocation;
@@ -11,34 +12,31 @@ interface Props {
 }
 
 export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }: Props) => {
+  const { t, i18n } = useTranslation();
   const c = data.current;
   const icon = iconForCode(c.weatherCode, c.isDay);
 
-  // Tick every minute and re-schedule at midnight so the date auto-rolls.
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
-    const tick = () => setNow(new Date());
-    const interval = setInterval(tick, 60_000);
+    const interval = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(interval);
   }, []);
 
-  const localTime = now.toLocaleTimeString("en-US", {
-    hour: "numeric", minute: "2-digit", timeZone: data.timezone,
-  });
-  const localDate = now.toLocaleDateString("en-US", {
-    weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: data.timezone,
-  });
+  // Re-render strings when language changes
+  void i18n.language;
+
+  const localTime = formatLocaleTime(now, data.timezone);
+  const localDate = formatLocaleDate(now, data.timezone);
 
   return (
     <section className="glass-strong relative overflow-hidden rounded-[2rem] p-6 sm:p-10 animate-fade-in-up">
-      {/* Sun glow background */}
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-sun opacity-20 blur-3xl animate-pulse-glow" />
 
       <div className="relative flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            {localTime} · local
+            {localTime} · {t("current.local")}
           </div>
           <div className="flex items-center gap-3">
             <h1 className="font-display text-4xl font-medium leading-tight sm:text-5xl">
@@ -47,18 +45,14 @@ export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }:
             {onToggleFavorite && (
               <button
                 onClick={onToggleFavorite}
-                title={isFavorite ? "Remove from favorites" : "Add to favorites"}
+                title={isFavorite ? t("current.removeFav") : t("current.addFav")}
                 className={`flex h-10 w-10 items-center justify-center rounded-full transition ${
                   isFavorite
                     ? "bg-primary/20 text-primary shadow-glow"
                     : "bg-secondary/60 text-muted-foreground hover:text-primary"
                 }`}
               >
-                <Star
-                  className="h-5 w-5"
-                  strokeWidth={1.75}
-                  fill={isFavorite ? "currentColor" : "none"}
-                />
+                <Star className="h-5 w-5" strokeWidth={1.75} fill={isFavorite ? "currentColor" : "none"} />
               </button>
             )}
           </div>
@@ -73,7 +67,7 @@ export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }:
             <div className="pb-3 text-lg text-foreground/80">{describeWeather(c.weatherCode)}</div>
           </div>
           <p className="text-sm text-muted-foreground">
-            Feels like {Math.round(c.apparentTemperature)}°
+            {t("current.feelsLikeFull", { temp: Math.round(c.apparentTemperature) })}
           </p>
         </div>
 
@@ -83,10 +77,10 @@ export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }:
       </div>
 
       <div className="relative mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat icon={<Thermometer className="h-4 w-4" />} label="Feels like" value={`${Math.round(c.apparentTemperature)}°`} />
-        <Stat icon={<Droplets className="h-4 w-4" />} label="Humidity" value={`${c.humidity}%`} />
-        <Stat icon={<Wind className="h-4 w-4" />} label="Wind" value={`${Math.round(c.windSpeed)} km/h`} />
-        <Stat icon={<SunIcon className="h-4 w-4" />} label="UV index" value={`${Math.round(c.uvIndex ?? 0)}`} />
+        <Stat icon={<Thermometer className="h-4 w-4" />} label={t("current.feelsLike")} value={`${Math.round(c.apparentTemperature)}°`} />
+        <Stat icon={<Droplets className="h-4 w-4" />} label={t("current.humidity")} value={`${c.humidity}%`} />
+        <Stat icon={<Wind className="h-4 w-4" />} label={t("current.wind")} value={`${Math.round(c.windSpeed)} km/h`} />
+        <Stat icon={<SunIcon className="h-4 w-4" />} label={t("current.uvIndex")} value={`${Math.round(c.uvIndex ?? 0)}`} />
       </div>
     </section>
   );
