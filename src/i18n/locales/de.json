@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Weltweite Wettervorhersagen", "worldwide": "Weltweite Vorhersagen" },
-  "search": { "placeholder": "Stadt weltweit suchen…", "useMyLocation": "Meinen Standort verwenden" },
-  "drawer": { "useCurrent": "Aktuellen Standort verwenden", "pickOnMap": "Auf Karte auswählen", "refresh": "Wetter aktualisieren", "europe": "Europa", "arab": "Arabische Welt", "favorites": "Favoriten", "language": "Sprache", "about": "Info", "dataSource": "Open-Meteo Daten" },
-  "tabs": { "hourly": "Stündlich", "fiveDays": "5 Tage", "tenDays": "10 Tage" },
-  "actions": { "refresh": "Aktualisieren", "lastUpdated": "Zuletzt aktualisiert" },
-  "map": { "title": "Wetterkarte", "description": "Tippe irgendwo auf die Weltkarte, um die Vorhersage zu laden.", "hint": "Tippe auf die Karte, um das Wetter dort zu sehen.", "selected": "Ausgewählt", "locating": "Suche…" },
-  "offline": { "title": "Offline-Modus", "savedAt": "Gespeicherte Daten vom {{date}}", "connect": "Internetverbindung erforderlich." },
-  "toasts": { "updated": "Wetter aktualisiert", "approxLocation": "Ungefährer Standort: {{name}}", "showing": "Wetter für {{name}}", "showingYours": "Wetter für deinen Standort", "unavailable": "Standort nicht verfügbar", "timedOut": "Zeitüberschreitung beim Standort", "offlineSaved": "Offline — gespeicherte Daten angezeigt", "offlineNoData": "Offline und keine gespeicherten Daten", "couldntRefresh": "Aktualisierung fehlgeschlagen — gespeicherte Daten", "enableLocation": "Standortzugriff im Browser aktivieren" },
-  "footer": "Wetterdaten von"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Weltweite Wettervorhersagen",
+    "worldwide": "Weltweite Vorhersagen"
+  },
+  "search": {
+    "placeholder": "Stadt suchen…",
+    "useMyLocation": "Mein Standort"
+  },
+  "drawer": {
+    "useCurrent": "Aktuellen Standort verwenden",
+    "pickOnMap": "Auf Karte wählen",
+    "refresh": "Wetter aktualisieren",
+    "europe": "Europa",
+    "arab": "Arabische Welt",
+    "favorites": "Favoriten",
+    "language": "Sprache",
+    "about": "Über",
+    "dataSource": "Open-Meteo-Daten"
+  },
+  "tabs": {
+    "hourly": "Stündlich",
+    "fiveDays": "5 Tage",
+    "tenDays": "10 Tage"
+  },
+  "actions": {
+    "refresh": "Aktualisieren",
+    "lastUpdated": "Aktualisiert"
+  },
+  "map": {
+    "title": "Wetterkarte",
+    "description": "Tippe auf einen Punkt, um die Vorhersage zu laden.",
+    "hint": "Tippe auf die Karte, um das Wetter zu sehen.",
+    "selected": "Ausgewählt",
+    "locating": "Standortbestimmung…"
+  },
+  "offline": {
+    "title": "Offline-Modus",
+    "savedAt": "Gespeicherte Daten von {{date}}",
+    "connect": "Verbinde dich mit dem Internet."
+  },
+  "toasts": {
+    "updated": "Wetter aktualisiert",
+    "approxLocation": "Ungefährer Standort: {{name}}",
+    "showing": "Wetter für {{name}}",
+    "showingYours": "Wetter für deinen Standort",
+    "unavailable": "Standort nicht verfügbar",
+    "timedOut": "Zeitüberschreitung",
+    "offlineSaved": "Offline — gespeicherte Daten",
+    "offlineNoData": "Offline und keine Daten gespeichert",
+    "couldntRefresh": "Aktualisierung fehlgeschlagen — gespeicherte Daten",
+    "enableLocation": "Aktiviere den Standort in den Browser-Einstellungen"
+  },
+  "current": {
+    "local": "lokal",
+    "feelsLike": "Gefühlt",
+    "humidity": "Luftfeuchte",
+    "wind": "Wind",
+    "uvIndex": "UV-Index",
+    "addFav": "Zu Favoriten",
+    "removeFav": "Aus Favoriten entfernen",
+    "feelsLikeFull": "Gefühlt {{temp}}°"
+  },
+  "hourly": {
+    "next": "Nächste {{hours}} Stunden",
+    "scroll": "scrollen →",
+    "now": "Jetzt"
+  },
+  "daily": {
+    "outlook": "{{days}}-Tage-Aussicht",
+    "today": "Heute"
+  },
+  "favorites": {
+    "title": "Favoriten",
+    "remove": "Entfernen"
+  },
+  "footer": "Wetterdaten von",
+  "weather": {
+    "0": "Klarer Himmel",
+    "1": "Überwiegend klar",
+    "2": "Teilweise bewölkt",
+    "3": "Bedeckt",
+    "45": "Nebel",
+    "48": "Raureifnebel",
+    "51": "Leichter Niesel",
+    "53": "Niesel",
+    "55": "Starker Niesel",
+    "56": "Gefrierender Niesel",
+    "57": "Gefrierender Niesel",
+    "61": "Leichter Regen",
+    "63": "Regen",
+    "65": "Starker Regen",
+    "66": "Gefrierender Regen",
+    "67": "Gefrierender Regen",
+    "71": "Leichter Schnee",
+    "73": "Schnee",
+    "75": "Starker Schnee",
+    "77": "Schneegriesel",
+    "80": "Regenschauer",
+    "81": "Regenschauer",
+    "82": "Heftige Schauer",
+    "85": "Schneeschauer",
+    "86": "Starke Schneeschauer",
+    "95": "Gewitter",
+    "96": "Gewitter mit Hagel",
+    "99": "Schweres Gewitter",
+    "unknown": "Unbekannt"
+  }
 }

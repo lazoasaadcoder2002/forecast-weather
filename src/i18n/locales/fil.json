@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Mga forecast ng panahon sa buong mundo", "worldwide": "Pang-mundong forecast" },
-  "search": { "placeholder": "Maghanap ng kahit anong lungsod…", "useMyLocation": "Gamitin ang aking lokasyon" },
-  "drawer": { "useCurrent": "Gamitin ang kasalukuyang lokasyon", "pickOnMap": "Pumili sa mapa", "refresh": "I-refresh ang panahon", "europe": "Europa", "arab": "Mundong Arabo", "favorites": "Mga paborito", "language": "Wika", "about": "Tungkol", "dataSource": "Datos ng Open-Meteo" },
-  "tabs": { "hourly": "Oras-oras", "fiveDays": "5 araw", "tenDays": "10 araw" },
-  "actions": { "refresh": "I-refresh", "lastUpdated": "Huling update" },
-  "map": { "title": "Mapa ng panahon", "description": "I-tap ang kahit saan sa mapa para makita ang forecast.", "hint": "I-tap ang mapa para makita ang panahon doon.", "selected": "Napili", "locating": "Hinahanap ang lokasyon…" },
-  "offline": { "title": "Offline mode", "savedAt": "Ipinapakita ang naka-save na datos noong {{date}}", "connect": "Kumonekta sa internet para ma-load ang panahon." },
-  "toasts": { "updated": "Na-update ang panahon", "approxLocation": "Tinatayang lokasyon: {{name}}", "showing": "Ipinapakita ang panahon para sa {{name}}", "showingYours": "Ipinapakita ang panahon ng iyong lokasyon", "unavailable": "Hindi available ang lokasyon", "timedOut": "Nag-time out ang kahilingan sa lokasyon", "offlineSaved": "Offline ka — ipinapakita ang naka-save na datos", "offlineNoData": "Offline at walang naka-save na datos", "couldntRefresh": "Hindi ma-refresh — naka-save na datos", "enableLocation": "Paki-enable ang lokasyon sa browser settings" },
-  "footer": "Datos ng panahon mula sa"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Pandaigdigang panahon",
+    "worldwide": "Pandaigdigang ulat"
+  },
+  "search": {
+    "placeholder": "Maghanap ng lungsod…",
+    "useMyLocation": "Gamitin ang aking lokasyon"
+  },
+  "drawer": {
+    "useCurrent": "Gamitin ang kasalukuyang lokasyon",
+    "pickOnMap": "Pumili sa mapa",
+    "refresh": "I-refresh ang panahon",
+    "europe": "Europa",
+    "arab": "Mundong Arabo",
+    "favorites": "Mga paborito",
+    "language": "Wika",
+    "about": "Tungkol",
+    "dataSource": "Datos ng Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Bawat oras",
+    "fiveDays": "5 araw",
+    "tenDays": "10 araw"
+  },
+  "actions": {
+    "refresh": "I-refresh",
+    "lastUpdated": "Huling update"
+  },
+  "map": {
+    "title": "Mapa ng panahon",
+    "description": "I-tap ang anumang lugar upang i-load ang ulat.",
+    "hint": "I-tap ang mapa para makita ang panahon sa lugar na iyon.",
+    "selected": "Napili",
+    "locating": "Hinahanap ang lokasyon…"
+  },
+  "offline": {
+    "title": "Offline mode",
+    "savedAt": "Nagpapakita ng nai-save na datos {{date}}",
+    "connect": "Kumonekta sa internet."
+  },
+  "toasts": {
+    "updated": "Na-update ang panahon",
+    "approxLocation": "Tinatayang lokasyon: {{name}}",
+    "showing": "Panahon para sa {{name}}",
+    "showingYours": "Panahon sa iyong lokasyon",
+    "unavailable": "Walang lokasyon",
+    "timedOut": "Nag-time out",
+    "offlineSaved": "Offline — nagpapakita ng nai-save na datos",
+    "offlineNoData": "Offline at walang nai-save na datos",
+    "couldntRefresh": "Hindi nai-refresh — nai-save na datos",
+    "enableLocation": "Paganahin ang lokasyon sa browser settings"
+  },
+  "current": {
+    "local": "lokal",
+    "feelsLike": "Pakiramdam",
+    "humidity": "Halumigmig",
+    "wind": "Hangin",
+    "uvIndex": "UV index",
+    "addFav": "Idagdag sa paborito",
+    "removeFav": "Alisin sa paborito",
+    "feelsLikeFull": "Pakiramdam {{temp}}°"
+  },
+  "hourly": {
+    "next": "Susunod na {{hours}} oras",
+    "scroll": "i-scroll →",
+    "now": "Ngayon"
+  },
+  "daily": {
+    "outlook": "Ulat sa {{days}} araw",
+    "today": "Ngayon"
+  },
+  "favorites": {
+    "title": "Mga paborito",
+    "remove": "Alisin"
+  },
+  "footer": "Datos ng panahon mula sa",
+  "weather": {
+    "0": "Maaliwalas",
+    "1": "Karaniwang maaliwalas",
+    "2": "Bahagyang maulap",
+    "3": "Maulap",
+    "45": "Mahamog",
+    "48": "Mahamog na nagyeyelo",
+    "51": "Mahinang ambon",
+    "53": "Ambon",
+    "55": "Malakas na ambon",
+    "56": "Nagyeyelong ambon",
+    "57": "Nagyeyelong ambon",
+    "61": "Mahinang ulan",
+    "63": "Ulan",
+    "65": "Malakas na ulan",
+    "66": "Nagyeyelong ulan",
+    "67": "Nagyeyelong ulan",
+    "71": "Mahinang niyebe",
+    "73": "Niyebe",
+    "75": "Malakas na niyebe",
+    "77": "Mga butil ng niyebe",
+    "80": "Pag-ulan",
+    "81": "Pag-ulan",
+    "82": "Malakas na pag-ulan",
+    "85": "Pag-ulan ng niyebe",
+    "86": "Malakas na pag-ulan ng niyebe",
+    "95": "Bagyong may kulog",
+    "96": "Bagyong may yelo",
+    "99": "Matinding bagyo",
+    "unknown": "Hindi alam"
+  }
 }

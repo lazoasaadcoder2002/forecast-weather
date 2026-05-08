@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "Pronósticos meteorológicos mundiales", "worldwide": "Pronósticos mundiales" },
-  "search": { "placeholder": "Busca cualquier ciudad…", "useMyLocation": "Usar mi ubicación" },
-  "drawer": { "useCurrent": "Usar ubicación actual", "pickOnMap": "Elegir en el mapa", "refresh": "Actualizar el tiempo", "europe": "Europa", "arab": "Mundo árabe", "favorites": "Favoritos", "language": "Idioma", "about": "Acerca de", "dataSource": "Datos de Open-Meteo" },
-  "tabs": { "hourly": "Por hora", "fiveDays": "5 días", "tenDays": "10 días" },
-  "actions": { "refresh": "Actualizar", "lastUpdated": "Última actualización" },
-  "map": { "title": "Mapa del tiempo", "description": "Toca cualquier punto del mapa mundial para ver el pronóstico.", "hint": "Toca cualquier punto del mapa para ver el tiempo allí.", "selected": "Seleccionado", "locating": "Localizando…" },
-  "offline": { "title": "Modo sin conexión", "savedAt": "Mostrando datos guardados {{date}}", "connect": "Conéctate a internet para cargar el tiempo." },
-  "toasts": { "updated": "Tiempo actualizado", "approxLocation": "Ubicación aproximada: {{name}}", "showing": "Mostrando el tiempo para {{name}}", "showingYours": "Mostrando el tiempo para tu ubicación", "unavailable": "Ubicación no disponible", "timedOut": "Tiempo de espera agotado para la ubicación", "offlineSaved": "Sin conexión — mostrando datos guardados", "offlineNoData": "Sin conexión y sin datos guardados", "couldntRefresh": "No se pudo actualizar — mostrando datos guardados", "enableLocation": "Activa la ubicación en los ajustes del navegador" },
-  "footer": "Datos meteorológicos de"
+  "app": {
+    "name": "Skyline",
+    "tagline": "Pronóstico del tiempo en todo el mundo",
+    "worldwide": "Pronósticos mundiales"
+  },
+  "search": {
+    "placeholder": "Busca cualquier ciudad…",
+    "useMyLocation": "Usar mi ubicación"
+  },
+  "drawer": {
+    "useCurrent": "Usar ubicación actual",
+    "pickOnMap": "Elegir en el mapa",
+    "refresh": "Actualizar tiempo",
+    "europe": "Europa",
+    "arab": "Mundo árabe",
+    "favorites": "Favoritos",
+    "language": "Idioma",
+    "about": "Acerca de",
+    "dataSource": "Datos de Open-Meteo"
+  },
+  "tabs": {
+    "hourly": "Por hora",
+    "fiveDays": "5 días",
+    "tenDays": "10 días"
+  },
+  "actions": {
+    "refresh": "Actualizar",
+    "lastUpdated": "Actualizado"
+  },
+  "map": {
+    "title": "Mapa del tiempo",
+    "description": "Toca cualquier punto del mapa para cargar su pronóstico.",
+    "hint": "Toca el mapa para ver el tiempo en ese punto.",
+    "selected": "Seleccionado",
+    "locating": "Localizando…"
+  },
+  "offline": {
+    "title": "Modo sin conexión",
+    "savedAt": "Mostrando datos guardados {{date}}",
+    "connect": "Conéctate a Internet para cargar el tiempo."
+  },
+  "toasts": {
+    "updated": "Tiempo actualizado",
+    "approxLocation": "Ubicación aproximada: {{name}}",
+    "showing": "Mostrando el tiempo de {{name}}",
+    "showingYours": "Mostrando el tiempo de tu ubicación",
+    "unavailable": "Ubicación no disponible",
+    "timedOut": "Tiempo de espera agotado",
+    "offlineSaved": "Sin conexión — mostrando datos guardados",
+    "offlineNoData": "Sin conexión y sin datos guardados",
+    "couldntRefresh": "No se pudo actualizar — mostrando datos guardados",
+    "enableLocation": "Activa la ubicación en la configuración del navegador"
+  },
+  "current": {
+    "local": "local",
+    "feelsLike": "Sensación",
+    "humidity": "Humedad",
+    "wind": "Viento",
+    "uvIndex": "Índice UV",
+    "addFav": "Añadir a favoritos",
+    "removeFav": "Quitar de favoritos",
+    "feelsLikeFull": "Sensación de {{temp}}°"
+  },
+  "hourly": {
+    "next": "Próximas {{hours}} horas",
+    "scroll": "desliza →",
+    "now": "Ahora"
+  },
+  "daily": {
+    "outlook": "Pronóstico a {{days}} días",
+    "today": "Hoy"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "remove": "Quitar favorito"
+  },
+  "footer": "Datos meteorológicos de",
+  "weather": {
+    "0": "Cielo despejado",
+    "1": "Mayormente despejado",
+    "2": "Parcialmente nublado",
+    "3": "Cubierto",
+    "45": "Niebla",
+    "48": "Niebla helada",
+    "51": "Llovizna ligera",
+    "53": "Llovizna",
+    "55": "Llovizna intensa",
+    "56": "Llovizna helada",
+    "57": "Llovizna helada",
+    "61": "Lluvia ligera",
+    "63": "Lluvia",
+    "65": "Lluvia intensa",
+    "66": "Lluvia helada",
+    "67": "Lluvia helada",
+    "71": "Nieve ligera",
+    "73": "Nieve",
+    "75": "Nieve intensa",
+    "77": "Granos de nieve",
+    "80": "Chubascos",
+    "81": "Chubascos",
+    "82": "Chubascos violentos",
+    "85": "Chubascos de nieve",
+    "86": "Chubascos intensos de nieve",
+    "95": "Tormenta",
+    "96": "Tormenta con granizo",
+    "99": "Tormenta severa",
+    "unknown": "Desconocido"
+  }
 }

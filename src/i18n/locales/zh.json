@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "全球天气预报", "worldwide": "全球预报" },
-  "search": { "placeholder": "搜索任意城市…", "useMyLocation": "使用我的位置" },
-  "drawer": { "useCurrent": "使用当前位置", "pickOnMap": "在地图上选择", "refresh": "刷新天气", "europe": "欧洲", "arab": "阿拉伯世界", "favorites": "收藏", "language": "语言", "about": "关于", "dataSource": "Open-Meteo 数据" },
-  "tabs": { "hourly": "每小时", "fiveDays": "5 天", "tenDays": "10 天" },
-  "actions": { "refresh": "刷新", "lastUpdated": "最后更新" },
-  "map": { "title": "天气地图", "description": "点击世界地图上的任意位置以查看预报。", "hint": "点击地图查看该地点的天气。", "selected": "已选择", "locating": "定位中…" },
-  "offline": { "title": "离线模式", "savedAt": "显示 {{date}} 保存的数据", "connect": "请连接互联网以加载天气。" },
-  "toasts": { "updated": "天气已更新", "approxLocation": "大致位置：{{name}}", "showing": "显示 {{name}} 的天气", "showingYours": "显示您所在位置的天气", "unavailable": "位置不可用", "timedOut": "位置请求超时", "offlineSaved": "您已离线 — 显示已保存数据", "offlineNoData": "离线且无已保存数据", "couldntRefresh": "无法刷新 — 显示已保存数据", "enableLocation": "请在浏览器设置中启用位置" },
-  "footer": "天气数据来源"
+  "app": {
+    "name": "Skyline",
+    "tagline": "全球天气预报",
+    "worldwide": "全球预报"
+  },
+  "search": {
+    "placeholder": "搜索城市…",
+    "useMyLocation": "使用我的位置"
+  },
+  "drawer": {
+    "useCurrent": "使用当前位置",
+    "pickOnMap": "在地图上选择",
+    "refresh": "刷新天气",
+    "europe": "欧洲",
+    "arab": "阿拉伯世界",
+    "favorites": "收藏",
+    "language": "语言",
+    "about": "关于",
+    "dataSource": "Open-Meteo 数据"
+  },
+  "tabs": {
+    "hourly": "每小时",
+    "fiveDays": "5 天",
+    "tenDays": "10 天"
+  },
+  "actions": {
+    "refresh": "刷新",
+    "lastUpdated": "最近更新"
+  },
+  "map": {
+    "title": "天气地图",
+    "description": "点击地图上的任意位置加载预报。",
+    "hint": "点击地图查看该位置的天气。",
+    "selected": "已选择",
+    "locating": "定位中…"
+  },
+  "offline": {
+    "title": "离线模式",
+    "savedAt": "显示 {{date}} 保存的数据",
+    "connect": "请连接到互联网。"
+  },
+  "toasts": {
+    "updated": "天气已更新",
+    "approxLocation": "大致位置：{{name}}",
+    "showing": "{{name}} 的天气",
+    "showingYours": "您所在位置的天气",
+    "unavailable": "无法获取位置",
+    "timedOut": "请求超时",
+    "offlineSaved": "离线 — 显示已保存数据",
+    "offlineNoData": "离线且无已保存数据",
+    "couldntRefresh": "无法刷新 — 显示已保存数据",
+    "enableLocation": "请在浏览器设置中启用位置"
+  },
+  "current": {
+    "local": "当地",
+    "feelsLike": "体感",
+    "humidity": "湿度",
+    "wind": "风",
+    "uvIndex": "紫外线指数",
+    "addFav": "添加到收藏",
+    "removeFav": "从收藏移除",
+    "feelsLikeFull": "体感 {{temp}}°"
+  },
+  "hourly": {
+    "next": "未来 {{hours}} 小时",
+    "scroll": "滑动 →",
+    "now": "现在"
+  },
+  "daily": {
+    "outlook": "{{days}} 天预报",
+    "today": "今天"
+  },
+  "favorites": {
+    "title": "收藏",
+    "remove": "移除"
+  },
+  "footer": "天气数据来自",
+  "weather": {
+    "0": "晴朗",
+    "1": "大部晴朗",
+    "2": "局部多云",
+    "3": "阴",
+    "45": "雾",
+    "48": "雾凇",
+    "51": "小毛毛雨",
+    "53": "毛毛雨",
+    "55": "大毛毛雨",
+    "56": "冻毛毛雨",
+    "57": "冻毛毛雨",
+    "61": "小雨",
+    "63": "雨",
+    "65": "大雨",
+    "66": "冻雨",
+    "67": "冻雨",
+    "71": "小雪",
+    "73": "雪",
+    "75": "大雪",
+    "77": "雪粒",
+    "80": "阵雨",
+    "81": "阵雨",
+    "82": "强阵雨",
+    "85": "阵雪",
+    "86": "强阵雪",
+    "95": "雷暴",
+    "96": "雷暴伴冰雹",
+    "99": "强雷暴",
+    "unknown": "未知"
+  }
 }

@@ -1,11 +1,110 @@
 {
-  "app": { "name": "Skyline", "tagline": "世界中の天気予報", "worldwide": "世界の予報" },
-  "search": { "placeholder": "都市を検索…", "useMyLocation": "現在地を使用" },
-  "drawer": { "useCurrent": "現在地を使用", "pickOnMap": "地図から選択", "refresh": "天気を更新", "europe": "ヨーロッパ", "arab": "アラブ世界", "favorites": "お気に入り", "language": "言語", "about": "アプリについて", "dataSource": "Open-Meteo データ" },
-  "tabs": { "hourly": "時間別", "fiveDays": "5日間", "tenDays": "10日間" },
-  "actions": { "refresh": "更新", "lastUpdated": "最終更新" },
-  "map": { "title": "天気マップ", "description": "地図上の任意の場所をタップして予報を表示。", "hint": "その地点の天気を見るには地図をタップ。", "selected": "選択中", "locating": "位置情報取得中…" },
-  "offline": { "title": "オフラインモード", "savedAt": "{{date}}に保存されたデータを表示中", "connect": "天気を読み込むにはインターネットに接続してください。" },
-  "toasts": { "updated": "天気を更新しました", "approxLocation": "おおよその位置: {{name}}", "showing": "{{name}}の天気を表示中", "showingYours": "現在地の天気を表示中", "unavailable": "位置情報を取得できません", "timedOut": "位置情報の取得がタイムアウトしました", "offlineSaved": "オフライン — 保存データを表示中", "offlineNoData": "オフラインで保存データもありません", "couldntRefresh": "更新できません — 保存データを表示", "enableLocation": "ブラウザ設定で位置情報を有効にしてください" },
-  "footer": "天気データ提供"
+  "app": {
+    "name": "Skyline",
+    "tagline": "世界の天気予報",
+    "worldwide": "世界の予報"
+  },
+  "search": {
+    "placeholder": "都市を検索…",
+    "useMyLocation": "現在地を使用"
+  },
+  "drawer": {
+    "useCurrent": "現在地を使用",
+    "pickOnMap": "地図で選択",
+    "refresh": "天気を更新",
+    "europe": "ヨーロッパ",
+    "arab": "アラブ世界",
+    "favorites": "お気に入り",
+    "language": "言語",
+    "about": "情報",
+    "dataSource": "Open-Meteo データ"
+  },
+  "tabs": {
+    "hourly": "1時間ごと",
+    "fiveDays": "5日間",
+    "tenDays": "10日間"
+  },
+  "actions": {
+    "refresh": "更新",
+    "lastUpdated": "最終更新"
+  },
+  "map": {
+    "title": "天気マップ",
+    "description": "予報を読み込むには地図上の任意の場所をタップ。",
+    "hint": "地図をタップしてその場所の天気を表示。",
+    "selected": "選択中",
+    "locating": "位置情報を取得中…"
+  },
+  "offline": {
+    "title": "オフラインモード",
+    "savedAt": "{{date}} に保存されたデータを表示",
+    "connect": "インターネットに接続してください。"
+  },
+  "toasts": {
+    "updated": "天気を更新しました",
+    "approxLocation": "おおよその位置: {{name}}",
+    "showing": "{{name}} の天気",
+    "showingYours": "現在地の天気",
+    "unavailable": "位置情報を取得できません",
+    "timedOut": "位置情報の取得がタイムアウトしました",
+    "offlineSaved": "オフライン — 保存済みデータを表示",
+    "offlineNoData": "オフラインで保存データがありません",
+    "couldntRefresh": "更新できませんでした — 保存済みデータ",
+    "enableLocation": "ブラウザ設定で位置情報を有効にしてください"
+  },
+  "current": {
+    "local": "現地",
+    "feelsLike": "体感",
+    "humidity": "湿度",
+    "wind": "風",
+    "uvIndex": "UV指数",
+    "addFav": "お気に入りに追加",
+    "removeFav": "お気に入りから削除",
+    "feelsLikeFull": "体感 {{temp}}°"
+  },
+  "hourly": {
+    "next": "今後 {{hours}} 時間",
+    "scroll": "スクロール →",
+    "now": "今"
+  },
+  "daily": {
+    "outlook": "{{days}}日間予報",
+    "today": "今日"
+  },
+  "favorites": {
+    "title": "お気に入り",
+    "remove": "削除"
+  },
+  "footer": "天気データ提供:",
+  "weather": {
+    "0": "快晴",
+    "1": "おおむね晴れ",
+    "2": "晴れ時々曇り",
+    "3": "曇り",
+    "45": "霧",
+    "48": "霧氷",
+    "51": "弱い霧雨",
+    "53": "霧雨",
+    "55": "強い霧雨",
+    "56": "着氷性の霧雨",
+    "57": "着氷性の霧雨",
+    "61": "弱い雨",
+    "63": "雨",
+    "65": "強い雨",
+    "66": "着氷性の雨",
+    "67": "着氷性の雨",
+    "71": "弱い雪",
+    "73": "雪",
+    "75": "強い雪",
+    "77": "霧雪",
+    "80": "にわか雨",
+    "81": "にわか雨",
+    "82": "激しいにわか雨",
+    "85": "にわか雪",
+    "86": "強いにわか雪",
+    "95": "雷雨",
+    "96": "雷雨と雹",
+    "99": "激しい雷雨",
+    "unknown": "不明"
+  }
 }
