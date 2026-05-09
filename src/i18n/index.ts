@@ -19,6 +19,7 @@ import hi from "./locales/hi.json";
 import ur from "./locales/ur.json";
 import zh from "./locales/zh.json";
 import ko from "./locales/ko.json";
+import mn from "./locales/mn.json";
 import ja from "./locales/ja.json";
 import id from "./locales/id.json";
 import ms from "./locales/ms.json";
