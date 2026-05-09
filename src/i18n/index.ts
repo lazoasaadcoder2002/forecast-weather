@@ -14,10 +14,12 @@ import nl from "./locales/nl.json";
 import uk from "./locales/uk.json";
 import tr from "./locales/tr.json";
 import ar from "./locales/ar.json";
+import fa from "./locales/fa.json";
 import hi from "./locales/hi.json";
 import ur from "./locales/ur.json";
 import zh from "./locales/zh.json";
 import ko from "./locales/ko.json";
+import mn from "./locales/mn.json";
 import ja from "./locales/ja.json";
 import id from "./locales/id.json";
 import ms from "./locales/ms.json";
@@ -38,10 +40,12 @@ export const LANGUAGES = [
   { code: "uk", label: "Ukrainian", native: "Українська", dir: "ltr" },
   { code: "tr", label: "Turkish", native: "Türkçe", dir: "ltr" },
   { code: "ar", label: "Arabic", native: "العربية", dir: "rtl" },
+  { code: "fa", label: "Persian", native: "فارسی", dir: "rtl" },
   { code: "hi", label: "Hindi", native: "हिन्दी", dir: "ltr" },
   { code: "ur", label: "Urdu", native: "اردو", dir: "rtl" },
   { code: "zh", label: "Chinese", native: "中文", dir: "ltr" },
   { code: "ko", label: "Korean", native: "한국어", dir: "ltr" },
+  { code: "mn", label: "Mongolian", native: "Монгол", dir: "ltr" },
   { code: "ja", label: "Japanese", native: "日本語", dir: "ltr" },
   { code: "id", label: "Indonesian", native: "Bahasa Indonesia", dir: "ltr" },
   { code: "ms", label: "Malay", native: "Bahasa Melayu", dir: "ltr" },
@@ -61,8 +65,8 @@ i18n
       de: { translation: de }, it: { translation: it }, pt: { translation: pt },
       ru: { translation: ru }, pl: { translation: pl }, nl: { translation: nl },
       uk: { translation: uk }, tr: { translation: tr }, ar: { translation: ar },
-      hi: { translation: hi }, ur: { translation: ur }, zh: { translation: zh },
-      ko: { translation: ko }, ja: { translation: ja }, id: { translation: id },
+      fa: { translation: fa }, hi: { translation: hi }, ur: { translation: ur }, zh: { translation: zh },
+      ko: { translation: ko }, mn: { translation: mn }, ja: { translation: ja }, id: { translation: id },
       ms: { translation: ms }, th: { translation: th }, vi: { translation: vi },
       fil: { translation: fil },
     },
