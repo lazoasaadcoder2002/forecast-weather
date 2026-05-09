@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Loader2, AlertCircle, WifiOff, RefreshCw, Menu, Star, MapPin, Info, ExternalLink, Map as MapIcon, Globe2, Languages } from "lucide-react";
+import { Loader2, AlertCircle, WifiOff, RefreshCw, Menu, Star, MapPin, Info, ExternalLink, Map as MapIcon, Globe2, Languages, Radar } from "lucide-react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { WeatherMap } from "@/components/WeatherMap";
+import { AlarmRadar } from "@/components/AlarmRadar";
 import { EUROPEAN_CAPITALS, ARABIC_CAPITALS } from "@/lib/regions";
 import { LANGUAGES } from "@/i18n";
 import { LocationSearch } from "@/components/LocationSearch";
@@ -42,6 +43,7 @@ const Index = () => {
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("24h");
   const [mapOpen, setMapOpen] = useState(false);
+  const [alarmOpen, setAlarmOpen] = useState(false);
 
   const online = useOnlineStatus();
   const { favorites, isFavorite, toggleFavorite, removeFavorite } = useFavorites();
@@ -330,6 +332,15 @@ const Index = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <button
+                        onClick={() => setAlarmOpen(true)}
+                        className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
+                      >
+                        <Radar className="h-4 w-4 text-primary" />
+                        {t("drawer.alarmRadar")}
+                      </button>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <button
                         onClick={handleRefresh}
                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
                       >
@@ -551,6 +562,18 @@ const Index = () => {
               }}
             />
           </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={alarmOpen} onOpenChange={setAlarmOpen}>
+        <DialogContent className="max-w-3xl p-4 sm:p-6">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Radar className="h-5 w-5 text-primary" /> {t("alarm.title")}
+            </DialogTitle>
+            <DialogDescription>{t("alarm.description")}</DialogDescription>
+          </DialogHeader>
+          <AlarmRadar location={location} data={data} />
         </DialogContent>
       </Dialog>
     </main>
