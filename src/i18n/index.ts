@@ -14,6 +14,7 @@ import nl from "./locales/nl.json";
 import uk from "./locales/uk.json";
 import tr from "./locales/tr.json";
 import ar from "./locales/ar.json";
+import fa from "./locales/fa.json";
 import hi from "./locales/hi.json";
 import ur from "./locales/ur.json";
 import zh from "./locales/zh.json";
