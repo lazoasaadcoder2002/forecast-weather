@@ -332,6 +332,15 @@ const Index = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <button
+                        onClick={() => setAlarmOpen(true)}
+                        className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
+                      >
+                        <Radar className="h-4 w-4 text-primary" />
+                        {t("drawer.alarmRadar")}
+                      </button>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <button
                         onClick={handleRefresh}
                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition hover:bg-muted/50"
                       >
@@ -553,6 +562,18 @@ const Index = () => {
               }}
             />
           </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={alarmOpen} onOpenChange={setAlarmOpen}>
+        <DialogContent className="max-w-3xl p-4 sm:p-6">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Radar className="h-5 w-5 text-primary" /> {t("alarm.title")}
+            </DialogTitle>
+            <DialogDescription>{t("alarm.description")}</DialogDescription>
+          </DialogHeader>
+          <AlarmRadar location={location} data={data} />
         </DialogContent>
       </Dialog>
     </main>
