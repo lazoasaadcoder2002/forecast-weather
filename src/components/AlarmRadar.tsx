@@ -31,7 +31,9 @@ export const AlarmRadar = ({ location, data }: Props) => {
     const cur = data.current;
     const today = data.daily;
 
-    const code = cur.weather_code;
+    const code = cur.weatherCode;
+    const wind = cur.windSpeed ?? 0;
+    const todayPrecipProb = today?.precipitationProbabilityMax?.[0] ?? 0;
     if ([95, 96, 99].includes(code)) {
       out.push({
         id: "storm",
@@ -41,7 +43,7 @@ export const AlarmRadar = ({ location, data }: Props) => {
         detail: t("alarm.alerts.thunderstorm.detail"),
       });
     }
-    if ([65, 67, 82].includes(code) || (today?.precipitation_sum?.[0] ?? 0) > 25) {
+    if ([65, 67, 82].includes(code) || todayPrecipProb >= 80) {
       out.push({
         id: "rain",
         level: "warning",
@@ -59,25 +61,25 @@ export const AlarmRadar = ({ location, data }: Props) => {
         detail: t("alarm.alerts.heavySnow.detail"),
       });
     }
-    if ((cur.wind_speed_10m ?? 0) >= 60) {
+    if (wind >= 60) {
       out.push({
         id: "wind",
         level: "severe",
         icon: Wind,
         title: t("alarm.alerts.galeWind.title"),
-        detail: t("alarm.alerts.galeWind.detail", { speed: Math.round(cur.wind_speed_10m) }),
+        detail: t("alarm.alerts.galeWind.detail", { speed: Math.round(wind) }),
       });
-    } else if ((cur.wind_speed_10m ?? 0) >= 40) {
+    } else if (wind >= 40) {
       out.push({
         id: "wind",
         level: "warning",
         icon: Wind,
         title: t("alarm.alerts.strongWind.title"),
-        detail: t("alarm.alerts.strongWind.detail", { speed: Math.round(cur.wind_speed_10m) }),
+        detail: t("alarm.alerts.strongWind.detail", { speed: Math.round(wind) }),
       });
     }
-    const max = today?.temperature_2m_max?.[0];
-    const min = today?.temperature_2m_min?.[0];
+    const max = today?.tempMax?.[0];
+    const min = today?.tempMin?.[0];
     if (typeof max === "number" && max >= 38) {
       out.push({
         id: "heat",
