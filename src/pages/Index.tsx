@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Loader2, AlertCircle, WifiOff, RefreshCw, Menu, Star, MapPin, Info, ExternalLink, Map as MapIcon, Globe2, Languages } from "lucide-react";
+import { Loader2, AlertCircle, WifiOff, RefreshCw, Menu, Star, MapPin, Info, ExternalLink, Map as MapIcon, Globe2, Languages, Radar } from "lucide-react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { WeatherMap } from "@/components/WeatherMap";
+import { AlarmRadar } from "@/components/AlarmRadar";
 import { EUROPEAN_CAPITALS, ARABIC_CAPITALS } from "@/lib/regions";
 import { LANGUAGES } from "@/i18n";
 import { LocationSearch } from "@/components/LocationSearch";
@@ -42,6 +43,7 @@ const Index = () => {
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("24h");
   const [mapOpen, setMapOpen] = useState(false);
+  const [alarmOpen, setAlarmOpen] = useState(false);
 
   const online = useOnlineStatus();
   const { favorites, isFavorite, toggleFavorite, removeFavorite } = useFavorites();

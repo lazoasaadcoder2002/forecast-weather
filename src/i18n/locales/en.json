@@ -11,6 +11,7 @@
   "drawer": {
     "useCurrent": "Use current location",
     "pickOnMap": "Pick on map",
+    "alarmRadar": "Alarm radar",
     "refresh": "Refresh weather",
     "europe": "Europe",
     "arab": "Arab world",
@@ -18,6 +19,22 @@
     "language": "Language",
     "about": "About",
     "dataSource": "Open-Meteo data"
+  },
+  "alarm": {
+    "title": "Alarm radar",
+    "description": "Live precipitation radar and active weather warnings for your location.",
+    "activeAlerts": "Active alerts",
+    "noAlerts": "No severe weather alerts right now. Stay safe!",
+    "disclaimer": "Alerts are derived from current forecast conditions. For official warnings, consult your local meteorological agency.",
+    "alerts": {
+      "thunderstorm": { "title": "Thunderstorm warning", "detail": "Lightning and heavy downpours expected. Avoid open areas." },
+      "heavyRain": { "title": "Heavy rain warning", "detail": "Risk of flooding and poor visibility. Drive with care." },
+      "heavySnow": { "title": "Heavy snow warning", "detail": "Snowfall may disrupt travel and reduce visibility." },
+      "galeWind": { "title": "Gale-force wind warning", "detail": "Sustained winds near {{speed}} km/h. Secure loose objects." },
+      "strongWind": { "title": "Strong wind advisory", "detail": "Winds around {{speed}} km/h expected. Take care outdoors." },
+      "extremeHeat": { "title": "Extreme heat warning", "detail": "Highs near {{temp}}°. Stay hydrated and avoid sun exposure." },
+      "extremeCold": { "title": "Extreme cold warning", "detail": "Lows near {{temp}}°. Risk of frostbite — dress warmly." }
+    }
   },
   "tabs": {
     "hourly": "Hourly",
