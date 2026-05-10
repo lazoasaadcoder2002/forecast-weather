@@ -17,7 +17,8 @@
     "favorites": "Ulubione",
     "language": "Język",
     "about": "O aplikacji",
-    "dataSource": "Dane Open-Meteo"
+    "dataSource": "Dane Open-Meteo",
+    "alarmRadar": "Radar alertów"
   },
   "tabs": {
     "hourly": "Godzinowo",
@@ -106,5 +107,42 @@
     "96": "Burza z gradem",
     "99": "Silna burza",
     "unknown": "Nieznane"
+  },
+  "alarm": {
+    "title": "Radar alertów",
+    "description": "Radar opadów na żywo i aktywne ostrzeżenia pogodowe dla Twojej lokalizacji.",
+    "activeAlerts": "Aktywne alerty",
+    "noAlerts": "Brak poważnych ostrzeżeń pogodowych. Zachowaj ostrożność!",
+    "disclaimer": "Alerty pochodzą z aktualnej prognozy. Oficjalne ostrzeżenia sprawdzaj w lokalnej służbie meteo.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Ostrzeżenie przed burzą",
+        "detail": "Możliwe pioruny i ulewy. Unikaj otwartych przestrzeni."
+      },
+      "heavyRain": {
+        "title": "Ulewny deszcz",
+        "detail": "Ryzyko podtopień i słabej widoczności. Jedź ostrożnie."
+      },
+      "heavySnow": {
+        "title": "Intensywne opady śniegu",
+        "detail": "Śnieg może utrudnić podróż i widoczność."
+      },
+      "galeWind": {
+        "title": "Wichury",
+        "detail": "Wiatr ok. {{speed}} km/h. Zabezpiecz luźne przedmioty."
+      },
+      "strongWind": {
+        "title": "Silny wiatr",
+        "detail": "Wiatr ok. {{speed}} km/h. Uważaj na zewnątrz."
+      },
+      "extremeHeat": {
+        "title": "Ekstremalny upał",
+        "detail": "Maks. ok. {{temp}}°. Pij wodę i unikaj słońca."
+      },
+      "extremeCold": {
+        "title": "Ekstremalne zimno",
+        "detail": "Min. ok. {{temp}}°. Ryzyko odmrożeń — ubierz się ciepło."
+      }
+    }
   }
 }

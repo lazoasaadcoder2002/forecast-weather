@@ -17,7 +17,8 @@
     "favorites": "收藏",
     "language": "语言",
     "about": "关于",
-    "dataSource": "Open-Meteo 数据"
+    "dataSource": "Open-Meteo 数据",
+    "alarmRadar": "警报雷达"
   },
   "tabs": {
     "hourly": "每小时",
@@ -106,5 +107,42 @@
     "96": "雷暴伴冰雹",
     "99": "强雷暴",
     "unknown": "未知"
+  },
+  "alarm": {
+    "title": "警报雷达",
+    "description": "您所在位置的实时降水雷达和有效天气警报。",
+    "activeAlerts": "有效警报",
+    "noAlerts": "目前没有严重天气警报。请保持安全！",
+    "disclaimer": "警报由当前预报推导而来。官方警报请咨询当地气象部门。",
+    "alerts": {
+      "thunderstorm": {
+        "title": "雷暴警报",
+        "detail": "预计有闪电和强降雨。请避开开阔地带。"
+      },
+      "heavyRain": {
+        "title": "强降雨警报",
+        "detail": "存在洪涝和能见度差的风险。请小心驾驶。"
+      },
+      "heavySnow": {
+        "title": "强降雪警报",
+        "detail": "降雪可能影响出行和能见度。"
+      },
+      "galeWind": {
+        "title": "大风警报",
+        "detail": "持续风速约 {{speed}} 公里/小时。请固定松散物品。"
+      },
+      "strongWind": {
+        "title": "强风提示",
+        "detail": "风速约 {{speed}} 公里/小时。户外请注意。"
+      },
+      "extremeHeat": {
+        "title": "极端高温警报",
+        "detail": "最高约 {{temp}}°。请补水并避免阳光直射。"
+      },
+      "extremeCold": {
+        "title": "极端低温警报",
+        "detail": "最低约 {{temp}}°。冻伤风险 — 请穿暖。"
+      }
+    }
   }
 }

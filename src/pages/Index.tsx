@@ -16,6 +16,7 @@ import { useFavorites } from "@/hooks/use-favorites";
 import { useOnlineStatus } from "@/hooks/use-online-status";
 import { fetchWeather, reverseGeocode, ipGeolocate, type GeoLocation, type WeatherData } from "@/lib/weather";
 import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weather-cache";
+import { notifyCurrentWeather, notifyAlerts, type WeatherAlertNotice } from "@/lib/native-notifications";
 import { toast } from "sonner";
 
 type Tab = "24h" | "5d" | "10d";
@@ -29,6 +30,24 @@ const DEFAULT_LOCATION: GeoLocation = {
   longitude: -0.1278,
   timezone: "Europe/London",
 };
+
+function computeAlertNotices(d: WeatherData, t: (k: string, opts?: Record<string, unknown>) => string): WeatherAlertNotice[] {
+  const out: WeatherAlertNotice[] = [];
+  const cur = d.current;
+  const code = cur.weatherCode;
+  const wind = cur.windSpeed ?? 0;
+  const todayPrecipProb = d.daily?.precipitationProbabilityMax?.[0] ?? 0;
+  const max = d.daily?.tempMax?.[0];
+  const min = d.daily?.tempMin?.[0];
+  if ([95, 96, 99].includes(code)) out.push({ id: "storm", title: t("alarm.alerts.thunderstorm.title"), detail: t("alarm.alerts.thunderstorm.detail") });
+  if ([65, 67, 82].includes(code) || todayPrecipProb >= 80) out.push({ id: "rain", title: t("alarm.alerts.heavyRain.title"), detail: t("alarm.alerts.heavyRain.detail") });
+  if ([75, 86].includes(code)) out.push({ id: "snow", title: t("alarm.alerts.heavySnow.title"), detail: t("alarm.alerts.heavySnow.detail") });
+  if (wind >= 60) out.push({ id: "wind-gale", title: t("alarm.alerts.galeWind.title"), detail: t("alarm.alerts.galeWind.detail", { speed: Math.round(wind) }) });
+  else if (wind >= 40) out.push({ id: "wind-strong", title: t("alarm.alerts.strongWind.title"), detail: t("alarm.alerts.strongWind.detail", { speed: Math.round(wind) }) });
+  if (typeof max === "number" && max >= 38) out.push({ id: "heat", title: t("alarm.alerts.extremeHeat.title"), detail: t("alarm.alerts.extremeHeat.detail", { temp: Math.round(max) }) });
+  if (typeof min === "number" && min <= -10) out.push({ id: "cold", title: t("alarm.alerts.extremeCold.title"), detail: t("alarm.alerts.extremeCold.detail", { temp: Math.round(min) }) });
+  return out;
+}
 
 const Index = () => {
   const { t, i18n } = useTranslation();
@@ -72,6 +91,9 @@ const Index = () => {
         setCachedAt(Date.now());
         setError(null);
         saveWeatherCache(loc, d);
+        // Native push: current weather + alerts (no-op on web).
+        notifyCurrentWeather(loc, d);
+        notifyAlerts(loc, computeAlertNotices(d, t));
         if (opts.userInitiated) toast.success("Weather updated");
       } catch (e) {
         const msg = (e as Error).message || "Failed to load weather";
@@ -87,8 +109,27 @@ const Index = () => {
         if (opts.silent) setRefreshing(false);
       }
     },
-    []
+    [t]
   );
+
+  // Pre-cache favorite locations whenever we're online so they're available offline.
+  useEffect(() => {
+    if (!online || favorites.length === 0) return;
+    let cancelled = false;
+    (async () => {
+      for (const fav of favorites) {
+        if (cancelled) return;
+        if (readWeatherCache(fav)) continue;
+        try {
+          const d = await fetchWeather(fav.latitude, fav.longitude, fav.timezone || "auto");
+          if (!cancelled) saveWeatherCache(fav, d);
+        } catch {
+          /* ignore */
+        }
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [online, favorites]);
 
   useEffect(() => {
     let cancelled = false;

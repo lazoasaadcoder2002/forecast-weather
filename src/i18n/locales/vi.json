@@ -17,7 +17,8 @@
     "favorites": "Yêu thích",
     "language": "Ngôn ngữ",
     "about": "Giới thiệu",
-    "dataSource": "Dữ liệu Open-Meteo"
+    "dataSource": "Dữ liệu Open-Meteo",
+    "alarmRadar": "Radar cảnh báo"
   },
   "tabs": {
     "hourly": "Theo giờ",
@@ -106,5 +107,42 @@
     "96": "Dông kèm mưa đá",
     "99": "Dông dữ dội",
     "unknown": "Không rõ"
+  },
+  "alarm": {
+    "title": "Radar cảnh báo",
+    "description": "Radar mưa trực tiếp và cảnh báo thời tiết đang hoạt động cho vị trí của bạn.",
+    "activeAlerts": "Cảnh báo đang hoạt động",
+    "noAlerts": "Hiện không có cảnh báo thời tiết nghiêm trọng. Hãy giữ an toàn!",
+    "disclaimer": "Cảnh báo được suy ra từ dự báo hiện tại. Với cảnh báo chính thức, hãy tham khảo cơ quan khí tượng địa phương.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Cảnh báo dông",
+        "detail": "Có thể có sét và mưa lớn. Tránh khu vực trống trải."
+      },
+      "heavyRain": {
+        "title": "Cảnh báo mưa lớn",
+        "detail": "Nguy cơ ngập úng và tầm nhìn kém. Lái xe cẩn thận."
+      },
+      "heavySnow": {
+        "title": "Cảnh báo tuyết dày",
+        "detail": "Tuyết có thể ảnh hưởng đến đi lại và tầm nhìn."
+      },
+      "galeWind": {
+        "title": "Cảnh báo gió giật mạnh",
+        "detail": "Gió duy trì khoảng {{speed}} km/h. Cố định đồ vật."
+      },
+      "strongWind": {
+        "title": "Khuyến cáo gió mạnh",
+        "detail": "Gió khoảng {{speed}} km/h. Cẩn thận khi ở ngoài trời."
+      },
+      "extremeHeat": {
+        "title": "Cảnh báo nắng nóng cực đoan",
+        "detail": "Cao nhất khoảng {{temp}}°. Uống nước và tránh nắng."
+      },
+      "extremeCold": {
+        "title": "Cảnh báo rét đậm",
+        "detail": "Thấp nhất khoảng {{temp}}°. Nguy cơ tê cóng — mặc ấm."
+      }
+    }
   }
 }

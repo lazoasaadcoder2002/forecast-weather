@@ -17,7 +17,8 @@
     "favorites": "Favorieten",
     "language": "Taal",
     "about": "Over",
-    "dataSource": "Open-Meteo data"
+    "dataSource": "Open-Meteo data",
+    "alarmRadar": "Alarmradar"
   },
   "tabs": {
     "hourly": "Per uur",
@@ -106,5 +107,42 @@
     "96": "Onweer met hagel",
     "99": "Zwaar onweer",
     "unknown": "Onbekend"
+  },
+  "alarm": {
+    "title": "Alarmradar",
+    "description": "Live neerslagradar en actieve weerwaarschuwingen voor je locatie.",
+    "activeAlerts": "Actieve waarschuwingen",
+    "noAlerts": "Geen ernstige weerwaarschuwingen. Blijf veilig!",
+    "disclaimer": "Waarschuwingen zijn afgeleid van de huidige verwachting. Raadpleeg je nationale weerdienst voor officiële alarmen.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Onweerswaarschuwing",
+        "detail": "Bliksem en hevige buien verwacht. Vermijd open terrein."
+      },
+      "heavyRain": {
+        "title": "Zware regen",
+        "detail": "Kans op wateroverlast en slecht zicht. Rijd voorzichtig."
+      },
+      "heavySnow": {
+        "title": "Zware sneeuwval",
+        "detail": "Sneeuw kan verkeer en zicht hinderen."
+      },
+      "galeWind": {
+        "title": "Stormwaarschuwing",
+        "detail": "Aanhoudende wind rond {{speed}} km/u. Zet losse spullen vast."
+      },
+      "strongWind": {
+        "title": "Krachtige wind",
+        "detail": "Wind rond {{speed}} km/u. Wees buiten voorzichtig."
+      },
+      "extremeHeat": {
+        "title": "Extreme hitte",
+        "detail": "Maxima rond {{temp}}°. Drink veel en mijd de zon."
+      },
+      "extremeCold": {
+        "title": "Extreme kou",
+        "detail": "Minima rond {{temp}}°. Risico op bevriezing — kleed je warm."
+      }
+    }
   }
 }
