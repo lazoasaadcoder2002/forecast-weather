@@ -17,7 +17,8 @@
     "favorites": "Favorit",
     "language": "Bahasa",
     "about": "Tentang",
-    "dataSource": "Data Open-Meteo"
+    "dataSource": "Data Open-Meteo",
+    "alarmRadar": "Radar peringatan"
   },
   "tabs": {
     "hourly": "Per jam",
@@ -106,5 +107,42 @@
     "96": "Badai dengan hujan es",
     "99": "Badai parah",
     "unknown": "Tidak diketahui"
+  },
+  "alarm": {
+    "title": "Radar peringatan",
+    "description": "Radar curah hujan langsung dan peringatan cuaca aktif untuk lokasi Anda.",
+    "activeAlerts": "Peringatan aktif",
+    "noAlerts": "Tidak ada peringatan cuaca berat saat ini. Tetap aman!",
+    "disclaimer": "Peringatan berasal dari prakiraan saat ini. Untuk peringatan resmi, hubungi badan meteorologi setempat.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Peringatan badai petir",
+        "detail": "Petir dan hujan deras diperkirakan. Hindari area terbuka."
+      },
+      "heavyRain": {
+        "title": "Peringatan hujan lebat",
+        "detail": "Risiko banjir dan jarak pandang buruk. Berhati-hatilah berkendara."
+      },
+      "heavySnow": {
+        "title": "Peringatan salju lebat",
+        "detail": "Salju dapat mengganggu perjalanan dan jarak pandang."
+      },
+      "galeWind": {
+        "title": "Peringatan angin kencang",
+        "detail": "Angin berkelanjutan sekitar {{speed}} km/jam. Amankan benda lepas."
+      },
+      "strongWind": {
+        "title": "Imbauan angin kuat",
+        "detail": "Angin sekitar {{speed}} km/jam. Hati-hati di luar ruang."
+      },
+      "extremeHeat": {
+        "title": "Peringatan panas ekstrem",
+        "detail": "Maksimum sekitar {{temp}}°. Tetap terhidrasi, hindari paparan matahari."
+      },
+      "extremeCold": {
+        "title": "Peringatan dingin ekstrem",
+        "detail": "Minimum sekitar {{temp}}°. Risiko radang dingin — pakai pakaian hangat."
+      }
+    }
   }
 }

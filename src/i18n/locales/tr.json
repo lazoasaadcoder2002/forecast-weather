@@ -17,7 +17,8 @@
     "favorites": "Favoriler",
     "language": "Dil",
     "about": "Hakkında",
-    "dataSource": "Open-Meteo verileri"
+    "dataSource": "Open-Meteo verileri",
+    "alarmRadar": "Alarm radarı"
   },
   "tabs": {
     "hourly": "Saatlik",
@@ -106,5 +107,42 @@
     "96": "Dolulu fırtına",
     "99": "Şiddetli fırtına",
     "unknown": "Bilinmiyor"
+  },
+  "alarm": {
+    "title": "Alarm radarı",
+    "description": "Konumunuz için canlı yağış radarı ve aktif hava durumu uyarıları.",
+    "activeAlerts": "Aktif uyarılar",
+    "noAlerts": "Şu anda ciddi hava durumu uyarısı yok. Güvende kalın!",
+    "disclaimer": "Uyarılar mevcut tahminden türetilir. Resmi uyarılar için yerel meteoroloji kurumuna danışın.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Fırtına uyarısı",
+        "detail": "Yıldırım ve şiddetli sağanak bekleniyor. Açık alanlardan kaçının."
+      },
+      "heavyRain": {
+        "title": "Şiddetli yağmur uyarısı",
+        "detail": "Sel ve düşük görüş riski. Dikkatli sürün."
+      },
+      "heavySnow": {
+        "title": "Yoğun kar uyarısı",
+        "detail": "Kar yağışı ulaşımı ve görüşü etkileyebilir."
+      },
+      "galeWind": {
+        "title": "Fırtına rüzgârı uyarısı",
+        "detail": "{{speed}} km/sa civarında sürekli rüzgâr. Eşyaları sabitleyin."
+      },
+      "strongWind": {
+        "title": "Kuvvetli rüzgâr uyarısı",
+        "detail": "{{speed}} km/sa civarında rüzgâr bekleniyor. Dışarıda dikkatli olun."
+      },
+      "extremeHeat": {
+        "title": "Aşırı sıcak uyarısı",
+        "detail": "En yüksek yaklaşık {{temp}}°. Bol su için ve güneşten kaçının."
+      },
+      "extremeCold": {
+        "title": "Aşırı soğuk uyarısı",
+        "detail": "En düşük yaklaşık {{temp}}°. Donma riski — sıcak giyinin."
+      }
+    }
   }
 }

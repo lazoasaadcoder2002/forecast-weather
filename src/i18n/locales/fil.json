@@ -17,7 +17,8 @@
     "favorites": "Mga paborito",
     "language": "Wika",
     "about": "Tungkol",
-    "dataSource": "Datos ng Open-Meteo"
+    "dataSource": "Datos ng Open-Meteo",
+    "alarmRadar": "Radar ng alarma"
   },
   "tabs": {
     "hourly": "Bawat oras",
@@ -106,5 +107,42 @@
     "96": "Bagyong may yelo",
     "99": "Matinding bagyo",
     "unknown": "Hindi alam"
+  },
+  "alarm": {
+    "title": "Radar ng alarma",
+    "description": "Live na radar ng ulan at aktibong babala sa panahon para sa iyong lokasyon.",
+    "activeAlerts": "Aktibong babala",
+    "noAlerts": "Walang malubhang babala sa panahon ngayon. Manatiling ligtas!",
+    "disclaimer": "Hango ang mga babala sa kasalukuyang pagtataya. Para sa opisyal na babala, sumangguni sa lokal na ahensya ng panahon.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Babala sa pagkidlat",
+        "detail": "Inaasahan ang kidlat at malakas na ulan. Iwasan ang lantad na lugar."
+      },
+      "heavyRain": {
+        "title": "Babala sa malakas na ulan",
+        "detail": "Panganib ng baha at mababang visibility. Mag-ingat sa pagmamaneho."
+      },
+      "heavySnow": {
+        "title": "Babala sa malakas na snow",
+        "detail": "Maaaring maapektuhan ng snow ang biyahe at visibility."
+      },
+      "galeWind": {
+        "title": "Babala sa malakas na hangin",
+        "detail": "Tuluy-tuloy na hangin malapit sa {{speed}} km/h. I-secure ang mga bagay."
+      },
+      "strongWind": {
+        "title": "Payo sa malakas na hangin",
+        "detail": "Hangin na humigit-kumulang {{speed}} km/h. Mag-ingat sa labas."
+      },
+      "extremeHeat": {
+        "title": "Babala sa matinding init",
+        "detail": "Pinakamataas malapit sa {{temp}}°. Uminom ng tubig at iwasan ang araw."
+      },
+      "extremeCold": {
+        "title": "Babala sa matinding lamig",
+        "detail": "Pinakamababa malapit sa {{temp}}°. Panganib ng frostbite — magbihis ng mainit."
+      }
+    }
   }
 }

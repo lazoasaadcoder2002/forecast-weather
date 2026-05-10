@@ -17,7 +17,8 @@
     "favorites": "お気に入り",
     "language": "言語",
     "about": "情報",
-    "dataSource": "Open-Meteo データ"
+    "dataSource": "Open-Meteo データ",
+    "alarmRadar": "警報レーダー"
   },
   "tabs": {
     "hourly": "1時間ごと",
@@ -106,5 +107,42 @@
     "96": "雷雨と雹",
     "99": "激しい雷雨",
     "unknown": "不明"
+  },
+  "alarm": {
+    "title": "警報レーダー",
+    "description": "現在地のライブ降水レーダーと有効な気象警報。",
+    "activeAlerts": "有効な警報",
+    "noAlerts": "現在、深刻な気象警報はありません。安全にお過ごしください！",
+    "disclaimer": "警報は現在の予報から作成されます。公式警報はお住まいの気象機関でご確認ください。",
+    "alerts": {
+      "thunderstorm": {
+        "title": "雷雨警報",
+        "detail": "雷と大雨が予想されます。開けた場所を避けてください。"
+      },
+      "heavyRain": {
+        "title": "大雨警報",
+        "detail": "浸水や視界不良の恐れ。運転にご注意ください。"
+      },
+      "heavySnow": {
+        "title": "大雪警報",
+        "detail": "降雪により交通や視界が乱れる恐れ。"
+      },
+      "galeWind": {
+        "title": "強風警報",
+        "detail": "持続風速 約 {{speed}} km/h。物の固定を。"
+      },
+      "strongWind": {
+        "title": "強風注意報",
+        "detail": "風速 約 {{speed}} km/h。屋外では注意を。"
+      },
+      "extremeHeat": {
+        "title": "猛暑警報",
+        "detail": "最高 約 {{temp}}°。水分補給と日差しを避けて。"
+      },
+      "extremeCold": {
+        "title": "極寒警報",
+        "detail": "最低 約 {{temp}}°。凍傷の恐れ — 暖かくして。"
+      }
+    }
   }
 }

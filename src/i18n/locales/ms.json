@@ -17,7 +17,8 @@
     "favorites": "Kegemaran",
     "language": "Bahasa",
     "about": "Tentang",
-    "dataSource": "Data Open-Meteo"
+    "dataSource": "Data Open-Meteo",
+    "alarmRadar": "Radar amaran"
   },
   "tabs": {
     "hourly": "Setiap jam",
@@ -106,5 +107,42 @@
     "96": "Ribut dengan hujan batu",
     "99": "Ribut teruk",
     "unknown": "Tidak diketahui"
+  },
+  "alarm": {
+    "title": "Radar amaran",
+    "description": "Radar hujan langsung dan amaran cuaca aktif untuk lokasi anda.",
+    "activeAlerts": "Amaran aktif",
+    "noAlerts": "Tiada amaran cuaca buruk pada masa ini. Kekal selamat!",
+    "disclaimer": "Amaran berdasarkan ramalan semasa. Untuk amaran rasmi, rujuk agensi meteorologi tempatan.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Amaran ribut petir",
+        "detail": "Petir dan hujan lebat dijangka. Elakkan kawasan terbuka."
+      },
+      "heavyRain": {
+        "title": "Amaran hujan lebat",
+        "detail": "Risiko banjir dan jarak pandang lemah. Pandu dengan berhati-hati."
+      },
+      "heavySnow": {
+        "title": "Amaran salji lebat",
+        "detail": "Salji boleh mengganggu perjalanan dan jarak pandang."
+      },
+      "galeWind": {
+        "title": "Amaran angin kencang",
+        "detail": "Angin berterusan sekitar {{speed}} km/j. Kemas barang yang longgar."
+      },
+      "strongWind": {
+        "title": "Nasihat angin kuat",
+        "detail": "Angin sekitar {{speed}} km/j. Berhati-hati di luar."
+      },
+      "extremeHeat": {
+        "title": "Amaran panas melampau",
+        "detail": "Maksimum sekitar {{temp}}°. Minum air dan elakkan matahari."
+      },
+      "extremeCold": {
+        "title": "Amaran sejuk melampau",
+        "detail": "Minimum sekitar {{temp}}°. Risiko fros — pakai pakaian panas."
+      }
+    }
   }
 }

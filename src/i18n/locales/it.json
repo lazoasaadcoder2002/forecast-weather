@@ -17,7 +17,8 @@
     "favorites": "Preferiti",
     "language": "Lingua",
     "about": "Informazioni",
-    "dataSource": "Dati Open-Meteo"
+    "dataSource": "Dati Open-Meteo",
+    "alarmRadar": "Radar allerte"
   },
   "tabs": {
     "hourly": "Orario",
@@ -106,5 +107,42 @@
     "96": "Temporale con grandine",
     "99": "Temporale severo",
     "unknown": "Sconosciuto"
+  },
+  "alarm": {
+    "title": "Radar allerte",
+    "description": "Radar delle precipitazioni in diretta e allerte meteo attive per la tua posizione.",
+    "activeAlerts": "Allerte attive",
+    "noAlerts": "Nessuna allerta meteo grave al momento. Resta al sicuro!",
+    "disclaimer": "Le allerte derivano dalle previsioni attuali. Per gli avvisi ufficiali consulta il servizio meteo locale.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Allerta temporali",
+        "detail": "Fulmini e rovesci intensi previsti. Evita zone aperte."
+      },
+      "heavyRain": {
+        "title": "Allerta pioggia intensa",
+        "detail": "Rischio allagamenti e scarsa visibilità. Guida con prudenza."
+      },
+      "heavySnow": {
+        "title": "Allerta neve intensa",
+        "detail": "La nevicata può disturbare i trasporti e la visibilità."
+      },
+      "galeWind": {
+        "title": "Allerta vento di burrasca",
+        "detail": "Venti sostenuti intorno a {{speed}} km/h. Fissa gli oggetti."
+      },
+      "strongWind": {
+        "title": "Avviso vento forte",
+        "detail": "Venti intorno a {{speed}} km/h. Attenzione all'aperto."
+      },
+      "extremeHeat": {
+        "title": "Allerta caldo estremo",
+        "detail": "Massime vicine a {{temp}}°. Idratati ed evita il sole."
+      },
+      "extremeCold": {
+        "title": "Allerta freddo estremo",
+        "detail": "Minime vicine a {{temp}}°. Rischio congelamento — copriti."
+      }
+    }
   }
 }

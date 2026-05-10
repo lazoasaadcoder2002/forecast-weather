@@ -17,7 +17,8 @@
     "favorites": "Favoriten",
     "language": "Sprache",
     "about": "Über",
-    "dataSource": "Open-Meteo-Daten"
+    "dataSource": "Open-Meteo-Daten",
+    "alarmRadar": "Warnradar"
   },
   "tabs": {
     "hourly": "Stündlich",
@@ -106,5 +107,42 @@
     "96": "Gewitter mit Hagel",
     "99": "Schweres Gewitter",
     "unknown": "Unbekannt"
+  },
+  "alarm": {
+    "title": "Warnradar",
+    "description": "Live-Niederschlagsradar und aktive Wetterwarnungen für Ihren Standort.",
+    "activeAlerts": "Aktive Warnungen",
+    "noAlerts": "Derzeit keine schweren Wetterwarnungen. Bleiben Sie sicher!",
+    "disclaimer": "Warnungen basieren auf aktuellen Prognosen. Offizielle Warnungen erhalten Sie bei Ihrem Wetterdienst.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Gewitterwarnung",
+        "detail": "Blitze und heftige Schauer erwartet. Meiden Sie offene Flächen."
+      },
+      "heavyRain": {
+        "title": "Starkregenwarnung",
+        "detail": "Überschwemmungs- und Sichtgefahr. Vorsichtig fahren."
+      },
+      "heavySnow": {
+        "title": "Starkschneewarnung",
+        "detail": "Schneefall kann Verkehr und Sicht beeinträchtigen."
+      },
+      "galeWind": {
+        "title": "Sturmwarnung",
+        "detail": "Anhaltende Winde um {{speed}} km/h. Lose Gegenstände sichern."
+      },
+      "strongWind": {
+        "title": "Windwarnung",
+        "detail": "Winde um {{speed}} km/h erwartet. Im Freien vorsichtig sein."
+      },
+      "extremeHeat": {
+        "title": "Hitzewarnung",
+        "detail": "Höchstwerte um {{temp}}°. Trinken Sie viel und meiden Sie die Sonne."
+      },
+      "extremeCold": {
+        "title": "Kältewarnung",
+        "detail": "Tiefstwerte um {{temp}}°. Erfrierungsgefahr — warm anziehen."
+      }
+    }
   }
 }

@@ -17,7 +17,8 @@
     "favorites": "Favoritos",
     "language": "Idioma",
     "about": "Acerca de",
-    "dataSource": "Datos de Open-Meteo"
+    "dataSource": "Datos de Open-Meteo",
+    "alarmRadar": "Radar de alertas"
   },
   "tabs": {
     "hourly": "Por hora",
@@ -106,5 +107,42 @@
     "96": "Tormenta con granizo",
     "99": "Tormenta severa",
     "unknown": "Desconocido"
+  },
+  "alarm": {
+    "title": "Radar de alertas",
+    "description": "Radar de precipitación en vivo y avisos meteorológicos activos para tu ubicación.",
+    "activeAlerts": "Alertas activas",
+    "noAlerts": "No hay alertas meteorológicas graves ahora. ¡Mantente seguro!",
+    "disclaimer": "Las alertas se derivan del pronóstico actual. Para avisos oficiales, consulta a tu agencia meteorológica local.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Aviso de tormenta",
+        "detail": "Se esperan rayos y lluvias intensas. Evita áreas abiertas."
+      },
+      "heavyRain": {
+        "title": "Aviso de lluvia intensa",
+        "detail": "Riesgo de inundaciones y mala visibilidad. Conduce con cuidado."
+      },
+      "heavySnow": {
+        "title": "Aviso de nieve intensa",
+        "detail": "La nevada puede afectar el tráfico y la visibilidad."
+      },
+      "galeWind": {
+        "title": "Aviso de vientos huracanados",
+        "detail": "Vientos cercanos a {{speed}} km/h. Asegura objetos sueltos."
+      },
+      "strongWind": {
+        "title": "Aviso de viento fuerte",
+        "detail": "Vientos de unos {{speed}} km/h. Ten cuidado al aire libre."
+      },
+      "extremeHeat": {
+        "title": "Aviso de calor extremo",
+        "detail": "Máximas cerca de {{temp}}°. Hidrátate y evita el sol."
+      },
+      "extremeCold": {
+        "title": "Aviso de frío extremo",
+        "detail": "Mínimas cerca de {{temp}}°. Riesgo de congelación — abrígate."
+      }
+    }
   }
 }
