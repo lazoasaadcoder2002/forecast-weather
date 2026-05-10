@@ -31,6 +31,24 @@ const DEFAULT_LOCATION: GeoLocation = {
   timezone: "Europe/London",
 };
 
+function computeAlertNotices(d: WeatherData, t: (k: string, opts?: Record<string, unknown>) => string): WeatherAlertNotice[] {
+  const out: WeatherAlertNotice[] = [];
+  const cur = d.current;
+  const code = cur.weatherCode;
+  const wind = cur.windSpeed ?? 0;
+  const todayPrecipProb = d.daily?.precipitationProbabilityMax?.[0] ?? 0;
+  const max = d.daily?.tempMax?.[0];
+  const min = d.daily?.tempMin?.[0];
+  if ([95, 96, 99].includes(code)) out.push({ id: "storm", title: t("alarm.alerts.thunderstorm.title"), detail: t("alarm.alerts.thunderstorm.detail") });
+  if ([65, 67, 82].includes(code) || todayPrecipProb >= 80) out.push({ id: "rain", title: t("alarm.alerts.heavyRain.title"), detail: t("alarm.alerts.heavyRain.detail") });
+  if ([75, 86].includes(code)) out.push({ id: "snow", title: t("alarm.alerts.heavySnow.title"), detail: t("alarm.alerts.heavySnow.detail") });
+  if (wind >= 60) out.push({ id: "wind-gale", title: t("alarm.alerts.galeWind.title"), detail: t("alarm.alerts.galeWind.detail", { speed: Math.round(wind) }) });
+  else if (wind >= 40) out.push({ id: "wind-strong", title: t("alarm.alerts.strongWind.title"), detail: t("alarm.alerts.strongWind.detail", { speed: Math.round(wind) }) });
+  if (typeof max === "number" && max >= 38) out.push({ id: "heat", title: t("alarm.alerts.extremeHeat.title"), detail: t("alarm.alerts.extremeHeat.detail", { temp: Math.round(max) }) });
+  if (typeof min === "number" && min <= -10) out.push({ id: "cold", title: t("alarm.alerts.extremeCold.title"), detail: t("alarm.alerts.extremeCold.detail", { temp: Math.round(min) }) });
+  return out;
+}
+
 const Index = () => {
   const { t, i18n } = useTranslation();
   const [location, setLocation] = useState<GeoLocation>(
