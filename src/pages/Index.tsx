@@ -73,6 +73,9 @@ const Index = () => {
         setCachedAt(Date.now());
         setError(null);
         saveWeatherCache(loc, d);
+        // Native push: current weather + alerts (no-op on web).
+        notifyCurrentWeather(loc, d);
+        notifyAlerts(loc, computeAlertNotices(d, t));
         if (opts.userInitiated) toast.success("Weather updated");
       } catch (e) {
         const msg = (e as Error).message || "Failed to load weather";
@@ -88,8 +91,27 @@ const Index = () => {
         if (opts.silent) setRefreshing(false);
       }
     },
-    []
+    [t]
   );
+
+  // Pre-cache favorite locations whenever we're online so they're available offline.
+  useEffect(() => {
+    if (!online || favorites.length === 0) return;
+    let cancelled = false;
+    (async () => {
+      for (const fav of favorites) {
+        if (cancelled) return;
+        if (readWeatherCache(fav)) continue;
+        try {
+          const d = await fetchWeather(fav.latitude, fav.longitude, fav.timezone || "auto");
+          if (!cancelled) saveWeatherCache(fav, d);
+        } catch {
+          /* ignore */
+        }
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [online, favorites]);
 
   useEffect(() => {
     let cancelled = false;
