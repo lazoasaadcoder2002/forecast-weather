@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Previsions meteorològiques mundials",
+    "worldwide": "Previsions mundials"
+  },
+  "search": {
+    "placeholder": "Cerca qualsevol ciutat…",
+    "useMyLocation": "Utilitza la meva ubicació"
+  },
+  "drawer": {
+    "useCurrent": "Utilitza la ubicació actual",
+    "pickOnMap": "Tria al mapa",
+    "alarmRadar": "Radar d'alarma",
+    "refresh": "Actualitza el temps",
+    "europe": "Europa",
+    "arab": "Món àrab",
+    "favorites": "Preferits",
+    "language": "Idioma",
+    "about": "Quant a",
+    "dataSource": "Dades d'Open-Meteo"
+  },
+  "alarm": {
+    "title": "Radar d'alarma",
+    "description": "Radar de precipitació en directe i avisos meteorològics actius.",
+    "activeAlerts": "Avisos actius",
+    "noAlerts": "No hi ha avisos meteorològics greus ara mateix.",
+    "disclaimer": "Els avisos provenen de les previsions actuals. Per a avisos oficials, consulteu el vostre servei meteorològic.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Avís de tempesta",
+        "detail": "S'esperen llamps i pluges intenses. Eviteu zones obertes."
+      },
+      "heavyRain": {
+        "title": "Pluja intensa",
+        "detail": "Risc d'inundacions. Conduïu amb cura."
+      },
+      "heavySnow": {
+        "title": "Nevades fortes",
+        "detail": "La neu pot afectar els viatges."
+      },
+      "galeWind": {
+        "title": "Avís de vent fort",
+        "detail": "Vents al voltant de {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Vent fort",
+        "detail": "Vents d'uns {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Calor extrema",
+        "detail": "Màximes prop de {{temp}}°. Beveu aigua."
+      },
+      "extremeCold": {
+        "title": "Fred extrem",
+        "detail": "Mínimes prop de {{temp}}°. Abrigueu-vos bé."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Per hores",
+    "fiveDays": "5 dies",
+    "tenDays": "10 dies"
+  },
+  "actions": {
+    "refresh": "Actualitza",
+    "lastUpdated": "Última actualització"
+  },
+  "map": {
+    "title": "Mapa meteorològic",
+    "description": "Toqueu qualsevol punt del mapa mundial.",
+    "hint": "Toqueu el mapa per veure el temps.",
+    "selected": "Seleccionat",
+    "locating": "Localitzant…"
+  },
+  "offline": {
+    "title": "Mode fora de línia",
+    "savedAt": "Mostrant dades desades el {{date}}",
+    "connect": "Connecteu-vos a internet per carregar el temps."
+  },
+  "toasts": {
+    "updated": "Temps actualitzat",
+    "approxLocation": "Ubicació aproximada: {{name}}",
+    "showing": "Mostrant temps per a {{name}}",
+    "showingYours": "Mostrant temps per a la vostra ubicació",
+    "unavailable": "Ubicació no disponible",
+    "timedOut": "La sol·licitud d'ubicació ha caducat",
+    "offlineSaved": "Esteu fora de línia — mostrant dades desades",
+    "offlineNoData": "Fora de línia i sense dades desades",
+    "couldntRefresh": "No s'ha pogut actualitzar — mostrant dades desades",
+    "enableLocation": "Activeu la ubicació a la configuració del navegador"
+  },
+  "current": {
+    "local": "local",
+    "feelsLike": "Sensació tèrmica",
+    "humidity": "Humitat",
+    "wind": "Vent",
+    "uvIndex": "Índex UV",
+    "addFav": "Afegir a preferits",
+    "removeFav": "Treure dels preferits",
+    "feelsLikeFull": "Sensació de {{temp}}°"
+  },
+  "hourly": {
+    "next": "Properes {{hours}} hores",
+    "scroll": "desplaça →",
+    "now": "Ara"
+  },
+  "daily": {
+    "outlook": "Previsió de {{days}} dies",
+    "today": "Avui"
+  },
+  "favorites": {
+    "title": "Preferits",
+    "remove": "Treure preferit"
+  },
+  "footer": "Dades meteorològiques de",
+  "weather": {
+    "0": "Cel serè",
+    "1": "Majoritàriament serè",
+    "2": "Parcialment ennuvolat",
+    "3": "Ennuvolat",
+    "45": "Boira",
+    "48": "Boira gebradora",
+    "51": "Plugim lleuger",
+    "53": "Plugim",
+    "55": "Plugim intens",
+    "56": "Plugim gelant",
+    "57": "Plugim gelant",
+    "61": "Pluja lleugera",
+    "63": "Pluja",
+    "65": "Pluja intensa",
+    "66": "Pluja gelant",
+    "67": "Pluja gelant",
+    "71": "Neu lleugera",
+    "73": "Neu",
+    "75": "Neu intensa",
+    "77": "Grans de neu",
+    "80": "Ruixats",
+    "81": "Ruixats",
+    "82": "Ruixats violents",
+    "85": "Ruixats de neu",
+    "86": "Ruixats forts de neu",
+    "95": "Tempesta",
+    "96": "Tempesta amb calamarsa",
+    "99": "Tempesta severa",
+    "unknown": "Desconegut"
+  }
+}

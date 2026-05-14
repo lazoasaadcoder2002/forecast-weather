@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Réamhaisnéisí aimsire ar fud an domhain",
+    "worldwide": "Réamhaisnéisí domhanda"
+  },
+  "search": {
+    "placeholder": "Cuardaigh aon chathair…",
+    "useMyLocation": "Úsáid mo láthair"
+  },
+  "drawer": {
+    "useCurrent": "Úsáid an láthair reatha",
+    "pickOnMap": "Roghnaigh ar an léarscáil",
+    "alarmRadar": "Radar foláirimh",
+    "refresh": "Athnuaigh aimsir",
+    "europe": "An Eoraip",
+    "arab": "An Domhan Arabach",
+    "favorites": "Ceanáin",
+    "language": "Teanga",
+    "about": "Maidir le",
+    "dataSource": "Sonraí Open-Meteo"
+  },
+  "alarm": {
+    "title": "Radar foláirimh",
+    "description": "Radar báistí beo agus rabhaidh aimsire gníomhacha.",
+    "activeAlerts": "Foláirimh ghníomhacha",
+    "noAlerts": "Níl aon rabhadh dian ann faoi láthair. Fan slán!",
+    "disclaimer": "Tagann foláirimh ó réamhaisnéisí reatha. Déan teagmháil le do sheirbhís meitéareolaíochta áitiúil le haghaidh rabhadh oifigiúil.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Rabhadh stoirme",
+        "detail": "Tintreach agus báisteach throm le teacht. Seachain spásanna oscailte."
+      },
+      "heavyRain": {
+        "title": "Báisteach throm",
+        "detail": "Riosca tuile agus drochradharc. Tiomáin go cúramach."
+      },
+      "heavySnow": {
+        "title": "Sneachta trom",
+        "detail": "Féadfaidh sneachta cur isteach ar thaisteal."
+      },
+      "galeWind": {
+        "title": "Rabhadh gála",
+        "detail": "Gaotha ag {{speed}} km/u. Daingnigh rudaí scaoilte."
+      },
+      "strongWind": {
+        "title": "Gaoth láidir",
+        "detail": "Gaotha thart ar {{speed}} km/u. Bí cúramach amuigh."
+      },
+      "extremeHeat": {
+        "title": "Teas foircneach",
+        "detail": "Buaicphointí gar do {{temp}}°. Ól uisce."
+      },
+      "extremeCold": {
+        "title": "Fuacht foircneach",
+        "detail": "Íseal gar do {{temp}}°. Cuir éadaí teo ort."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Uair an chloig",
+    "fiveDays": "5 lá",
+    "tenDays": "10 lá"
+  },
+  "actions": {
+    "refresh": "Athnuaigh",
+    "lastUpdated": "Nuashonraithe go deireanach"
+  },
+  "map": {
+    "title": "Léarscáil aimsire",
+    "description": "Tapáil áit ar bith ar an léarscáil.",
+    "hint": "Tapáil áit ar bith ar an léarscáil chun an aimsir a fheiceáil.",
+    "selected": "Roghnaithe",
+    "locating": "Á aimsiú…"
+  },
+  "offline": {
+    "title": "Mód as líne",
+    "savedAt": "Ag taispeáint sonraí sábháilte {{date}}",
+    "connect": "Ceangail leis an idirlíon chun an aimsir a luchtú."
+  },
+  "toasts": {
+    "updated": "Aimsir nuashonraithe",
+    "approxLocation": "Láthair gar do: {{name}}",
+    "showing": "Aimsir á taispeáint do {{name}}",
+    "showingYours": "Aimsir á taispeáint do do láthair",
+    "unavailable": "Láthair neamhinfhaighte",
+    "timedOut": "Iarratas láthair imithe in éag",
+    "offlineSaved": "Tá tú as líne — sonraí sábháilte",
+    "offlineNoData": "As líne agus gan sonraí sábháilte",
+    "couldntRefresh": "Níorbh fhéidir athnuachan — sonraí sábháilte",
+    "enableLocation": "Cumasaigh láthair sa bhrabhsálaí"
+  },
+  "current": {
+    "local": "áitiúil",
+    "feelsLike": "Mothaíonn cosúil le",
+    "humidity": "Taise",
+    "wind": "Gaoth",
+    "uvIndex": "Innéacs UV",
+    "addFav": "Cuir le ceanáin",
+    "removeFav": "Bain de cheanáin",
+    "feelsLikeFull": "Mothaíonn cosúil le {{temp}}°"
+  },
+  "hourly": {
+    "next": "Na chéad {{hours}} uair",
+    "scroll": "scrollaigh →",
+    "now": "Anois"
+  },
+  "daily": {
+    "outlook": "Réamhaisnéis {{days}} lá",
+    "today": "Inniu"
+  },
+  "favorites": {
+    "title": "Ceanáin",
+    "remove": "Bain ceanán"
+  },
+  "footer": "Sonraí aimsire ó",
+  "weather": {
+    "0": "Spéir ghlan",
+    "1": "Beagnach glan",
+    "2": "Páirt-scamallach",
+    "3": "Scamallach",
+    "45": "Ceobhrán",
+    "48": "Ceo seaca",
+    "51": "Brádán éadrom",
+    "53": "Brádán",
+    "55": "Brádán trom",
+    "56": "Brádán reoite",
+    "57": "Brádán reoite",
+    "61": "Báisteach éadrom",
+    "63": "Báisteach",
+    "65": "Báisteach throm",
+    "66": "Báisteach reoite",
+    "67": "Báisteach reoite",
+    "71": "Sneachta éadrom",
+    "73": "Sneachta",
+    "75": "Sneachta trom",
+    "77": "Gráinní sneachta",
+    "80": "Ceathanna báistí",
+    "81": "Ceathanna báistí",
+    "82": "Ceathanna foréigneacha",
+    "85": "Ceathanna sneachta",
+    "86": "Ceathanna sneachta troma",
+    "95": "Toirneach",
+    "96": "Toirneach le clocha sneachta",
+    "99": "Toirneach dian",
+    "unknown": "Anaithnid"
+  }
+}

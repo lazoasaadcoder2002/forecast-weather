@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Verdensomspennende værmeldinger",
+    "worldwide": "Globale meldinger"
+  },
+  "search": {
+    "placeholder": "Søk en hvilken som helst by…",
+    "useMyLocation": "Bruk min posisjon"
+  },
+  "drawer": {
+    "useCurrent": "Bruk nåværende posisjon",
+    "pickOnMap": "Velg på kart",
+    "alarmRadar": "Varselradar",
+    "refresh": "Oppdater vær",
+    "europe": "Europa",
+    "arab": "Den arabiske verden",
+    "favorites": "Favoritter",
+    "language": "Språk",
+    "about": "Om",
+    "dataSource": "Open-Meteo-data"
+  },
+  "alarm": {
+    "title": "Varselradar",
+    "description": "Live nedbørsradar og aktive værvarsler for din posisjon.",
+    "activeAlerts": "Aktive varsler",
+    "noAlerts": "Ingen alvorlige værvarsler akkurat nå. Vær trygg!",
+    "disclaimer": "Varsler kommer fra gjeldende prognoser. For offisielle varsler, kontakt din lokale meteorologiske tjeneste.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Tordenvarsel",
+        "detail": "Lyn og kraftige byger ventes. Unngå åpne områder."
+      },
+      "heavyRain": {
+        "title": "Kraftig regn",
+        "detail": "Risiko for flom og dårlig sikt. Kjør forsiktig."
+      },
+      "heavySnow": {
+        "title": "Kraftig snøfall",
+        "detail": "Snøfall kan forstyrre reise og redusere sikt."
+      },
+      "galeWind": {
+        "title": "Stormvarsel",
+        "detail": "Vedvarende vind nær {{speed}} km/t. Sikre løse gjenstander."
+      },
+      "strongWind": {
+        "title": "Sterk vind",
+        "detail": "Vind rundt {{speed}} km/t ventes. Vær forsiktig ute."
+      },
+      "extremeHeat": {
+        "title": "Ekstrem varme",
+        "detail": "Topper nær {{temp}}°. Drikk vann og unngå sol."
+      },
+      "extremeCold": {
+        "title": "Ekstrem kulde",
+        "detail": "Lavpunkt nær {{temp}}°. Fare for frostskader — kle deg varmt."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Time for time",
+    "fiveDays": "5 dager",
+    "tenDays": "10 dager"
+  },
+  "actions": {
+    "refresh": "Oppdater",
+    "lastUpdated": "Sist oppdatert"
+  },
+  "map": {
+    "title": "Værkart",
+    "description": "Trykk hvor som helst på verdenskartet for å laste prognosen.",
+    "hint": "Trykk hvor som helst på kartet for å se været der.",
+    "selected": "Valgt",
+    "locating": "Lokaliserer…"
+  },
+  "offline": {
+    "title": "Frakoblet modus",
+    "savedAt": "Viser data lagret {{date}}",
+    "connect": "Koble til internett for å laste været."
+  },
+  "toasts": {
+    "updated": "Vær oppdatert",
+    "approxLocation": "Omtrentlig posisjon: {{name}}",
+    "showing": "Viser vær for {{name}}",
+    "showingYours": "Viser vær for din posisjon",
+    "unavailable": "Posisjon utilgjengelig",
+    "timedOut": "Posisjonsforespørsel tidsavbrutt",
+    "offlineSaved": "Du er frakoblet — viser lagrede data",
+    "offlineNoData": "Du er frakoblet og ingen lagrede data finnes",
+    "couldntRefresh": "Kunne ikke oppdatere — viser lagrede data",
+    "enableLocation": "Aktiver posisjon i nettleserinnstillingene"
+  },
+  "current": {
+    "local": "lokal",
+    "feelsLike": "Føles som",
+    "humidity": "Fuktighet",
+    "wind": "Vind",
+    "uvIndex": "UV-indeks",
+    "addFav": "Legg til favoritt",
+    "removeFav": "Fjern favoritt",
+    "feelsLikeFull": "Føles som {{temp}}°"
+  },
+  "hourly": {
+    "next": "Neste {{hours}} timer",
+    "scroll": "bla →",
+    "now": "Nå"
+  },
+  "daily": {
+    "outlook": "{{days}}-dagers utsikt",
+    "today": "I dag"
+  },
+  "favorites": {
+    "title": "Favoritter",
+    "remove": "Fjern favoritt"
+  },
+  "footer": "Værdata fra",
+  "weather": {
+    "0": "Klar himmel",
+    "1": "For det meste klart",
+    "2": "Delvis skyet",
+    "3": "Overskyet",
+    "45": "Tåke",
+    "48": "Rimfrost-tåke",
+    "51": "Lett yr",
+    "53": "Yr",
+    "55": "Kraftig yr",
+    "56": "Frysende yr",
+    "57": "Frysende yr",
+    "61": "Lett regn",
+    "63": "Regn",
+    "65": "Kraftig regn",
+    "66": "Frysende regn",
+    "67": "Frysende regn",
+    "71": "Lett snø",
+    "73": "Snø",
+    "75": "Kraftig snø",
+    "77": "Snøkorn",
+    "80": "Regnbyger",
+    "81": "Regnbyger",
+    "82": "Voldsomme byger",
+    "85": "Snøbyger",
+    "86": "Kraftige snøbyger",
+    "95": "Torden",
+    "96": "Torden m/ hagl",
+    "99": "Kraftig torden",
+    "unknown": "Ukjent"
+  }
+}

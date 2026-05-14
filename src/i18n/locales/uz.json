@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Butun dunyo bo‘yicha ob-havo prognozlari",
+    "worldwide": "Global prognozlar"
+  },
+  "search": {
+    "placeholder": "Shahar qidirish…",
+    "useMyLocation": "Mening joylashuvimdan foydalanish"
+  },
+  "drawer": {
+    "useCurrent": "Joriy joylashuvdan foydalanish",
+    "pickOnMap": "Xaritadan tanlash",
+    "alarmRadar": "Ogohlantirish radari",
+    "refresh": "Ob-havoni yangilash",
+    "europe": "Yevropa",
+    "arab": "Arab dunyosi",
+    "favorites": "Sevimlilar",
+    "language": "Til",
+    "about": "Haqida",
+    "dataSource": "Open-Meteo ma'lumotlari"
+  },
+  "alarm": {
+    "title": "Ogohlantirish radari",
+    "description": "Jonli yog‘in radari va faol ogohlantirishlar.",
+    "activeAlerts": "Faol ogohlantirishlar",
+    "noAlerts": "Hozir jiddiy ogohlantirishlar yo‘q.",
+    "disclaimer": "Ogohlantirishlar joriy prognozlardan olingan.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Momaqaldiroq ogohlantirishi",
+        "detail": "Yashin va kuchli yomg‘ir kutilmoqda."
+      },
+      "heavyRain": {
+        "title": "Kuchli yomg‘ir",
+        "detail": "Toshqin xavfi."
+      },
+      "heavySnow": {
+        "title": "Kuchli qor",
+        "detail": "Qor sayohatlarni buzishi mumkin."
+      },
+      "galeWind": {
+        "title": "Bo‘ron ogohlantirishi",
+        "detail": "Shamol taxminan {{speed}} km/soat."
+      },
+      "strongWind": {
+        "title": "Kuchli shamol",
+        "detail": "Shamol taxminan {{speed}} km/soat."
+      },
+      "extremeHeat": {
+        "title": "Haddan tashqari issiq",
+        "detail": "Maksimum {{temp}}° atrofida."
+      },
+      "extremeCold": {
+        "title": "Haddan tashqari sovuq",
+        "detail": "Minimum {{temp}}° atrofida."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Soatlik",
+    "fiveDays": "5 kun",
+    "tenDays": "10 kun"
+  },
+  "actions": {
+    "refresh": "Yangilash",
+    "lastUpdated": "Oxirgi yangilanish"
+  },
+  "map": {
+    "title": "Ob-havo xaritasi",
+    "description": "Dunyo xaritasining istalgan joyini bosing.",
+    "hint": "Ob-havoni ko‘rish uchun xaritani bosing.",
+    "selected": "Tanlangan",
+    "locating": "Joylashuv aniqlanmoqda…"
+  },
+  "offline": {
+    "title": "Oflayn rejim",
+    "savedAt": "Saqlangan ma'lumotlar ko‘rsatilmoqda {{date}}",
+    "connect": "Internetga ulaning."
+  },
+  "toasts": {
+    "updated": "Ob-havo yangilandi",
+    "approxLocation": "Taxminiy joylashuv: {{name}}",
+    "showing": "{{name}} uchun ob-havo",
+    "showingYours": "Sizning joyingiz uchun ob-havo",
+    "unavailable": "Joylashuv mavjud emas",
+    "timedOut": "So‘rov vaqti tugadi",
+    "offlineSaved": "Oflaynsiz — saqlangan ma'lumotlar",
+    "offlineNoData": "Oflayn va ma'lumot yo‘q",
+    "couldntRefresh": "Yangilab bo‘lmadi",
+    "enableLocation": "Brauzerda joylashuvni yoqing"
+  },
+  "current": {
+    "local": "mahalliy",
+    "feelsLike": "His qilinadi",
+    "humidity": "Namlik",
+    "wind": "Shamol",
+    "uvIndex": "UV indeksi",
+    "addFav": "Sevimlilarga qo‘shish",
+    "removeFav": "Sevimlilardan olib tashlash",
+    "feelsLikeFull": "His qilinadi {{temp}}°"
+  },
+  "hourly": {
+    "next": "Keyingi {{hours}} soat",
+    "scroll": "aylantirish →",
+    "now": "Hozir"
+  },
+  "daily": {
+    "outlook": "{{days}} kunlik prognoz",
+    "today": "Bugun"
+  },
+  "favorites": {
+    "title": "Sevimlilar",
+    "remove": "Sevimlini olib tashlash"
+  },
+  "footer": "Ob-havo ma'lumotlari:",
+  "weather": {
+    "0": "Ochiq osmon",
+    "1": "Asosan ochiq",
+    "2": "Qisman bulutli",
+    "3": "Bulutli",
+    "45": "Tuman",
+    "48": "Qirov tumani",
+    "51": "Yengil mayda yomg‘ir",
+    "53": "Mayda yomg‘ir",
+    "55": "Kuchli mayda yomg‘ir",
+    "56": "Muzlatuvchi mayda yomg‘ir",
+    "57": "Muzlatuvchi mayda yomg‘ir",
+    "61": "Yengil yomg‘ir",
+    "63": "Yomg‘ir",
+    "65": "Kuchli yomg‘ir",
+    "66": "Muzlatuvchi yomg‘ir",
+    "67": "Muzlatuvchi yomg‘ir",
+    "71": "Yengil qor",
+    "73": "Qor",
+    "75": "Kuchli qor",
+    "77": "Qor donalari",
+    "80": "Jala",
+    "81": "Jala",
+    "82": "Kuchli jala",
+    "85": "Qor jalasi",
+    "86": "Kuchli qor jalasi",
+    "95": "Momaqaldiroq",
+    "96": "Momaqaldiroq do‘l bilan",
+    "99": "Kuchli bo‘ron",
+    "unknown": "Noma'lum"
+  }
+}

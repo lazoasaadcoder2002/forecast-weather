@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Ülemaailmsed ilmaprognoosid",
+    "worldwide": "Globaalsed prognoosid"
+  },
+  "search": {
+    "placeholder": "Otsi linna…",
+    "useMyLocation": "Kasuta minu asukohta"
+  },
+  "drawer": {
+    "useCurrent": "Kasuta praegust asukohta",
+    "pickOnMap": "Vali kaardilt",
+    "alarmRadar": "Hoiatuste radar",
+    "refresh": "Värskenda ilma",
+    "europe": "Euroopa",
+    "arab": "Araabia maailm",
+    "favorites": "Lemmikud",
+    "language": "Keel",
+    "about": "Teave",
+    "dataSource": "Open-Meteo andmed"
+  },
+  "alarm": {
+    "title": "Hoiatuste radar",
+    "description": "Reaalajas sajuandmed ja aktiivsed ilmahoiatused.",
+    "activeAlerts": "Aktiivsed hoiatused",
+    "noAlerts": "Hetkel ei ole tõsiseid hoiatusi.",
+    "disclaimer": "Hoiatused tulenevad praegustest prognoosidest.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Äikesehoiatus",
+        "detail": "Oodata pikset ja tugevat sadu."
+      },
+      "heavyRain": {
+        "title": "Tugev vihm",
+        "detail": "Üleujutuste oht."
+      },
+      "heavySnow": {
+        "title": "Tugev lumesadu",
+        "detail": "Lumi võib häirida liiklust."
+      },
+      "galeWind": {
+        "title": "Tormihoiatus",
+        "detail": "Tuul umbes {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Tugev tuul",
+        "detail": "Tuul umbes {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Äärmuslik kuumus",
+        "detail": "Maksimumid umbes {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Äärmuslik külm",
+        "detail": "Miinimumid umbes {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Tunni järgi",
+    "fiveDays": "5 päeva",
+    "tenDays": "10 päeva"
+  },
+  "actions": {
+    "refresh": "Värskenda",
+    "lastUpdated": "Viimati uuendatud"
+  },
+  "map": {
+    "title": "Ilmakaart",
+    "description": "Puudutage kuskil maailmakaardil.",
+    "hint": "Puudutage kaarti ilma vaatamiseks.",
+    "selected": "Valitud",
+    "locating": "Asukoha määramine…"
+  },
+  "offline": {
+    "title": "Võrguta režiim",
+    "savedAt": "Kuvatakse salvestatud andmed {{date}}",
+    "connect": "Ühendage internetti."
+  },
+  "toasts": {
+    "updated": "Ilm uuendatud",
+    "approxLocation": "Ligikaudne asukoht: {{name}}",
+    "showing": "Ilm asukohale {{name}}",
+    "showingYours": "Ilm teie asukohale",
+    "unavailable": "Asukoht pole saadaval",
+    "timedOut": "Asukohataotlus aegus",
+    "offlineSaved": "Olete võrguta — salvestatud andmed",
+    "offlineNoData": "Võrguta ja andmeid pole",
+    "couldntRefresh": "Värskendamine ebaõnnestus",
+    "enableLocation": "Lubage asukoht brauseris"
+  },
+  "current": {
+    "local": "kohalik",
+    "feelsLike": "Tundub nagu",
+    "humidity": "Niiskus",
+    "wind": "Tuul",
+    "uvIndex": "UV-indeks",
+    "addFav": "Lisa lemmikutesse",
+    "removeFav": "Eemalda lemmikutest",
+    "feelsLikeFull": "Tundub nagu {{temp}}°"
+  },
+  "hourly": {
+    "next": "Järgmised {{hours}} tundi",
+    "scroll": "keri →",
+    "now": "Praegu"
+  },
+  "daily": {
+    "outlook": "{{days}}-päevane prognoos",
+    "today": "Täna"
+  },
+  "favorites": {
+    "title": "Lemmikud",
+    "remove": "Eemalda lemmik"
+  },
+  "footer": "Ilmaandmed:",
+  "weather": {
+    "0": "Selge taevas",
+    "1": "Peamiselt selge",
+    "2": "Vahelduv pilvisus",
+    "3": "Pilves",
+    "45": "Udu",
+    "48": "Härmaudu",
+    "51": "Kerge tibutamine",
+    "53": "Tibutamine",
+    "55": "Tugev tibutamine",
+    "56": "Külmuv tibutamine",
+    "57": "Külmuv tibutamine",
+    "61": "Kerge vihm",
+    "63": "Vihm",
+    "65": "Tugev vihm",
+    "66": "Külmuv vihm",
+    "67": "Külmuv vihm",
+    "71": "Kerge lumi",
+    "73": "Lumi",
+    "75": "Tugev lumi",
+    "77": "Lumeterad",
+    "80": "Hoovihmad",
+    "81": "Hoovihmad",
+    "82": "Tugevad hoovihmad",
+    "85": "Lumehoog",
+    "86": "Tugev lumehoog",
+    "95": "Äike",
+    "96": "Äike rahega",
+    "99": "Tugev äike",
+    "unknown": "Tundmatu"
+  }
+}

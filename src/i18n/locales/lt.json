@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Pasaulinės orų prognozės",
+    "worldwide": "Pasaulinės prognozės"
+  },
+  "search": {
+    "placeholder": "Ieškoti miesto…",
+    "useMyLocation": "Naudoti mano vietą"
+  },
+  "drawer": {
+    "useCurrent": "Naudoti dabartinę vietą",
+    "pickOnMap": "Pasirinkti žemėlapyje",
+    "alarmRadar": "Įspėjimų radaras",
+    "refresh": "Atnaujinti orus",
+    "europe": "Europa",
+    "arab": "Arabų pasaulis",
+    "favorites": "Mėgstamiausi",
+    "language": "Kalba",
+    "about": "Apie",
+    "dataSource": "Open-Meteo duomenys"
+  },
+  "alarm": {
+    "title": "Įspėjimų radaras",
+    "description": "Tiesioginis kritulių radaras ir aktyvūs orų įspėjimai.",
+    "activeAlerts": "Aktyvūs įspėjimai",
+    "noAlerts": "Šiuo metu rimtų įspėjimų nėra.",
+    "disclaimer": "Įspėjimai gaunami iš dabartinių prognozių.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Perkūnijos įspėjimas",
+        "detail": "Tikimasi žaibų ir liūčių."
+      },
+      "heavyRain": {
+        "title": "Smarkus lietus",
+        "detail": "Potvynių rizika."
+      },
+      "heavySnow": {
+        "title": "Smarki snieguotė",
+        "detail": "Sniegas gali trikdyti keliones."
+      },
+      "galeWind": {
+        "title": "Audros įspėjimas",
+        "detail": "Vėjas apie {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Stiprus vėjas",
+        "detail": "Vėjas apie {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Ekstremalus karštis",
+        "detail": "Maksimumai apie {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Ekstremalus šaltis",
+        "detail": "Minimumai apie {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Pagal valandas",
+    "fiveDays": "5 dienos",
+    "tenDays": "10 dienų"
+  },
+  "actions": {
+    "refresh": "Atnaujinti",
+    "lastUpdated": "Paskutinį kartą atnaujinta"
+  },
+  "map": {
+    "title": "Orų žemėlapis",
+    "description": "Bakstelėkite bet kur pasaulio žemėlapyje.",
+    "hint": "Bakstelėkite žemėlapį, kad pamatytumėte orus.",
+    "selected": "Pasirinkta",
+    "locating": "Nustatoma vieta…"
+  },
+  "offline": {
+    "title": "Neprisijungimo režimas",
+    "savedAt": "Rodomi duomenys išsaugoti {{date}}",
+    "connect": "Prisijunkite prie interneto."
+  },
+  "toasts": {
+    "updated": "Orai atnaujinti",
+    "approxLocation": "Apytikrė vieta: {{name}}",
+    "showing": "Orai {{name}}",
+    "showingYours": "Orai jūsų vietai",
+    "unavailable": "Vieta neprieinama",
+    "timedOut": "Užklausos laikas baigėsi",
+    "offlineSaved": "Esate atsijungę — išsaugoti duomenys",
+    "offlineNoData": "Atsijungę be duomenų",
+    "couldntRefresh": "Nepavyko atnaujinti",
+    "enableLocation": "Įjunkite vietą naršyklėje"
+  },
+  "current": {
+    "local": "vietinis",
+    "feelsLike": "Jaučiasi kaip",
+    "humidity": "Drėgmė",
+    "wind": "Vėjas",
+    "uvIndex": "UV indeksas",
+    "addFav": "Pridėti prie mėgstamiausių",
+    "removeFav": "Pašalinti iš mėgstamiausių",
+    "feelsLikeFull": "Jaučiasi kaip {{temp}}°"
+  },
+  "hourly": {
+    "next": "Kitos {{hours}} val.",
+    "scroll": "slinkti →",
+    "now": "Dabar"
+  },
+  "daily": {
+    "outlook": "{{days}} dienų prognozė",
+    "today": "Šiandien"
+  },
+  "favorites": {
+    "title": "Mėgstamiausi",
+    "remove": "Pašalinti mėgstamiausią"
+  },
+  "footer": "Orų duomenys:",
+  "weather": {
+    "0": "Giedras dangus",
+    "1": "Daugiausia giedra",
+    "2": "Mažai debesuota",
+    "3": "Debesuota",
+    "45": "Rūkas",
+    "48": "Šerkšno rūkas",
+    "51": "Lengva dulksna",
+    "53": "Dulksna",
+    "55": "Tiršta dulksna",
+    "56": "Šąlanti dulksna",
+    "57": "Šąlanti dulksna",
+    "61": "Lengvas lietus",
+    "63": "Lietus",
+    "65": "Smarkus lietus",
+    "66": "Šąlantis lietus",
+    "67": "Šąlantis lietus",
+    "71": "Lengvas sniegas",
+    "73": "Sniegas",
+    "75": "Smarkus sniegas",
+    "77": "Sniego kruša",
+    "80": "Liūtys",
+    "81": "Liūtys",
+    "82": "Smarkios liūtys",
+    "85": "Sniego liūtys",
+    "86": "Smarkios sniego liūtys",
+    "95": "Perkūnija",
+    "96": "Perkūnija su kruša",
+    "99": "Stipri perkūnija",
+    "unknown": "Nežinoma"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Världsomspännande väderprognoser",
+    "worldwide": "Globala prognoser"
+  },
+  "search": {
+    "placeholder": "Sök vilken stad som helst…",
+    "useMyLocation": "Använd min plats"
+  },
+  "drawer": {
+    "useCurrent": "Använd nuvarande plats",
+    "pickOnMap": "Välj på karta",
+    "alarmRadar": "Varningsradar",
+    "refresh": "Uppdatera väder",
+    "europe": "Europa",
+    "arab": "Arabvärlden",
+    "favorites": "Favoriter",
+    "language": "Språk",
+    "about": "Om",
+    "dataSource": "Open-Meteo-data"
+  },
+  "alarm": {
+    "title": "Varningsradar",
+    "description": "Live-nederbördsradar och aktiva vädervarningar för din plats.",
+    "activeAlerts": "Aktiva varningar",
+    "noAlerts": "Inga svåra vädervarningar just nu. Var säker!",
+    "disclaimer": "Varningar härleds från aktuella prognoser. För officiella varningar, kontakta din lokala vädertjänst.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Åskvarning",
+        "detail": "Blixtnedslag och kraftiga regn väntas. Undvik öppna områden."
+      },
+      "heavyRain": {
+        "title": "Kraftigt regn",
+        "detail": "Risk för översvämning och dålig sikt. Kör försiktigt."
+      },
+      "heavySnow": {
+        "title": "Kraftigt snöfall",
+        "detail": "Snöfall kan störa resor och försämra sikten."
+      },
+      "galeWind": {
+        "title": "Stormvarning",
+        "detail": "Ihållande vindar nära {{speed}} km/h. Säkra lösa föremål."
+      },
+      "strongWind": {
+        "title": "Kraftig vind",
+        "detail": "Vindar runt {{speed}} km/h väntas. Var försiktig utomhus."
+      },
+      "extremeHeat": {
+        "title": "Extrem värme",
+        "detail": "Toppar nära {{temp}}°. Drick vatten och undvik solen."
+      },
+      "extremeCold": {
+        "title": "Extrem kyla",
+        "detail": "Lägsta nära {{temp}}°. Risk för köldskador — klä dig varmt."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Timme för timme",
+    "fiveDays": "5 dagar",
+    "tenDays": "10 dagar"
+  },
+  "actions": {
+    "refresh": "Uppdatera",
+    "lastUpdated": "Senast uppdaterad"
+  },
+  "map": {
+    "title": "Väderkarta",
+    "description": "Tryck var som helst på världskartan för att läsa in prognosen.",
+    "hint": "Tryck var som helst på kartan för att se vädret där.",
+    "selected": "Vald",
+    "locating": "Letar plats…"
+  },
+  "offline": {
+    "title": "Offlineläge",
+    "savedAt": "Visar data sparad {{date}}",
+    "connect": "Anslut till internet för att läsa in väder."
+  },
+  "toasts": {
+    "updated": "Vädret uppdaterat",
+    "approxLocation": "Ungefärlig plats: {{name}}",
+    "showing": "Visar väder för {{name}}",
+    "showingYours": "Visar väder för din plats",
+    "unavailable": "Plats otillgänglig",
+    "timedOut": "Platsförfrågan tog för lång tid",
+    "offlineSaved": "Du är offline — visar sparad data",
+    "offlineNoData": "Du är offline och ingen sparad data finns",
+    "couldntRefresh": "Kunde inte uppdatera — visar sparad data",
+    "enableLocation": "Aktivera plats i webbläsarinställningarna"
+  },
+  "current": {
+    "local": "lokal",
+    "feelsLike": "Känns som",
+    "humidity": "Luftfuktighet",
+    "wind": "Vind",
+    "uvIndex": "UV-index",
+    "addFav": "Lägg till favorit",
+    "removeFav": "Ta bort favorit",
+    "feelsLikeFull": "Känns som {{temp}}°"
+  },
+  "hourly": {
+    "next": "Nästa {{hours}} timmar",
+    "scroll": "skrolla →",
+    "now": "Nu"
+  },
+  "daily": {
+    "outlook": "{{days}}-dagars utsikt",
+    "today": "Idag"
+  },
+  "favorites": {
+    "title": "Favoriter",
+    "remove": "Ta bort favorit"
+  },
+  "footer": "Väderdata från",
+  "weather": {
+    "0": "Klar himmel",
+    "1": "Mestadels klart",
+    "2": "Delvis molnigt",
+    "3": "Mulet",
+    "45": "Dimmigt",
+    "48": "Rimfrostdimma",
+    "51": "Lätt duggregn",
+    "53": "Duggregn",
+    "55": "Kraftigt duggregn",
+    "56": "Underkylt duggregn",
+    "57": "Underkylt duggregn",
+    "61": "Lätt regn",
+    "63": "Regn",
+    "65": "Kraftigt regn",
+    "66": "Underkylt regn",
+    "67": "Underkylt regn",
+    "71": "Lätt snö",
+    "73": "Snö",
+    "75": "Kraftig snö",
+    "77": "Snökorn",
+    "80": "Regnskurar",
+    "81": "Regnskurar",
+    "82": "Häftiga skurar",
+    "85": "Snöbyar",
+    "86": "Kraftiga snöbyar",
+    "95": "Åska",
+    "96": "Åska med hagel",
+    "99": "Kraftig åska",
+    "unknown": "Okänt"
+  }
+}

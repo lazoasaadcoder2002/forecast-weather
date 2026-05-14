@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Világszerte időjárás-előrejelzések",
+    "worldwide": "Globális előrejelzések"
+  },
+  "search": {
+    "placeholder": "Keress egy várost…",
+    "useMyLocation": "Saját helyszín használata"
+  },
+  "drawer": {
+    "useCurrent": "Aktuális helyszín használata",
+    "pickOnMap": "Választás a térképen",
+    "alarmRadar": "Riasztásradar",
+    "refresh": "Időjárás frissítése",
+    "europe": "Európa",
+    "arab": "Arab világ",
+    "favorites": "Kedvencek",
+    "language": "Nyelv",
+    "about": "Névjegy",
+    "dataSource": "Open-Meteo adatok"
+  },
+  "alarm": {
+    "title": "Riasztásradar",
+    "description": "Élő csapadékradar és aktív időjárási riasztások.",
+    "activeAlerts": "Aktív riasztások",
+    "noAlerts": "Nincs súlyos időjárási riasztás.",
+    "disclaimer": "A riasztások az aktuális előrejelzésekből származnak.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Zivatar-riasztás",
+        "detail": "Villámlás és heves esőzés várható."
+      },
+      "heavyRain": {
+        "title": "Heves eső",
+        "detail": "Árvízveszély."
+      },
+      "heavySnow": {
+        "title": "Erős havazás",
+        "detail": "A havazás zavarhatja a közlekedést."
+      },
+      "galeWind": {
+        "title": "Viharos szél",
+        "detail": "Szél kb. {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Erős szél",
+        "detail": "Szél kb. {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Szélsőséges hőség",
+        "detail": "Csúcsok {{temp}}° körül."
+      },
+      "extremeCold": {
+        "title": "Szélsőséges hideg",
+        "detail": "Mélypontok {{temp}}° körül."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Óránkénti",
+    "fiveDays": "5 nap",
+    "tenDays": "10 nap"
+  },
+  "actions": {
+    "refresh": "Frissítés",
+    "lastUpdated": "Utoljára frissítve"
+  },
+  "map": {
+    "title": "Időjárási térkép",
+    "description": "Érintsd meg bárhol a világtérképet.",
+    "hint": "Érintsd meg a térképet az időjárásért.",
+    "selected": "Kiválasztva",
+    "locating": "Helymeghatározás…"
+  },
+  "offline": {
+    "title": "Offline mód",
+    "savedAt": "Megjelenített mentett adatok: {{date}}",
+    "connect": "Csatlakozz az internethez."
+  },
+  "toasts": {
+    "updated": "Időjárás frissítve",
+    "approxLocation": "Hozzávetőleges hely: {{name}}",
+    "showing": "Időjárás: {{name}}",
+    "showingYours": "Időjárás a helyszínedhez",
+    "unavailable": "Hely nem elérhető",
+    "timedOut": "Időtúllépés",
+    "offlineSaved": "Offline vagy — mentett adatok",
+    "offlineNoData": "Offline és nincsenek adatok",
+    "couldntRefresh": "Nem sikerült frissíteni — mentett adatok",
+    "enableLocation": "Engedélyezd a helyet a böngészőben"
+  },
+  "current": {
+    "local": "helyi",
+    "feelsLike": "Hőérzet",
+    "humidity": "Páratartalom",
+    "wind": "Szél",
+    "uvIndex": "UV-index",
+    "addFav": "Hozzáadás a kedvencekhez",
+    "removeFav": "Eltávolítás a kedvencekből",
+    "feelsLikeFull": "Hőérzet {{temp}}°"
+  },
+  "hourly": {
+    "next": "Következő {{hours}} óra",
+    "scroll": "görgetés →",
+    "now": "Most"
+  },
+  "daily": {
+    "outlook": "{{days}} napos előrejelzés",
+    "today": "Ma"
+  },
+  "favorites": {
+    "title": "Kedvencek",
+    "remove": "Kedvenc eltávolítása"
+  },
+  "footer": "Időjárási adatok forrása:",
+  "weather": {
+    "0": "Tiszta ég",
+    "1": "Többnyire derült",
+    "2": "Részben felhős",
+    "3": "Borult",
+    "45": "Köd",
+    "48": "Zúzmarás köd",
+    "51": "Gyenge szitálás",
+    "53": "Szitálás",
+    "55": "Erős szitálás",
+    "56": "Fagyos szitálás",
+    "57": "Fagyos szitálás",
+    "61": "Gyenge eső",
+    "63": "Eső",
+    "65": "Erős eső",
+    "66": "Fagyos eső",
+    "67": "Fagyos eső",
+    "71": "Gyenge havazás",
+    "73": "Hó",
+    "75": "Erős havazás",
+    "77": "Hószemcsék",
+    "80": "Záporok",
+    "81": "Záporok",
+    "82": "Heves záporok",
+    "85": "Hózáporok",
+    "86": "Erős hózáporok",
+    "95": "Zivatar",
+    "96": "Zivatar jégesővel",
+    "99": "Erős zivatar",
+    "unknown": "Ismeretlen"
+  }
+}

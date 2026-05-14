@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Vremenske napovedi po svetu",
+    "worldwide": "Globalne napovedi"
+  },
+  "search": {
+    "placeholder": "Iskanje mesta…",
+    "useMyLocation": "Uporabi mojo lokacijo"
+  },
+  "drawer": {
+    "useCurrent": "Uporabi trenutno lokacijo",
+    "pickOnMap": "Izberi na zemljevidu",
+    "alarmRadar": "Opozorilni radar",
+    "refresh": "Osveži vreme",
+    "europe": "Evropa",
+    "arab": "Arabski svet",
+    "favorites": "Priljubljene",
+    "language": "Jezik",
+    "about": "O aplikaciji",
+    "dataSource": "Open-Meteo podatki"
+  },
+  "alarm": {
+    "title": "Opozorilni radar",
+    "description": "Radar padavin v živo in aktivna vremenska opozorila.",
+    "activeAlerts": "Aktivna opozorila",
+    "noAlerts": "Trenutno ni resnih opozoril.",
+    "disclaimer": "Opozorila izhajajo iz trenutnih napovedi.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Opozorilo o nevihti",
+        "detail": "Pričakujemo strele in močan dež."
+      },
+      "heavyRain": {
+        "title": "Močan dež",
+        "detail": "Nevarnost poplav."
+      },
+      "heavySnow": {
+        "title": "Močno sneženje",
+        "detail": "Sneženje lahko moti potovanja."
+      },
+      "galeWind": {
+        "title": "Opozorilo o orkanskem vetru",
+        "detail": "Veter okoli {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Močan veter",
+        "detail": "Veter okoli {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Ekstremna vročina",
+        "detail": "Maksimumi pri {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Ekstremen mraz",
+        "detail": "Minimumi pri {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Po urah",
+    "fiveDays": "5 dni",
+    "tenDays": "10 dni"
+  },
+  "actions": {
+    "refresh": "Osveži",
+    "lastUpdated": "Zadnja posodobitev"
+  },
+  "map": {
+    "title": "Vremenska karta",
+    "description": "Tapnite kjerkoli na zemljevidu sveta.",
+    "hint": "Tapnite zemljevid za vreme.",
+    "selected": "Izbrano",
+    "locating": "Lokacija…"
+  },
+  "offline": {
+    "title": "Način brez povezave",
+    "savedAt": "Prikazani podatki shranjeni {{date}}",
+    "connect": "Povežite se z internetom."
+  },
+  "toasts": {
+    "updated": "Vreme posodobljeno",
+    "approxLocation": "Približna lokacija: {{name}}",
+    "showing": "Vreme za {{name}}",
+    "showingYours": "Vreme za vašo lokacijo",
+    "unavailable": "Lokacija ni na voljo",
+    "timedOut": "Časovna omejitev presežena",
+    "offlineSaved": "Brez povezave — shranjeni podatki",
+    "offlineNoData": "Brez povezave in podatkov",
+    "couldntRefresh": "Osvežitev ni uspela",
+    "enableLocation": "Omogočite lokacijo v brskalniku"
+  },
+  "current": {
+    "local": "lokalno",
+    "feelsLike": "Občuti se kot",
+    "humidity": "Vlažnost",
+    "wind": "Veter",
+    "uvIndex": "UV-indeks",
+    "addFav": "Dodaj med priljubljene",
+    "removeFav": "Odstrani iz priljubljenih",
+    "feelsLikeFull": "Občuti se kot {{temp}}°"
+  },
+  "hourly": {
+    "next": "Naslednjih {{hours}} ur",
+    "scroll": "drsenje →",
+    "now": "Zdaj"
+  },
+  "daily": {
+    "outlook": "Napoved za {{days}} dni",
+    "today": "Danes"
+  },
+  "favorites": {
+    "title": "Priljubljene",
+    "remove": "Odstrani priljubljeno"
+  },
+  "footer": "Vremenski podatki:",
+  "weather": {
+    "0": "Jasno",
+    "1": "Pretežno jasno",
+    "2": "Delno oblačno",
+    "3": "Oblačno",
+    "45": "Megla",
+    "48": "Ivje megla",
+    "51": "Rahlo pršenje",
+    "53": "Pršenje",
+    "55": "Močno pršenje",
+    "56": "Zmrzujoče pršenje",
+    "57": "Zmrzujoče pršenje",
+    "61": "Rahel dež",
+    "63": "Dež",
+    "65": "Močan dež",
+    "66": "Zmrzujoč dež",
+    "67": "Zmrzujoč dež",
+    "71": "Rahel sneg",
+    "73": "Sneg",
+    "75": "Močan sneg",
+    "77": "Snežna zrna",
+    "80": "Plohe",
+    "81": "Plohe",
+    "82": "Močne plohe",
+    "85": "Snežne plohe",
+    "86": "Močne snežne plohe",
+    "95": "Nevihta",
+    "96": "Nevihta s točo",
+    "99": "Močna nevihta",
+    "unknown": "Neznano"
+  }
+}

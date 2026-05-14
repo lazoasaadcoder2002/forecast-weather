@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Prognoze meteo mondiale",
+    "worldwide": "Prognoze globale"
+  },
+  "search": {
+    "placeholder": "Caută orice oraș…",
+    "useMyLocation": "Folosește locația mea"
+  },
+  "drawer": {
+    "useCurrent": "Folosește locația curentă",
+    "pickOnMap": "Alege pe hartă",
+    "alarmRadar": "Radar de alertă",
+    "refresh": "Reîmprospătează vremea",
+    "europe": "Europa",
+    "arab": "Lumea arabă",
+    "favorites": "Favorite",
+    "language": "Limbă",
+    "about": "Despre",
+    "dataSource": "Date Open-Meteo"
+  },
+  "alarm": {
+    "title": "Radar de alertă",
+    "description": "Radar de precipitații live și avertizări meteo active.",
+    "activeAlerts": "Alerte active",
+    "noAlerts": "Nicio alertă meteo severă acum.",
+    "disclaimer": "Alertele provin din prognozele actuale.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Avertizare furtună",
+        "detail": "Fulgere și ploi torențiale așteptate."
+      },
+      "heavyRain": {
+        "title": "Ploi puternice",
+        "detail": "Risc de inundații."
+      },
+      "heavySnow": {
+        "title": "Ninsoare puternică",
+        "detail": "Ninsoarea poate afecta călătoriile."
+      },
+      "galeWind": {
+        "title": "Avertizare vânt puternic",
+        "detail": "Vânt în jur de {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Vânt puternic",
+        "detail": "Vânt în jur de {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Caniculă extremă",
+        "detail": "Maxime aproape de {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Frig extrem",
+        "detail": "Minime aproape de {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Pe ore",
+    "fiveDays": "5 zile",
+    "tenDays": "10 zile"
+  },
+  "actions": {
+    "refresh": "Reîmprospătează",
+    "lastUpdated": "Ultima actualizare"
+  },
+  "map": {
+    "title": "Hartă meteo",
+    "description": "Atinge oriunde pe harta lumii.",
+    "hint": "Atinge harta pentru a vedea vremea.",
+    "selected": "Selectat",
+    "locating": "Se localizează…"
+  },
+  "offline": {
+    "title": "Mod offline",
+    "savedAt": "Se afișează datele salvate la {{date}}",
+    "connect": "Conectează-te la internet."
+  },
+  "toasts": {
+    "updated": "Vremea actualizată",
+    "approxLocation": "Locație aproximativă: {{name}}",
+    "showing": "Vremea pentru {{name}}",
+    "showingYours": "Vremea pentru locația ta",
+    "unavailable": "Locație indisponibilă",
+    "timedOut": "Cerere expirată",
+    "offlineSaved": "Ești offline — date salvate",
+    "offlineNoData": "Offline și fără date",
+    "couldntRefresh": "Nu s-a putut actualiza — date salvate",
+    "enableLocation": "Activează locația în browser"
+  },
+  "current": {
+    "local": "local",
+    "feelsLike": "Se simte ca",
+    "humidity": "Umiditate",
+    "wind": "Vânt",
+    "uvIndex": "Index UV",
+    "addFav": "Adaugă la favorite",
+    "removeFav": "Elimină din favorite",
+    "feelsLikeFull": "Se simte ca {{temp}}°"
+  },
+  "hourly": {
+    "next": "Următoarele {{hours}} ore",
+    "scroll": "derulează →",
+    "now": "Acum"
+  },
+  "daily": {
+    "outlook": "Prognoză {{days}} zile",
+    "today": "Astăzi"
+  },
+  "favorites": {
+    "title": "Favorite",
+    "remove": "Elimină favoritul"
+  },
+  "footer": "Date meteo de la",
+  "weather": {
+    "0": "Cer senin",
+    "1": "Aproape senin",
+    "2": "Parțial înnorat",
+    "3": "Înnorat",
+    "45": "Ceață",
+    "48": "Ceață cu chiciură",
+    "51": "Burniță ușoară",
+    "53": "Burniță",
+    "55": "Burniță densă",
+    "56": "Burniță înghețată",
+    "57": "Burniță înghețată",
+    "61": "Ploaie ușoară",
+    "63": "Ploaie",
+    "65": "Ploaie torențială",
+    "66": "Ploaie înghețată",
+    "67": "Ploaie înghețată",
+    "71": "Ninsoare ușoară",
+    "73": "Ninsoare",
+    "75": "Ninsoare abundentă",
+    "77": "Granule de zăpadă",
+    "80": "Averse",
+    "81": "Averse",
+    "82": "Averse violente",
+    "85": "Averse de zăpadă",
+    "86": "Averse mari de zăpadă",
+    "95": "Furtună",
+    "96": "Furtună cu grindină",
+    "99": "Furtună severă",
+    "unknown": "Necunoscut"
+  }
+}
