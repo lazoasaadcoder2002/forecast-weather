@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Parashikime moti në mbarë botën",
+    "worldwide": "Parashikime globale"
+  },
+  "search": {
+    "placeholder": "Kërko qytet…",
+    "useMyLocation": "Përdor vendndodhjen time"
+  },
+  "drawer": {
+    "useCurrent": "Përdor vendndodhjen aktuale",
+    "pickOnMap": "Zgjidh në hartë",
+    "alarmRadar": "Radari i alarmit",
+    "refresh": "Rifresko motin",
+    "europe": "Evropa",
+    "arab": "Bota arabe",
+    "favorites": "Të preferuarat",
+    "language": "Gjuha",
+    "about": "Rreth",
+    "dataSource": "Të dhëna Open-Meteo"
+  },
+  "alarm": {
+    "title": "Radari i alarmit",
+    "description": "Radar reshjesh në kohë reale dhe paralajmërime moti.",
+    "activeAlerts": "Paralajmërime aktive",
+    "noAlerts": "Asnjë paralajmërim i rëndë moti.",
+    "disclaimer": "Paralajmërimet rrjedhin nga parashikimet aktuale.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Paralajmërim stuhie",
+        "detail": "Vetëtima dhe shi i dendur. Shmangni hapësirat e hapura."
+      },
+      "heavyRain": {
+        "title": "Shi i dendur",
+        "detail": "Rrezik përmbytjesh."
+      },
+      "heavySnow": {
+        "title": "Borë e dendur",
+        "detail": "Bora mund të prishë udhëtimin."
+      },
+      "galeWind": {
+        "title": "Paralajmërim ere të fortë",
+        "detail": "Erëra rreth {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Erë e fortë",
+        "detail": "Erëra rreth {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Vapë ekstreme",
+        "detail": "Maksimumet rreth {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "I ftohtë ekstrem",
+        "detail": "Minimumet rreth {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Orë pas ore",
+    "fiveDays": "5 ditë",
+    "tenDays": "10 ditë"
+  },
+  "actions": {
+    "refresh": "Rifresko",
+    "lastUpdated": "Përditësimi i fundit"
+  },
+  "map": {
+    "title": "Hartë moti",
+    "description": "Prek kudo në hartën e botës.",
+    "hint": "Prek hartën për të parë motin.",
+    "selected": "Zgjedhur",
+    "locating": "Po lokalizon…"
+  },
+  "offline": {
+    "title": "Modaliteti offline",
+    "savedAt": "Shfaqen të dhënat e ruajtura më {{date}}",
+    "connect": "Lidhu me internetin për motin."
+  },
+  "toasts": {
+    "updated": "Moti u përditësua",
+    "approxLocation": "Vendndodhje e përafërt: {{name}}",
+    "showing": "Moti për {{name}}",
+    "showingYours": "Moti për vendndodhjen tuaj",
+    "unavailable": "Vendndodhja e padisponueshme",
+    "timedOut": "Kërkesa skadoi",
+    "offlineSaved": "Jeni offline — të dhëna të ruajtura",
+    "offlineNoData": "Offline pa të dhëna",
+    "couldntRefresh": "Nuk u rifreskua — të dhëna të ruajtura",
+    "enableLocation": "Aktivizo vendndodhjen në shfletues"
+  },
+  "current": {
+    "local": "lokale",
+    "feelsLike": "Ndihet si",
+    "humidity": "Lagështia",
+    "wind": "Era",
+    "uvIndex": "Indeksi UV",
+    "addFav": "Shto te të preferuarat",
+    "removeFav": "Hiq nga të preferuarat",
+    "feelsLikeFull": "Ndihet si {{temp}}°"
+  },
+  "hourly": {
+    "next": "{{hours}} orët e ardhshme",
+    "scroll": "rrëshqit →",
+    "now": "Tani"
+  },
+  "daily": {
+    "outlook": "Parashikim {{days}}-ditor",
+    "today": "Sot"
+  },
+  "favorites": {
+    "title": "Të preferuarat",
+    "remove": "Hiq të preferuarën"
+  },
+  "footer": "Të dhënat e motit nga",
+  "weather": {
+    "0": "Qiell i kthjellët",
+    "1": "Kryesisht i kthjellët",
+    "2": "Pjesërisht me re",
+    "3": "I vrenjtur",
+    "45": "Mjegull",
+    "48": "Mjegull e ngrirë",
+    "51": "Shi i lehtë",
+    "53": "Shi i imët",
+    "55": "Shi i imët i dendur",
+    "56": "Shi i ngrirë",
+    "57": "Shi i ngrirë",
+    "61": "Shi i lehtë",
+    "63": "Shi",
+    "65": "Shi i dendur",
+    "66": "Shi i ngrirë",
+    "67": "Shi i ngrirë",
+    "71": "Borë e lehtë",
+    "73": "Borë",
+    "75": "Borë e dendur",
+    "77": "Kokrra bore",
+    "80": "Shira",
+    "81": "Shira",
+    "82": "Shira të dhunshëm",
+    "85": "Bora",
+    "86": "Bora të dendura",
+    "95": "Stuhi",
+    "96": "Stuhi me breshër",
+    "99": "Stuhi e ashpër",
+    "unknown": "E panjohur"
+  }
+}

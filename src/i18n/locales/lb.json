@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Weltwäit Wiedervirsoën",
+    "worldwide": "Globale Virsoën"
+  },
+  "search": {
+    "placeholder": "Sich eng Stad…",
+    "useMyLocation": "Meng Plaz benotzen"
+  },
+  "drawer": {
+    "useCurrent": "Aktuell Plaz benotzen",
+    "pickOnMap": "Op der Kaart wielen",
+    "alarmRadar": "Alarmradar",
+    "refresh": "Wieder aktualiséieren",
+    "europe": "Europa",
+    "arab": "Arabesch Welt",
+    "favorites": "Favoritten",
+    "language": "Sprooch",
+    "about": "Iwwer",
+    "dataSource": "Open-Meteo Daten"
+  },
+  "alarm": {
+    "title": "Alarmradar",
+    "description": "Live Nidderschlagsradar a Wiederwarnungen.",
+    "activeAlerts": "Aktiv Warnungen",
+    "noAlerts": "Keng schwéier Wiederwarnungen am Moment.",
+    "disclaimer": "Warnungen kommen aus aktuellen Virsoën. Fir offiziell Warnungen kontaktéiert Är meteorologesch Servicer.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Donnerwarnung",
+        "detail": "Blëtz a staarken Reen erwaart. Vermeit oppe Plazen."
+      },
+      "heavyRain": {
+        "title": "Staarke Reen",
+        "detail": "Iwwerschwemmungsrisiko a schlecht Siicht."
+      },
+      "heavySnow": {
+        "title": "Staarke Schnéi",
+        "detail": "Schnéi kann d'Reesen stéieren."
+      },
+      "galeWind": {
+        "title": "Stuermwarnung",
+        "detail": "Wand bei {{speed}} km/h. Sécher locker Saachen."
+      },
+      "strongWind": {
+        "title": "Staarke Wand",
+        "detail": "Wand ronderëm {{speed}} km/h. Opgepasst dobaussen."
+      },
+      "extremeHeat": {
+        "title": "Extrem Hëtzt",
+        "detail": "Maximum bei {{temp}}°. Drénkt Waasser."
+      },
+      "extremeCold": {
+        "title": "Extrem Keelt",
+        "detail": "Minimum bei {{temp}}°. Frostriskio — zitt Iech waarm un."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Stonn fir Stonn",
+    "fiveDays": "5 Deeg",
+    "tenDays": "10 Deeg"
+  },
+  "actions": {
+    "refresh": "Aktualiséieren",
+    "lastUpdated": "Lescht Aktualiséierung"
+  },
+  "map": {
+    "title": "Wiederkaart",
+    "description": "Klickt iergendwou op d'Weltkaart.",
+    "hint": "Klickt op d'Kaart fir d'Wieder ze gesinn.",
+    "selected": "Ausgewielt",
+    "locating": "Lokaliséieren…"
+  },
+  "offline": {
+    "title": "Offline Modus",
+    "savedAt": "Daten gespäichert um {{date}}",
+    "connect": "Verbënnt Iech mam Internet."
+  },
+  "toasts": {
+    "updated": "Wieder aktualiséiert",
+    "approxLocation": "Ongeféier Plaz: {{name}}",
+    "showing": "Wieder fir {{name}}",
+    "showingYours": "Wieder fir Är Plaz",
+    "unavailable": "Plaz net verfügbar",
+    "timedOut": "Ufro ofgelaf",
+    "offlineSaved": "Dir sidd offline — gespäichert Daten",
+    "offlineNoData": "Offline an keng Daten",
+    "couldntRefresh": "Konnt net aktualiséieren",
+    "enableLocation": "Aktivéiert d'Plaz am Browser"
+  },
+  "current": {
+    "local": "lokal",
+    "feelsLike": "Fillt sech un wéi",
+    "humidity": "Fiichtegkeet",
+    "wind": "Wand",
+    "uvIndex": "UV-Index",
+    "addFav": "Bei Favoritten dobäisetzen",
+    "removeFav": "Vu Favoritten ewechhuelen",
+    "feelsLikeFull": "Fillt sech un wéi {{temp}}°"
+  },
+  "hourly": {
+    "next": "Nächst {{hours}} Stonnen",
+    "scroll": "scrollen →",
+    "now": "Elo"
+  },
+  "daily": {
+    "outlook": "{{days}}-Deeg Virsoë",
+    "today": "Haut"
+  },
+  "favorites": {
+    "title": "Favoritten",
+    "remove": "Favorit ewechhuelen"
+  },
+  "footer": "Wiederdaten vun",
+  "weather": {
+    "0": "Klore Himmel",
+    "1": "Meeschtens kloer",
+    "2": "Deelweis bewölkt",
+    "3": "Bedeckt",
+    "45": "Niwwel",
+    "48": "Räif-Niwwel",
+    "51": "Liichten Drëps",
+    "53": "Drëps",
+    "55": "Staarken Drëps",
+    "56": "Gefruerener Drëps",
+    "57": "Gefruerener Drëps",
+    "61": "Liichte Reen",
+    "63": "Reen",
+    "65": "Staarke Reen",
+    "66": "Gefruerene Reen",
+    "67": "Gefruerene Reen",
+    "71": "Liichte Schnéi",
+    "73": "Schnéi",
+    "75": "Staarke Schnéi",
+    "77": "Schnéikären",
+    "80": "Reenschauer",
+    "81": "Reenschauer",
+    "82": "Heftig Schauer",
+    "85": "Schnéischauer",
+    "86": "Staark Schnéischauer",
+    "95": "Donner",
+    "96": "Donner mat Hagel",
+    "99": "Schwéier Donner",
+    "unknown": "Onbekannt"
+  }
+}

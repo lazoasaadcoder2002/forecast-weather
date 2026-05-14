@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Maailmanlaajuiset sääennusteet",
+    "worldwide": "Maailmanlaajuiset ennusteet"
+  },
+  "search": {
+    "placeholder": "Etsi mikä tahansa kaupunki…",
+    "useMyLocation": "Käytä sijaintiani"
+  },
+  "drawer": {
+    "useCurrent": "Käytä nykyistä sijaintia",
+    "pickOnMap": "Valitse kartalta",
+    "alarmRadar": "Hälytystutka",
+    "refresh": "Päivitä sää",
+    "europe": "Eurooppa",
+    "arab": "Arabimaailma",
+    "favorites": "Suosikit",
+    "language": "Kieli",
+    "about": "Tietoja",
+    "dataSource": "Open-Meteo-tiedot"
+  },
+  "alarm": {
+    "title": "Hälytystutka",
+    "description": "Reaaliaikainen sadetutka ja aktiiviset säävaroitukset sijainnillesi.",
+    "activeAlerts": "Aktiiviset varoitukset",
+    "noAlerts": "Ei vakavia säävaroituksia juuri nyt. Pysy turvassa!",
+    "disclaimer": "Varoitukset johdetaan nykyisistä ennusteista. Virallisia varoituksia varten ota yhteys paikalliseen ilmatieteen laitokseen.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Ukkosvaroitus",
+        "detail": "Salamointia ja rankkasateita odotettavissa. Vältä avoimia alueita."
+      },
+      "heavyRain": {
+        "title": "Rankkasade",
+        "detail": "Tulvariski ja huono näkyvyys. Aja varovasti."
+      },
+      "heavySnow": {
+        "title": "Runsas lumisade",
+        "detail": "Lumisade voi häiritä matkustamista ja heikentää näkyvyyttä."
+      },
+      "galeWind": {
+        "title": "Myrskyvaroitus",
+        "detail": "Tuulen nopeus lähellä {{speed}} km/h. Kiinnitä irtonaiset esineet."
+      },
+      "strongWind": {
+        "title": "Voimakas tuuli",
+        "detail": "Tuulia noin {{speed}} km/h odotettavissa. Ole varovainen ulkona."
+      },
+      "extremeHeat": {
+        "title": "Äärimmäinen kuumuus",
+        "detail": "Lämpötila lähellä {{temp}}°. Juo vettä ja vältä aurinkoa."
+      },
+      "extremeCold": {
+        "title": "Äärimmäinen kylmyys",
+        "detail": "Lämpötila lähellä {{temp}}°. Paleltumavaara — pukeudu lämpimästi."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Tunneittain",
+    "fiveDays": "5 päivää",
+    "tenDays": "10 päivää"
+  },
+  "actions": {
+    "refresh": "Päivitä",
+    "lastUpdated": "Päivitetty viimeksi"
+  },
+  "map": {
+    "title": "Säkartta",
+    "description": "Napauta mitä tahansa kohtaa maailmankartalla ladataksesi ennusteen.",
+    "hint": "Napauta karttaa nähdäksesi sään.",
+    "selected": "Valittu",
+    "locating": "Paikannetaan…"
+  },
+  "offline": {
+    "title": "Offline-tila",
+    "savedAt": "Näytetään tiedot tallennettu {{date}}",
+    "connect": "Yhdistä internetiin ladataksesi sään."
+  },
+  "toasts": {
+    "updated": "Sää päivitetty",
+    "approxLocation": "Likimääräinen sijainti: {{name}}",
+    "showing": "Näytetään sää: {{name}}",
+    "showingYours": "Näytetään sää sijainnillesi",
+    "unavailable": "Sijainti ei saatavilla",
+    "timedOut": "Sijaintipyyntö aikakatkaistiin",
+    "offlineSaved": "Olet offline-tilassa — näytetään tallennetut tiedot",
+    "offlineNoData": "Olet offline-tilassa eikä tallennettuja tietoja ole",
+    "couldntRefresh": "Ei voitu päivittää — näytetään tallennetut tiedot",
+    "enableLocation": "Ota sijainti käyttöön selaimen asetuksista"
+  },
+  "current": {
+    "local": "paikallinen",
+    "feelsLike": "Tuntuu kuin",
+    "humidity": "Kosteus",
+    "wind": "Tuuli",
+    "uvIndex": "UV-indeksi",
+    "addFav": "Lisää suosikiksi",
+    "removeFav": "Poista suosikeista",
+    "feelsLikeFull": "Tuntuu kuin {{temp}}°"
+  },
+  "hourly": {
+    "next": "Seuraavat {{hours}} tuntia",
+    "scroll": "selaa →",
+    "now": "Nyt"
+  },
+  "daily": {
+    "outlook": "{{days}} päivän ennuste",
+    "today": "Tänään"
+  },
+  "favorites": {
+    "title": "Suosikit",
+    "remove": "Poista suosikki"
+  },
+  "footer": "Säätiedot:",
+  "weather": {
+    "0": "Selkeää",
+    "1": "Pääosin selkeää",
+    "2": "Puolipilvistä",
+    "3": "Pilvistä",
+    "45": "Sumua",
+    "48": "Huurresumua",
+    "51": "Tihkua",
+    "53": "Tihkua",
+    "55": "Voimakasta tihkua",
+    "56": "Jäätävää tihkua",
+    "57": "Jäätävää tihkua",
+    "61": "Kevyttä sadetta",
+    "63": "Sadetta",
+    "65": "Voimakasta sadetta",
+    "66": "Jäätävää sadetta",
+    "67": "Jäätävää sadetta",
+    "71": "Kevyttä lunta",
+    "73": "Lunta",
+    "75": "Voimakasta lunta",
+    "77": "Lumijyväsiä",
+    "80": "Sadekuuroja",
+    "81": "Sadekuuroja",
+    "82": "Rajuja kuuroja",
+    "85": "Lumikuuroja",
+    "86": "Voimakkaita lumikuuroja",
+    "95": "Ukkonen",
+    "96": "Ukkonen ja rakeita",
+    "99": "Voimakas ukkonen",
+    "unknown": "Tuntematon"
+  }
+}

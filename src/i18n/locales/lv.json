@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Pasaules laika prognozes",
+    "worldwide": "Globālās prognozes"
+  },
+  "search": {
+    "placeholder": "Meklēt pilsētu…",
+    "useMyLocation": "Izmantot manu atrašanās vietu"
+  },
+  "drawer": {
+    "useCurrent": "Izmantot pašreizējo atrašanās vietu",
+    "pickOnMap": "Izvēlēties kartē",
+    "alarmRadar": "Brīdinājumu radars",
+    "refresh": "Atjaunināt laiku",
+    "europe": "Eiropa",
+    "arab": "Arābu pasaule",
+    "favorites": "Iecienītākie",
+    "language": "Valoda",
+    "about": "Par",
+    "dataSource": "Open-Meteo dati"
+  },
+  "alarm": {
+    "title": "Brīdinājumu radars",
+    "description": "Tiešraides nokrišņu radars un aktīvi laika brīdinājumi.",
+    "activeAlerts": "Aktīvie brīdinājumi",
+    "noAlerts": "Šobrīd nav nopietnu brīdinājumu.",
+    "disclaimer": "Brīdinājumi izriet no pašreizējām prognozēm.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Pērkona brīdinājums",
+        "detail": "Gaidāmi zibens un stiprs lietus."
+      },
+      "heavyRain": {
+        "title": "Stiprs lietus",
+        "detail": "Plūdu risks."
+      },
+      "heavySnow": {
+        "title": "Stiprs sniegs",
+        "detail": "Sniegs var traucēt ceļošanu."
+      },
+      "galeWind": {
+        "title": "Vētras brīdinājums",
+        "detail": "Vējš ap {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Stiprs vējš",
+        "detail": "Vējš ap {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Ekstrēms karstums",
+        "detail": "Maksimumi ap {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Ekstrēms aukstums",
+        "detail": "Minimumi ap {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Pa stundām",
+    "fiveDays": "5 dienas",
+    "tenDays": "10 dienas"
+  },
+  "actions": {
+    "refresh": "Atjaunināt",
+    "lastUpdated": "Pēdējais atjauninājums"
+  },
+  "map": {
+    "title": "Laika karte",
+    "description": "Pieskarieties jebkur pasaules kartē.",
+    "hint": "Pieskarieties kartei laika apskatei.",
+    "selected": "Izvēlēts",
+    "locating": "Atrašanās vieta…"
+  },
+  "offline": {
+    "title": "Bezsaistes režīms",
+    "savedAt": "Tiek rādīti dati saglabāti {{date}}",
+    "connect": "Pieslēdzieties internetam."
+  },
+  "toasts": {
+    "updated": "Laiks atjaunināts",
+    "approxLocation": "Aptuvenā atrašanās vieta: {{name}}",
+    "showing": "Laiks {{name}}",
+    "showingYours": "Laiks jūsu atrašanās vietai",
+    "unavailable": "Atrašanās vieta nav pieejama",
+    "timedOut": "Pieprasījuma noildze",
+    "offlineSaved": "Esat bezsaistē — saglabātie dati",
+    "offlineNoData": "Bezsaistē bez datiem",
+    "couldntRefresh": "Atjaunināšana neizdevās",
+    "enableLocation": "Iespējojiet atrašanās vietu pārlūkā"
+  },
+  "current": {
+    "local": "vietējais",
+    "feelsLike": "Jūtas kā",
+    "humidity": "Mitrums",
+    "wind": "Vējš",
+    "uvIndex": "UV indekss",
+    "addFav": "Pievienot iecienītākajiem",
+    "removeFav": "Noņemt no iecienītākajiem",
+    "feelsLikeFull": "Jūtas kā {{temp}}°"
+  },
+  "hourly": {
+    "next": "Nākamās {{hours}} stundas",
+    "scroll": "ritināt →",
+    "now": "Tagad"
+  },
+  "daily": {
+    "outlook": "{{days}}-dienu prognoze",
+    "today": "Šodien"
+  },
+  "favorites": {
+    "title": "Iecienītākie",
+    "remove": "Noņemt iecienītāko"
+  },
+  "footer": "Laika dati:",
+  "weather": {
+    "0": "Skaidras debesis",
+    "1": "Pārsvarā skaidrs",
+    "2": "Daļēji mākoņains",
+    "3": "Apmācies",
+    "45": "Migla",
+    "48": "Sarmas migla",
+    "51": "Viegls smidzens",
+    "53": "Smidzens",
+    "55": "Stiprs smidzens",
+    "56": "Sasalstošs smidzens",
+    "57": "Sasalstošs smidzens",
+    "61": "Viegls lietus",
+    "63": "Lietus",
+    "65": "Stiprs lietus",
+    "66": "Sasalstošs lietus",
+    "67": "Sasalstošs lietus",
+    "71": "Viegls sniegs",
+    "73": "Sniegs",
+    "75": "Stiprs sniegs",
+    "77": "Sniega graudi",
+    "80": "Lietusgāzes",
+    "81": "Lietusgāzes",
+    "82": "Spēcīgas lietusgāzes",
+    "85": "Sniegputeņi",
+    "86": "Stipri sniegputeņi",
+    "95": "Pērkons",
+    "96": "Pērkons ar krusu",
+    "99": "Stiprs pērkons",
+    "unknown": "Nezināms"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Veðurspár um allan heim",
+    "worldwide": "Heimspár"
+  },
+  "search": {
+    "placeholder": "Leita að borg…",
+    "useMyLocation": "Nota staðsetningu mína"
+  },
+  "drawer": {
+    "useCurrent": "Nota núverandi staðsetningu",
+    "pickOnMap": "Velja á korti",
+    "alarmRadar": "Aðvörunarratsjá",
+    "refresh": "Endurnýja veður",
+    "europe": "Evrópa",
+    "arab": "Arabaheimurinn",
+    "favorites": "Eftirlæti",
+    "language": "Tungumál",
+    "about": "Um",
+    "dataSource": "Open-Meteo gögn"
+  },
+  "alarm": {
+    "title": "Aðvörunarratsjá",
+    "description": "Bein úrkomuratsjá og virkar veðuraðvaranir.",
+    "activeAlerts": "Virkar aðvaranir",
+    "noAlerts": "Engar alvarlegar veðuraðvaranir núna. Vertu örugg/ur!",
+    "disclaimer": "Aðvaranir eru leiddar af núverandi spám. Fyrir opinberar aðvaranir, hafðu samband við Veðurstofuna.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Þrumuviðvörun",
+        "detail": "Eldingar og hellirigning væntanleg. Forðastu opin svæði."
+      },
+      "heavyRain": {
+        "title": "Mikil rigning",
+        "detail": "Hætta á flóðum og lélegu skyggni. Aktu varlega."
+      },
+      "heavySnow": {
+        "title": "Mikil snjókoma",
+        "detail": "Snjókoma getur truflað ferðir og dregið úr skyggni."
+      },
+      "galeWind": {
+        "title": "Stormviðvörun",
+        "detail": "Stöðugur vindur nálægt {{speed}} km/klst. Tryggðu lausa hluti."
+      },
+      "strongWind": {
+        "title": "Sterkur vindur",
+        "detail": "Vindur um {{speed}} km/klst væntanlegur. Farðu varlega úti."
+      },
+      "extremeHeat": {
+        "title": "Mikill hiti",
+        "detail": "Hámark nálægt {{temp}}°. Drekktu vatn og forðastu sól."
+      },
+      "extremeCold": {
+        "title": "Mikil kuldi",
+        "detail": "Lágmark nálægt {{temp}}°. Frostbitahætta — klæddu þig vel."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Klukkustundir",
+    "fiveDays": "5 dagar",
+    "tenDays": "10 dagar"
+  },
+  "actions": {
+    "refresh": "Endurnýja",
+    "lastUpdated": "Síðast uppfært"
+  },
+  "map": {
+    "title": "Veðurkort",
+    "description": "Bankaðu hvar sem er á heimskortið.",
+    "hint": "Bankaðu á kortið til að sjá veðrið.",
+    "selected": "Valið",
+    "locating": "Staðsetning…"
+  },
+  "offline": {
+    "title": "Án nettengingar",
+    "savedAt": "Sýnir gögn vistuð {{date}}",
+    "connect": "Tengstu við netið til að hlaða veðri."
+  },
+  "toasts": {
+    "updated": "Veður uppfært",
+    "approxLocation": "Áætluð staðsetning: {{name}}",
+    "showing": "Sýnir veður fyrir {{name}}",
+    "showingYours": "Sýnir veður fyrir staðsetningu þína",
+    "unavailable": "Staðsetning ekki tiltæk",
+    "timedOut": "Staðsetningarbeiðni rann út",
+    "offlineSaved": "Án nettengingar — sýnir vistuð gögn",
+    "offlineNoData": "Án nettengingar og engin vistuð gögn",
+    "couldntRefresh": "Ekki hægt að endurnýja — sýnir vistuð gögn",
+    "enableLocation": "Virkjaðu staðsetningu í vafrastillingum"
+  },
+  "current": {
+    "local": "staðbundið",
+    "feelsLike": "Finnst eins og",
+    "humidity": "Raki",
+    "wind": "Vindur",
+    "uvIndex": "UV-vísitala",
+    "addFav": "Bæta við eftirlæti",
+    "removeFav": "Fjarlægja eftirlæti",
+    "feelsLikeFull": "Finnst eins og {{temp}}°"
+  },
+  "hourly": {
+    "next": "Næstu {{hours}} klst",
+    "scroll": "fletta →",
+    "now": "Núna"
+  },
+  "daily": {
+    "outlook": "{{days}}-daga horfur",
+    "today": "Í dag"
+  },
+  "favorites": {
+    "title": "Eftirlæti",
+    "remove": "Fjarlægja eftirlæti"
+  },
+  "footer": "Veðurgögn frá",
+  "weather": {
+    "0": "Heiðríkt",
+    "1": "Að mestu heiðríkt",
+    "2": "Skýjað að hluta",
+    "3": "Alskýjað",
+    "45": "Þoka",
+    "48": "Hrímþoka",
+    "51": "Létt súld",
+    "53": "Súld",
+    "55": "Þétt súld",
+    "56": "Frjósandi súld",
+    "57": "Frjósandi súld",
+    "61": "Létt rigning",
+    "63": "Rigning",
+    "65": "Mikil rigning",
+    "66": "Frjósandi rigning",
+    "67": "Frjósandi rigning",
+    "71": "Létt snjókoma",
+    "73": "Snjór",
+    "75": "Mikil snjókoma",
+    "77": "Snjókorn",
+    "80": "Skúrir",
+    "81": "Skúrir",
+    "82": "Mjög miklar skúrir",
+    "85": "Snjóskúrir",
+    "86": "Miklar snjóskúrir",
+    "95": "Þrumur",
+    "96": "Þrumur og hagl",
+    "99": "Mikið þrumuveður",
+    "unknown": "Óþekkt"
+  }
+}

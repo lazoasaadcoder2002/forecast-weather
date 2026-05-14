@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Pêşbînên hewayê yên cîhanî",
+    "worldwide": "Pêşbînên cîhanî"
+  },
+  "search": {
+    "placeholder": "Bajarekê bigere…",
+    "useMyLocation": "Cihê min bikar bîne"
+  },
+  "drawer": {
+    "useCurrent": "Cihê heyî bikar bîne",
+    "pickOnMap": "Li ser nexşe hilbijêre",
+    "alarmRadar": "Radara hişyariyê",
+    "refresh": "Hewayê nû bike",
+    "europe": "Ewropa",
+    "arab": "Cîhana Erebî",
+    "favorites": "Bijarte",
+    "language": "Ziman",
+    "about": "Derbarê",
+    "dataSource": "Daneyên Open-Meteo"
+  },
+  "alarm": {
+    "title": "Radara hişyariyê",
+    "description": "Radara baranê ya zindî û hişyariyên çalak ên hewayê.",
+    "activeAlerts": "Hişyariyên çalak",
+    "noAlerts": "Niha hişyariyên giran tune.",
+    "disclaimer": "Hişyarî ji pêşbînên niha tên.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Hişyariya birûskê",
+        "detail": "Birûsk û barana giran tê hêvîkirin."
+      },
+      "heavyRain": {
+        "title": "Barana giran",
+        "detail": "Xetereya lehiyê."
+      },
+      "heavySnow": {
+        "title": "Berfa giran",
+        "detail": "Berf dikare gerê asteng bike."
+      },
+      "galeWind": {
+        "title": "Hişyariya bahozê",
+        "detail": "Bayê nêzî {{speed}} km/saet."
+      },
+      "strongWind": {
+        "title": "Bayê xurt",
+        "detail": "Bayê nêzî {{speed}} km/saet."
+      },
+      "extremeHeat": {
+        "title": "Germahiya zêde",
+        "detail": "Bilindahî nêzî {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Sarmaya zêde",
+        "detail": "Nizmî nêzî {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Saet bi saet",
+    "fiveDays": "5 roj",
+    "tenDays": "10 roj"
+  },
+  "actions": {
+    "refresh": "Nû bike",
+    "lastUpdated": "Nûjenkirina dawî"
+  },
+  "map": {
+    "title": "Nexşeya hewayê",
+    "description": "Cihek li ser nexşeya cîhanê bitikîne.",
+    "hint": "Ji bo dîtina hewayê nexşeyê bitikîne.",
+    "selected": "Hilbijartî",
+    "locating": "Cih tê dîtin…"
+  },
+  "offline": {
+    "title": "Awayê negirêdayî",
+    "savedAt": "Daneyên hilanîn nîşan dide {{date}}",
+    "connect": "Bi înternetê ve girêde."
+  },
+  "toasts": {
+    "updated": "Hewa nû bû",
+    "approxLocation": "Cihê texmînî: {{name}}",
+    "showing": "Hewa ji bo {{name}}",
+    "showingYours": "Hewa ji bo cihê te",
+    "unavailable": "Cih nayê dîtin",
+    "timedOut": "Daxwaz qediya",
+    "offlineSaved": "Tu negirêdayî yî — daneyên hilanîn",
+    "offlineNoData": "Negirêdayî û bê dane",
+    "couldntRefresh": "Nikare nû bibe",
+    "enableLocation": "Cih li gerokê çalak bike"
+  },
+  "current": {
+    "local": "herêmî",
+    "feelsLike": "Wek tê hîskirin",
+    "humidity": "Şilabûn",
+    "wind": "Ba",
+    "uvIndex": "Pîvera UV",
+    "addFav": "Têxe bijarteyan",
+    "removeFav": "Ji bijarteyan derxe",
+    "feelsLikeFull": "Wek {{temp}}° tê hîskirin"
+  },
+  "hourly": {
+    "next": "{{hours}} saetên bê",
+    "scroll": "bigerîne →",
+    "now": "Niha"
+  },
+  "daily": {
+    "outlook": "Pêşbîna {{days}} rojî",
+    "today": "Îro"
+  },
+  "favorites": {
+    "title": "Bijarte",
+    "remove": "Bijarteyê derxe"
+  },
+  "footer": "Daneyên hewayê ji",
+  "weather": {
+    "0": "Asîmana zelal",
+    "1": "Bi giranî zelal",
+    "2": "Hinek ewr",
+    "3": "Ewr",
+    "45": "Mij",
+    "48": "Mija qeşa",
+    "51": "Barana siviktir",
+    "53": "Barana sivik",
+    "55": "Barana sivik a giran",
+    "56": "Barana qeşa",
+    "57": "Barana qeşa",
+    "61": "Barana sivik",
+    "63": "Baran",
+    "65": "Barana giran",
+    "66": "Barana qeşa",
+    "67": "Barana qeşa",
+    "71": "Berfa sivik",
+    "73": "Berf",
+    "75": "Berfa giran",
+    "77": "Dexlên berfê",
+    "80": "Bahozên baranê",
+    "81": "Bahozên baranê",
+    "82": "Bahozên xurt",
+    "85": "Bahozên berfê",
+    "86": "Bahozên xurt ên berfê",
+    "95": "Birûsk",
+    "96": "Birûsk bi heya",
+    "99": "Bahoza giran",
+    "unknown": "Nenas"
+  }
+}

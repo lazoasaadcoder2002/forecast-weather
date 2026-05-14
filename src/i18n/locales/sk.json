@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Celosvetové predpovede počasia",
+    "worldwide": "Celosvetové predpovede"
+  },
+  "search": {
+    "placeholder": "Hľadať mesto…",
+    "useMyLocation": "Použiť moju polohu"
+  },
+  "drawer": {
+    "useCurrent": "Použiť aktuálnu polohu",
+    "pickOnMap": "Vybrať na mape",
+    "alarmRadar": "Výstražný radar",
+    "refresh": "Obnoviť počasie",
+    "europe": "Európa",
+    "arab": "Arabský svet",
+    "favorites": "Obľúbené",
+    "language": "Jazyk",
+    "about": "O aplikácii",
+    "dataSource": "Dáta Open-Meteo"
+  },
+  "alarm": {
+    "title": "Výstražný radar",
+    "description": "Živý zrážkový radar a aktívne výstrahy.",
+    "activeAlerts": "Aktívne výstrahy",
+    "noAlerts": "Žiadne vážne výstrahy.",
+    "disclaimer": "Výstrahy vychádzajú z predpovedí. Pre oficiálne kontaktujte SHMÚ.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Búrková výstraha",
+        "detail": "Očakávajú sa blesky a silné lejaky."
+      },
+      "heavyRain": {
+        "title": "Silný dážď",
+        "detail": "Riziko záplav."
+      },
+      "heavySnow": {
+        "title": "Silné sneženie",
+        "detail": "Sneženie môže narušiť cestovanie."
+      },
+      "galeWind": {
+        "title": "Výstraha pred víchricou",
+        "detail": "Vietor okolo {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Silný vietor",
+        "detail": "Vietor okolo {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Extrémne teplo",
+        "detail": "Maximá pri {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Extrémny mráz",
+        "detail": "Minimá pri {{temp}}°."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Hodinová",
+    "fiveDays": "5 dní",
+    "tenDays": "10 dní"
+  },
+  "actions": {
+    "refresh": "Obnoviť",
+    "lastUpdated": "Naposledy aktualizované"
+  },
+  "map": {
+    "title": "Mapa počasia",
+    "description": "Klepnite kdekoľvek na mapu sveta.",
+    "hint": "Klepnite na mapu pre počasie.",
+    "selected": "Vybrané",
+    "locating": "Lokalizácia…"
+  },
+  "offline": {
+    "title": "Režim offline",
+    "savedAt": "Zobrazujú sa dáta uložené {{date}}",
+    "connect": "Pripojte sa k internetu."
+  },
+  "toasts": {
+    "updated": "Počasie aktualizované",
+    "approxLocation": "Približná poloha: {{name}}",
+    "showing": "Počasie pre {{name}}",
+    "showingYours": "Počasie pre vašu polohu",
+    "unavailable": "Poloha nedostupná",
+    "timedOut": "Vypršal čas",
+    "offlineSaved": "Ste offline — uložené dáta",
+    "offlineNoData": "Offline a žiadne dáta",
+    "couldntRefresh": "Nepodarilo sa obnoviť — uložené dáta",
+    "enableLocation": "Povoľte polohu v prehliadači"
+  },
+  "current": {
+    "local": "miestne",
+    "feelsLike": "Pocitová",
+    "humidity": "Vlhkosť",
+    "wind": "Vietor",
+    "uvIndex": "UV index",
+    "addFav": "Pridať k obľúbeným",
+    "removeFav": "Odstrániť z obľúbených",
+    "feelsLikeFull": "Pocitová {{temp}}°"
+  },
+  "hourly": {
+    "next": "Ďalších {{hours}} hodín",
+    "scroll": "posunúť →",
+    "now": "Teraz"
+  },
+  "daily": {
+    "outlook": "Predpoveď na {{days}} dní",
+    "today": "Dnes"
+  },
+  "favorites": {
+    "title": "Obľúbené",
+    "remove": "Odstrániť obľúbené"
+  },
+  "footer": "Dáta počasia od",
+  "weather": {
+    "0": "Jasno",
+    "1": "Prevažne jasno",
+    "2": "Polojasno",
+    "3": "Zamračené",
+    "45": "Hmla",
+    "48": "Námrazová hmla",
+    "51": "Slabé mrholenie",
+    "53": "Mrholenie",
+    "55": "Silné mrholenie",
+    "56": "Mrznúce mrholenie",
+    "57": "Mrznúce mrholenie",
+    "61": "Slabý dážď",
+    "63": "Dážď",
+    "65": "Silný dážď",
+    "66": "Mrznúci dážď",
+    "67": "Mrznúci dážď",
+    "71": "Slabé sneženie",
+    "73": "Sneh",
+    "75": "Silné sneženie",
+    "77": "Snehové zrná",
+    "80": "Prehánky",
+    "81": "Prehánky",
+    "82": "Prudké prehánky",
+    "85": "Snehové prehánky",
+    "86": "Silné snehové prehánky",
+    "95": "Búrka",
+    "96": "Búrka s krupobitím",
+    "99": "Silná búrka",
+    "unknown": "Neznáme"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Celosvětové předpovědi počasí",
+    "worldwide": "Celosvětové předpovědi"
+  },
+  "search": {
+    "placeholder": "Hledat libovolné město…",
+    "useMyLocation": "Použít moji polohu"
+  },
+  "drawer": {
+    "useCurrent": "Použít aktuální polohu",
+    "pickOnMap": "Vybrat na mapě",
+    "alarmRadar": "Radar varování",
+    "refresh": "Obnovit počasí",
+    "europe": "Evropa",
+    "arab": "Arabský svět",
+    "favorites": "Oblíbené",
+    "language": "Jazyk",
+    "about": "O aplikaci",
+    "dataSource": "Data Open-Meteo"
+  },
+  "alarm": {
+    "title": "Radar varování",
+    "description": "Živý srážkový radar a aktivní výstrahy počasí.",
+    "activeAlerts": "Aktivní výstrahy",
+    "noAlerts": "Žádné vážné výstrahy počasí.",
+    "disclaimer": "Výstrahy vycházejí z aktuálních předpovědí. Pro oficiální výstrahy konzultujte ČHMÚ.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Bouřková výstraha",
+        "detail": "Očekávají se blesky a silné lijáky. Vyhněte se otevřeným prostorům."
+      },
+      "heavyRain": {
+        "title": "Vydatný déšť",
+        "detail": "Riziko povodní. Jezděte opatrně."
+      },
+      "heavySnow": {
+        "title": "Vydatné sněžení",
+        "detail": "Sněžení může narušit dopravu."
+      },
+      "galeWind": {
+        "title": "Výstraha před vichřicí",
+        "detail": "Vítr okolo {{speed}} km/h."
+      },
+      "strongWind": {
+        "title": "Silný vítr",
+        "detail": "Vítr kolem {{speed}} km/h."
+      },
+      "extremeHeat": {
+        "title": "Extrémní horko",
+        "detail": "Maxima blízko {{temp}}°. Pijte vodu."
+      },
+      "extremeCold": {
+        "title": "Extrémní zima",
+        "detail": "Minima blízko {{temp}}°. Oblečte se teple."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Po hodinách",
+    "fiveDays": "5 dní",
+    "tenDays": "10 dní"
+  },
+  "actions": {
+    "refresh": "Obnovit",
+    "lastUpdated": "Naposledy aktualizováno"
+  },
+  "map": {
+    "title": "Mapa počasí",
+    "description": "Klepněte kamkoli na mapu světa.",
+    "hint": "Klepněte na mapu pro zobrazení počasí.",
+    "selected": "Vybráno",
+    "locating": "Lokalizace…"
+  },
+  "offline": {
+    "title": "Režim offline",
+    "savedAt": "Zobrazení dat uložených {{date}}",
+    "connect": "Připojte se k internetu pro načtení počasí."
+  },
+  "toasts": {
+    "updated": "Počasí aktualizováno",
+    "approxLocation": "Přibližná poloha: {{name}}",
+    "showing": "Zobrazuji počasí pro {{name}}",
+    "showingYours": "Zobrazuji počasí pro vaši polohu",
+    "unavailable": "Poloha nedostupná",
+    "timedOut": "Vypršel časový limit",
+    "offlineSaved": "Jste offline — zobrazená uložená data",
+    "offlineNoData": "Offline a žádná uložená data",
+    "couldntRefresh": "Nelze obnovit — zobrazená uložená data",
+    "enableLocation": "Povolte polohu v nastavení prohlížeče"
+  },
+  "current": {
+    "local": "místní",
+    "feelsLike": "Pocitová",
+    "humidity": "Vlhkost",
+    "wind": "Vítr",
+    "uvIndex": "UV index",
+    "addFav": "Přidat k oblíbeným",
+    "removeFav": "Odebrat z oblíbených",
+    "feelsLikeFull": "Pocitová {{temp}}°"
+  },
+  "hourly": {
+    "next": "Dalších {{hours}} hodin",
+    "scroll": "posunout →",
+    "now": "Nyní"
+  },
+  "daily": {
+    "outlook": "Předpověď na {{days}} dní",
+    "today": "Dnes"
+  },
+  "favorites": {
+    "title": "Oblíbené",
+    "remove": "Odstranit oblíbené"
+  },
+  "footer": "Data počasí od",
+  "weather": {
+    "0": "Jasno",
+    "1": "Převážně jasno",
+    "2": "Polojasno",
+    "3": "Zataženo",
+    "45": "Mlha",
+    "48": "Námrazová mlha",
+    "51": "Slabé mrholení",
+    "53": "Mrholení",
+    "55": "Silné mrholení",
+    "56": "Mrznoucí mrholení",
+    "57": "Mrznoucí mrholení",
+    "61": "Slabý déšť",
+    "63": "Déšť",
+    "65": "Silný déšť",
+    "66": "Mrznoucí déšť",
+    "67": "Mrznoucí déšť",
+    "71": "Slabé sněžení",
+    "73": "Sníh",
+    "75": "Silné sněžení",
+    "77": "Sněhová zrna",
+    "80": "Přeháňky",
+    "81": "Přeháňky",
+    "82": "Prudké přeháňky",
+    "85": "Sněhové přeháňky",
+    "86": "Silné sněhové přeháňky",
+    "95": "Bouřka",
+    "96": "Bouřka s kroupami",
+    "99": "Silná bouřka",
+    "unknown": "Neznámé"
+  }
+}

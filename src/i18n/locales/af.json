@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Skyline",
+    "tagline": "Wêreldwye weervoorspellings",
+    "worldwide": "Wêreldwye voorspellings"
+  },
+  "search": {
+    "placeholder": "Soek 'n stad…",
+    "useMyLocation": "Gebruik my ligging"
+  },
+  "drawer": {
+    "useCurrent": "Gebruik huidige ligging",
+    "pickOnMap": "Kies op kaart",
+    "alarmRadar": "Alarmradar",
+    "refresh": "Verfris weer",
+    "europe": "Europa",
+    "arab": "Arabiese wêreld",
+    "favorites": "Gunstelinge",
+    "language": "Taal",
+    "about": "Oor",
+    "dataSource": "Open-Meteo data"
+  },
+  "alarm": {
+    "title": "Alarmradar",
+    "description": "Lewendige reënval-radar en aktiewe weerwaarskuwings.",
+    "activeAlerts": "Aktiewe waarskuwings",
+    "noAlerts": "Geen ernstige waarskuwings tans nie.",
+    "disclaimer": "Waarskuwings is afgelei van huidige voorspellings.",
+    "alerts": {
+      "thunderstorm": {
+        "title": "Donderstormwaarskuwing",
+        "detail": "Weerlig en swaar reën verwag. Vermy oop areas."
+      },
+      "heavyRain": {
+        "title": "Swaar reën",
+        "detail": "Vloedrisiko. Bestuur versigtig."
+      },
+      "heavySnow": {
+        "title": "Swaar sneeu",
+        "detail": "Sneeu kan reise ontwrig."
+      },
+      "galeWind": {
+        "title": "Stormwindwaarskuwing",
+        "detail": "Wind ongeveer {{speed}} km/u."
+      },
+      "strongWind": {
+        "title": "Sterk wind",
+        "detail": "Wind ongeveer {{speed}} km/u."
+      },
+      "extremeHeat": {
+        "title": "Uiterste hitte",
+        "detail": "Hoogtes naby {{temp}}°."
+      },
+      "extremeCold": {
+        "title": "Uiterste koue",
+        "detail": "Laagtes naby {{temp}}°. Gevaar van bevriesing."
+      }
+    }
+  },
+  "tabs": {
+    "hourly": "Uurliks",
+    "fiveDays": "5 dae",
+    "tenDays": "10 dae"
+  },
+  "actions": {
+    "refresh": "Verfris",
+    "lastUpdated": "Laas opgedateer"
+  },
+  "map": {
+    "title": "Weerkaart",
+    "description": "Tik enige plek op die wêreldkaart.",
+    "hint": "Tik die kaart om die weer te sien.",
+    "selected": "Gekies",
+    "locating": "Soek ligging…"
+  },
+  "offline": {
+    "title": "Vanlyn modus",
+    "savedAt": "Wys data gestoor op {{date}}",
+    "connect": "Koppel aan die internet."
+  },
+  "toasts": {
+    "updated": "Weer opgedateer",
+    "approxLocation": "Geskatte ligging: {{name}}",
+    "showing": "Wys weer vir {{name}}",
+    "showingYours": "Wys weer vir jou ligging",
+    "unavailable": "Ligging onbeskikbaar",
+    "timedOut": "Liggingsversoek het verstryk",
+    "offlineSaved": "Jy is vanlyn — gestoor data",
+    "offlineNoData": "Vanlyn en geen data",
+    "couldntRefresh": "Kon nie verfris nie",
+    "enableLocation": "Aktiveer ligging in jou blaaier"
+  },
+  "current": {
+    "local": "plaaslik",
+    "feelsLike": "Voel soos",
+    "humidity": "Humiditeit",
+    "wind": "Wind",
+    "uvIndex": "UV-indeks",
+    "addFav": "Voeg by gunstelinge",
+    "removeFav": "Verwyder uit gunstelinge",
+    "feelsLikeFull": "Voel soos {{temp}}°"
+  },
+  "hourly": {
+    "next": "Volgende {{hours}} ure",
+    "scroll": "blaai →",
+    "now": "Nou"
+  },
+  "daily": {
+    "outlook": "{{days}}-dag vooruitsig",
+    "today": "Vandag"
+  },
+  "favorites": {
+    "title": "Gunstelinge",
+    "remove": "Verwyder gunsteling"
+  },
+  "footer": "Weerdata van",
+  "weather": {
+    "0": "Helder lug",
+    "1": "Meestal helder",
+    "2": "Gedeeltelik bewolk",
+    "3": "Bewolk",
+    "45": "Mistig",
+    "48": "Ryp-mis",
+    "51": "Ligte motreën",
+    "53": "Motreën",
+    "55": "Swaar motreën",
+    "56": "Vrieskou motreën",
+    "57": "Vrieskou motreën",
+    "61": "Ligte reën",
+    "63": "Reën",
+    "65": "Swaar reën",
+    "66": "Vrieskou reën",
+    "67": "Vrieskou reën",
+    "71": "Ligte sneeu",
+    "73": "Sneeu",
+    "75": "Swaar sneeu",
+    "77": "Sneeukorrels",
+    "80": "Reënbuie",
+    "81": "Reënbuie",
+    "82": "Geweldige buie",
+    "85": "Sneeubuie",
+    "86": "Swaar sneeubuie",
+    "95": "Donderstorm",
+    "96": "Donderstorm met hael",
+    "99": "Erge donderstorm",
+    "unknown": "Onbekend"
+  }
+}
