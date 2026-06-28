@@ -18,8 +18,10 @@ import { fetchWeather, reverseGeocode, ipGeolocate, type GeoLocation, type Weath
 import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weather-cache";
 import { notifyCurrentWeather, notifyAlerts, type WeatherAlertNotice } from "@/lib/native-notifications";
 import { toast } from "sonner";
+import skylineLogo from "@/assets/skyline-logo.png";
+import mountainsFooter from "@/assets/mountains-footer.jpg";
 
-type Tab = "24h" | "5d" | "10d";
+type Tab = "24h" | "7d" | "15d";
 
 const DEFAULT_LOCATION: GeoLocation = {
   id: 2643743,
@@ -318,17 +320,28 @@ const Index = () => {
   const tabs = useMemo(
     () => [
       { id: "24h" as Tab, label: t("tabs.hourly") },
-      { id: "5d" as Tab, label: t("tabs.fiveDays") },
-      { id: "10d" as Tab, label: t("tabs.tenDays") },
+      { id: "7d" as Tab, label: t("tabs.sevenDays", { defaultValue: "7 days" }) },
+      { id: "15d" as Tab, label: t("tabs.fifteenDays", { defaultValue: "15 days" }) },
     ],
     [t]
   );
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen overflow-hidden">
       {/* Ambient orbs */}
-      <div className="pointer-events-none fixed left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[hsl(var(--sun)/0.08)] blur-[120px]" />
-      <div className="pointer-events-none fixed -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--accent)/0.1)] blur-[120px]" />
+      <div className="pointer-events-none fixed left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[hsl(var(--sun)/0.10)] blur-[120px]" />
+      <div className="pointer-events-none fixed -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--accent)/0.12)] blur-[120px]" />
+
+      {/* Mountain silhouette anchored to bottom */}
+      <img
+        src={mountainsFooter}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[28vh] w-full select-none object-cover object-top opacity-90 mix-blend-screen sm:h-[22vh]"
+      />
+      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[28vh] bg-gradient-to-t from-[hsl(258_70%_10%/0.95)] via-[hsl(258_70%_14%/0.35)] to-transparent sm:h-[22vh]" />
+
 
       <div className="relative mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
         <header className="mb-8 flex flex-col gap-6 sm:mb-10">
@@ -346,7 +359,7 @@ const Index = () => {
                 <SheetContent side="left" className="w-[85vw] max-w-xs overflow-y-auto">
                   <SheetHeader className="text-left">
                     <SheetTitle className="flex items-center gap-2">
-                      <div className="h-7 w-7 rounded-lg bg-gradient-sun shadow-glow" />
+                      <img src={skylineLogo} alt="" className="h-8 w-8" width={32} height={32} />
                       <span className="font-display text-lg font-medium">{t("app.name")}</span>
                     </SheetTitle>
                     <SheetDescription>{t("app.tagline")}</SheetDescription>
@@ -489,8 +502,8 @@ const Index = () => {
                   </div>
                 </SheetContent>
               </Sheet>
-              <div className="h-9 w-9 rounded-xl bg-gradient-sun shadow-glow" />
-              <span className="font-display text-xl font-medium">{t("app.name")}</span>
+              <img src={skylineLogo} alt="Skyline" className="h-10 w-10 drop-shadow-[0_4px_18px_hsl(var(--sun)/0.5)]" width={40} height={40} />
+              <span className="font-display text-2xl font-medium">{t("app.name")}</span>
             </div>
             <span className="hidden text-xs uppercase tracking-[0.25em] text-muted-foreground sm:block">
               {t("app.worldwide")}
@@ -574,10 +587,8 @@ const Index = () => {
             </div>
 
             {tab === "24h" && <HourlyForecast data={data} hours={24} />}
-            {tab === "5d" && <DailyForecast data={data} days={5} />}
-            {tab === "10d" && <DailyForecast data={data} days={10} />}
-
-            {tab !== "24h" && <HourlyForecast data={data} hours={24} />}
+            {tab === "7d" && <DailyForecast data={data} days={7} />}
+            {tab === "15d" && <DailyForecast data={data} days={15} />}
           </div>
         )}
 
