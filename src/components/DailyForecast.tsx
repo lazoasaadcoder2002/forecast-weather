@@ -3,7 +3,7 @@ import { Droplets } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
 import { describeWeather, formatDay, iconForCode, type WeatherData } from "@/lib/weather";
 
-interface Props { data: WeatherData; days: 5 | 10; }
+interface Props { data: WeatherData; days: number; }
 
 export const DailyForecast = ({ data, days }: Props) => {
   const { t, i18n } = useTranslation();

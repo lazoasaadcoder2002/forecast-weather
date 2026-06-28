@@ -19,7 +19,7 @@ import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weat
 import { notifyCurrentWeather, notifyAlerts, type WeatherAlertNotice } from "@/lib/native-notifications";
 import { toast } from "sonner";
 
-type Tab = "24h" | "5d" | "10d";
+type Tab = "24h" | "7d" | "15d";
 
 const DEFAULT_LOCATION: GeoLocation = {
   id: 2643743,
@@ -318,8 +318,8 @@ const Index = () => {
   const tabs = useMemo(
     () => [
       { id: "24h" as Tab, label: t("tabs.hourly") },
-      { id: "5d" as Tab, label: t("tabs.fiveDays") },
-      { id: "10d" as Tab, label: t("tabs.tenDays") },
+      { id: "7d" as Tab, label: t("tabs.sevenDays", { defaultValue: "7 days" }) },
+      { id: "15d" as Tab, label: t("tabs.fifteenDays", { defaultValue: "15 days" }) },
     ],
     [t]
   );
@@ -574,10 +574,8 @@ const Index = () => {
             </div>
 
             {tab === "24h" && <HourlyForecast data={data} hours={24} />}
-            {tab === "5d" && <DailyForecast data={data} days={5} />}
-            {tab === "10d" && <DailyForecast data={data} days={10} />}
-
-            {tab !== "24h" && <HourlyForecast data={data} hours={24} />}
+            {tab === "7d" && <DailyForecast data={data} days={7} />}
+            {tab === "15d" && <DailyForecast data={data} days={15} />}
           </div>
         )}
 
