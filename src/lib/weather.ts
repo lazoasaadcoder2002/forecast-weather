@@ -123,7 +123,7 @@ export async function fetchWeather(lat: number, lon: number, timezone = "auto"):
     daily:
       "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset,wind_speed_10m_max,uv_index_max",
     timezone,
-    forecast_days: "10",
+    forecast_days: "16",
     forecast_hours: "48",
   });
   const res = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`);
