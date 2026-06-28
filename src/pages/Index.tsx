@@ -18,6 +18,8 @@ import { fetchWeather, reverseGeocode, ipGeolocate, type GeoLocation, type Weath
 import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weather-cache";
 import { notifyCurrentWeather, notifyAlerts, type WeatherAlertNotice } from "@/lib/native-notifications";
 import { toast } from "sonner";
+import skylineLogo from "@/assets/skyline-logo.png";
+import mountainsFooter from "@/assets/mountains-footer.jpg";
 
 type Tab = "24h" | "7d" | "15d";
 
@@ -346,7 +348,7 @@ const Index = () => {
                 <SheetContent side="left" className="w-[85vw] max-w-xs overflow-y-auto">
                   <SheetHeader className="text-left">
                     <SheetTitle className="flex items-center gap-2">
-                      <div className="h-7 w-7 rounded-lg bg-gradient-sun shadow-glow" />
+                      <img src={skylineLogo} alt="" className="h-8 w-8" width={32} height={32} />
                       <span className="font-display text-lg font-medium">{t("app.name")}</span>
                     </SheetTitle>
                     <SheetDescription>{t("app.tagline")}</SheetDescription>
@@ -489,8 +491,8 @@ const Index = () => {
                   </div>
                 </SheetContent>
               </Sheet>
-              <div className="h-9 w-9 rounded-xl bg-gradient-sun shadow-glow" />
-              <span className="font-display text-xl font-medium">{t("app.name")}</span>
+              <img src={skylineLogo} alt="Skyline" className="h-10 w-10 drop-shadow-[0_4px_18px_hsl(var(--sun)/0.5)]" width={40} height={40} />
+              <span className="font-display text-2xl font-medium">{t("app.name")}</span>
             </div>
             <span className="hidden text-xs uppercase tracking-[0.25em] text-muted-foreground sm:block">
               {t("app.worldwide")}
