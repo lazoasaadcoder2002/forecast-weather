@@ -327,10 +327,21 @@ const Index = () => {
   );
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen overflow-hidden">
       {/* Ambient orbs */}
-      <div className="pointer-events-none fixed left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[hsl(var(--sun)/0.08)] blur-[120px]" />
-      <div className="pointer-events-none fixed -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--accent)/0.1)] blur-[120px]" />
+      <div className="pointer-events-none fixed left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[hsl(var(--sun)/0.10)] blur-[120px]" />
+      <div className="pointer-events-none fixed -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--accent)/0.12)] blur-[120px]" />
+
+      {/* Mountain silhouette anchored to bottom */}
+      <img
+        src={mountainsFooter}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[28vh] w-full select-none object-cover object-top opacity-90 mix-blend-screen sm:h-[22vh]"
+      />
+      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[28vh] bg-gradient-to-t from-[hsl(258_70%_10%/0.95)] via-[hsl(258_70%_14%/0.35)] to-transparent sm:h-[22vh]" />
+
 
       <div className="relative mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
         <header className="mb-8 flex flex-col gap-6 sm:mb-10">
