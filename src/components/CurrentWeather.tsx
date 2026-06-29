@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Thermometer, Star, Droplets, Wind, Sun as SunIcon } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
 import { describeWeather, iconForCode, formatLocaleTime, formatDay, type GeoLocation, type WeatherData } from "@/lib/weather";
-import heroSunset from "@/assets/hero-sunset.jpg";
 
 interface Props {
   location: GeoLocation;
