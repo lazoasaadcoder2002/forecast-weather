@@ -27,11 +27,12 @@ export const LocationSearch = ({ onSelect, onUseCurrent, loadingCurrent }: Props
   }, []);
 
   useEffect(() => {
-    if (!query.trim()) { setResults([]); return; }
+    const trimmed = query.trim();
+    if (!trimmed) { setResults([]); return; }
     setLoading(true);
     const t = setTimeout(async () => {
       try {
-        const r = await searchLocations(query);
+        const r = await searchLocations(trimmed);
         setResults(r);
         setOpen(true);
       } finally { setLoading(false); }
