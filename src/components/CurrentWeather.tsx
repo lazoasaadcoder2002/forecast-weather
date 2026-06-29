@@ -29,14 +29,6 @@ export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }:
     weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: data.timezone,
   });
 
-  const miniDays = data.daily.time.slice(0, 4).map((time, i) => ({
-    time,
-    code: data.daily.weatherCode[i],
-    max: data.daily.tempMax[i],
-    min: data.daily.tempMin[i],
-    isDay: 1,
-  }));
-
   return (
     <section className="relative overflow-hidden rounded-[2rem] shadow-deep animate-fade-in-up">
       {/* Background image */}
@@ -111,21 +103,6 @@ export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }:
           <MiniStat icon={<Droplets className="h-3.5 w-3.5" />} label={t("current.humidity")} value={`${c.humidity}%`} />
           <MiniStat icon={<Wind className="h-3.5 w-3.5" />} label={t("current.wind")} value={`${Math.round(c.windSpeed)} km/h`} />
           <MiniStat icon={<SunIcon className="h-3.5 w-3.5" />} label={t("current.uvIndex")} value={`${Math.round(c.uvIndex ?? 0)}`} />
-        </div>
-
-        {/* Mini 4-day */}
-        <div className="glass-inner mt-5 grid grid-cols-4 gap-2 rounded-2xl p-3">
-          {miniDays.map((d, i) => (
-            <div key={d.time} className="flex flex-col items-center gap-1.5">
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-white/70">
-                {i === 0 ? t("daily.today") : formatDay(d.time, data.timezone)}
-              </span>
-              <WeatherIcon name={iconForCode(d.code, 1)} className="h-7 w-7" />
-              <span className="text-[11px] text-white/90">
-                {Math.round(d.max)}° / {Math.round(d.min)}°
-              </span>
-            </div>
-          ))}
         </div>
       </div>
     </section>
