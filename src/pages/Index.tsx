@@ -19,7 +19,6 @@ import { saveWeatherCache, readWeatherCache, readLastLocation } from "@/lib/weat
 import { notifyCurrentWeather, notifyAlerts, type WeatherAlertNotice } from "@/lib/native-notifications";
 import { toast } from "sonner";
 import skylineLogo from "@/assets/skyline-logo.png";
-import mountainsFooter from "@/assets/mountains-footer.jpg";
 
 type Tab = "24h" | "7d" | "15d";
 
@@ -333,13 +332,6 @@ const Index = () => {
       <div className="pointer-events-none fixed -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--accent)/0.12)] blur-[120px]" />
 
       {/* Mountain silhouette anchored to bottom */}
-      <img
-        src={mountainsFooter}
-        alt=""
-        aria-hidden
-        loading="lazy"
-        className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[28vh] w-full select-none object-cover object-top opacity-90 mix-blend-screen sm:h-[22vh]"
-      />
       <div className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[28vh] bg-gradient-to-t from-[hsl(258_70%_10%/0.95)] via-[hsl(258_70%_14%/0.35)] to-transparent sm:h-[22vh]" />
 
 
