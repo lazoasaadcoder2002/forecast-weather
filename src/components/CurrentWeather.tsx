@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Thermometer, Star, Droplets, Wind, Sun as SunIcon } from "lucide-react";
 import { WeatherIcon } from "./WeatherIcon";
 import { describeWeather, iconForCode, formatLocaleTime, formatDay, type GeoLocation, type WeatherData } from "@/lib/weather";
-import heroSunset from "@/assets/hero-sunset.jpg";
 
 interface Props {
   location: GeoLocation;
@@ -30,19 +29,10 @@ export const CurrentWeather = ({ location, data, isFavorite, onToggleFavorite }:
   });
 
   return (
-    <section className="relative overflow-hidden rounded-[2rem] shadow-deep animate-fade-in-up">
-      {/* Background image */}
-      <img
-        src={heroSunset}
-        alt=""
-        aria-hidden
-        className="absolute inset-0 h-full w-full object-cover"
-        width={1024}
-        height={1280}
-      />
-      {/* Purple wash + bottom darken */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(258_70%_18%/0.55)] via-[hsl(275_55%_30%/0.35)] to-[hsl(258_70%_14%/0.85)]" />
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[hsl(258_70%_12%/0.85)] to-transparent" />
+    <section className="relative overflow-hidden rounded-[2rem] shadow-deep animate-fade-in-up bg-gradient-to-br from-[hsl(262_60%_28%)] via-[hsl(270_55%_22%)] to-[hsl(258_70%_14%)]">
+      {/* Decorative purple glow */}
+      <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[hsl(275_55%_40%/0.25)] blur-3xl" />
+      <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-[hsl(252_60%_35%/0.25)] blur-3xl" />
 
       <div className="relative p-6 sm:p-8">
         {/* Top meta */}
