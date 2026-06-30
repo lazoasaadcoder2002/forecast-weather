@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 260 55% 16%;
+    --background: 288 90% 58%;
     --foreground: 0 0% 100%;
 
     --card: 260 45% 18%;
@@ -67,9 +67,7 @@
     @apply text-foreground;
     font-family: 'Inter', system-ui, sans-serif;
     background:
-      radial-gradient(ellipse 80% 60% at 50% 0%, hsl(280 60% 32% / 0.7) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 50% at 100% 30%, hsl(20 90% 55% / 0.18) 0%, transparent 60%),
-      linear-gradient(180deg, hsl(258 60% 14%) 0%, hsl(262 55% 22%) 50%, hsl(275 55% 30%) 100%);
+      radial-gradient(ellipse 90% 70% at 50% 20%, hsl(290 95% 65%) 0%, hsl(288 90% 58%) 40%, hsl(285 85% 50%) 100%);
     background-attachment: fixed;
     min-height: 100vh;
   }
