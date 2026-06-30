@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 288 90% 58%;
+    --background: 270 65% 60%;
     --foreground: 0 0% 100%;
 
     --card: 260 45% 18%;
@@ -66,7 +66,7 @@
   body {
     @apply text-foreground;
     font-family: 'Inter', system-ui, sans-serif;
-    background: hsl(270 65% 60%);
+    background: hsl(var(--background));
     background-attachment: fixed;
     min-height: 100vh;
   }
